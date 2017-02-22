@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>test</name>
+    </assembly>
+    <members>
+        <member name="P:test.ConcreteAggregate.Item(System.Int32)">
+            <summary>
+            索引器
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:test.JudgementsContentCollectorBak.PageInfo">
+            <summary>
+            页面信息类
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.Index">
+            <summary>
+            第几页
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.CaseType">
+            <summary>
+            案件类型
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.Page">
+            <summary>
+            每页几个裁决书
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.TotalPages">
+            <summary>
+            总共几个裁决书
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.TotalIndex">
+            <summary>
+            总共需要翻多少页
+            </summary>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.test">
+            <summary>
+            测试
+            </summary>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetHtmlFromGet(System.String,System.Text.Encoding)">
+            <summary>
+            通过GET方式获取页面的方法
+            </summary>
+            <param name="urlString">请求的URL</param>
+            <param name="encoding">页面编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetHtmlFromPost(System.String,System.Text.Encoding,System.String)">
+            <summary>
+            提供通过POST方法获取页面的方法
+            </summary>
+            <param name="urlString">请求的URL</param>
+            <param name="encoding">页面使用的编码</param>
+            <param name="postDataString">POST数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetDocId(System.String)">
+            <summary>
+            得到DocId
+            </summary>
+            <param name="htmlString">网页内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetJudgementsTitle(System.String)">
+            <summary>
+            得到裁决文书的标题
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetJudgementsContent(System.String)">
+            <summary>
+            得到裁判文书的内容
+            </summary>
+            <param name="htmlString">网页内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetJudgementsPubDate(System.String)">
+            <summary>
+            得到裁决文书的发布日期
+            </summary>
+            <param name="htmlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetTotalPages(System.String)">
+            <summary>
+            得到总共的页数
+            </summary>
+            <param name="htmlString">网页内容</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

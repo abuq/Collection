@@ -1,0 +1,96 @@
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\phantomjs.exe
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\phantomjs-license.txt
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\更新历史记录.txt
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\JDCollection.exe.config
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\JDCollection.XML
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\JDCollection.exe
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\JDCollection.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\GEBase.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\HtmlAgilityPack.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\INIFileParser.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\Interop.IWshRuntimeLibrary.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\Interop.SHDocVw.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\Interop.ShockwaveFlashObjects.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\LinqBridge.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\log4net.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\ManagedWinapi.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\Microsoft.mshtml.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\MySql.Data.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\Newtonsoft.Json.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\nunit.framework.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\stdole.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\ToucanTech.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\Ude.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\X.CommLib.DotNet2.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\X.GlodEyes.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\XFCollection.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\CsvHelper.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\Ionic.Zip.Reduced.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\DotRas.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\tessnet2_32.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\Newtonsoft.Json.Net20.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\XFCollection.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\XFCollection.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\GEBase.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\HtmlAgilityPack.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\HtmlAgilityPack.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\INIFileParser.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\log4net.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\Newtonsoft.Json.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\nunit.framework.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\ToucanTech.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\X.CommLib.DotNet2.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\X.CommLib.DotNet2.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\CsvHelper.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\bin\Release\DotRas.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\obj\Release\JDCollection.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\obj\Release\JDCollection.exe
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDCollection\obj\Release\JDCollection.pdb
+F:\myGitHub\Collection\JDCollection\bin\Release\phantomjs.exe
+F:\myGitHub\Collection\JDCollection\bin\Release\phantomjs-license.txt
+F:\myGitHub\Collection\JDCollection\bin\Release\更新历史记录.txt
+F:\myGitHub\Collection\JDCollection\bin\Release\JDCollection.exe.config
+F:\myGitHub\Collection\JDCollection\bin\Release\JDCollection.XML
+F:\myGitHub\Collection\JDCollection\bin\Release\JDCollection.exe
+F:\myGitHub\Collection\JDCollection\bin\Release\JDCollection.pdb
+F:\myGitHub\Collection\JDCollection\bin\Release\GEBase.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\HtmlAgilityPack.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\INIFileParser.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\Interop.IWshRuntimeLibrary.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\Interop.SHDocVw.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\Interop.ShockwaveFlashObjects.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\LinqBridge.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\log4net.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\ManagedWinapi.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\Microsoft.mshtml.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\MySql.Data.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\Newtonsoft.Json.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\nunit.framework.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\stdole.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\ToucanTech.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\Ude.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\X.CommLib.DotNet2.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\X.GlodEyes.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\XFCollection.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\CsvHelper.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\Ionic.Zip.Reduced.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\DotRas.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\tessnet2_32.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\Newtonsoft.Json.Net20.dll
+F:\myGitHub\Collection\JDCollection\bin\Release\XFCollection.pdb
+F:\myGitHub\Collection\JDCollection\bin\Release\XFCollection.xml
+F:\myGitHub\Collection\JDCollection\bin\Release\GEBase.pdb
+F:\myGitHub\Collection\JDCollection\bin\Release\HtmlAgilityPack.pdb
+F:\myGitHub\Collection\JDCollection\bin\Release\HtmlAgilityPack.xml
+F:\myGitHub\Collection\JDCollection\bin\Release\INIFileParser.pdb
+F:\myGitHub\Collection\JDCollection\bin\Release\log4net.xml
+F:\myGitHub\Collection\JDCollection\bin\Release\Newtonsoft.Json.xml
+F:\myGitHub\Collection\JDCollection\bin\Release\nunit.framework.xml
+F:\myGitHub\Collection\JDCollection\bin\Release\ToucanTech.pdb
+F:\myGitHub\Collection\JDCollection\bin\Release\X.CommLib.DotNet2.pdb
+F:\myGitHub\Collection\JDCollection\bin\Release\X.CommLib.DotNet2.xml
+F:\myGitHub\Collection\JDCollection\bin\Release\CsvHelper.xml
+F:\myGitHub\Collection\JDCollection\bin\Release\DotRas.xml
+F:\myGitHub\Collection\JDCollection\obj\Release\JDCollection.csprojResolveAssemblyReference.cache
+F:\myGitHub\Collection\JDCollection\obj\Release\JDCollection.exe
+F:\myGitHub\Collection\JDCollection\obj\Release\JDCollection.pdb

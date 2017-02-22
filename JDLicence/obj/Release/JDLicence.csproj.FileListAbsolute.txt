@@ -1,0 +1,78 @@
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\phantomjs.exe
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\phantomjs-license.txt
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\更新历史记录.txt
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\JDLicence.dll.config
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\JDLicence.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\JDLicence.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\HtmlAgilityPack.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\XFCollection.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\X.CommLib.DotNet2.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\MySql.Data.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\X.GlodEyes.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\Newtonsoft.Json.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\CsvHelper.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\LinqBridge.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\Ionic.Zip.Reduced.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\DotRas.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\tessnet2_32.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\Ude.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\Interop.SHDocVw.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\ManagedWinapi.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\Microsoft.mshtml.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\Interop.ShockwaveFlashObjects.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\INIFileParser.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\stdole.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\XFCollection.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\XFCollection.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\HtmlAgilityPack.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\HtmlAgilityPack.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\X.CommLib.DotNet2.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\X.CommLib.DotNet2.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\X.GlodEyes.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\X.GlodEyes.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\Newtonsoft.Json.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\CsvHelper.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\DotRas.xml
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Release\INIFileParser.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\obj\Release\JDLicence.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\obj\Release\JDLicence.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\obj\Release\JDLicence.pdb
+F:\myGitHub\Collection\JDLicence\bin\Release\phantomjs.exe
+F:\myGitHub\Collection\JDLicence\bin\Release\phantomjs-license.txt
+F:\myGitHub\Collection\JDLicence\bin\Release\更新历史记录.txt
+F:\myGitHub\Collection\JDLicence\bin\Release\JDLicence.dll.config
+F:\myGitHub\Collection\JDLicence\bin\Release\JDLicence.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\JDLicence.pdb
+F:\myGitHub\Collection\JDLicence\bin\Release\HtmlAgilityPack.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\XFCollection.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\X.CommLib.DotNet2.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\MySql.Data.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\X.GlodEyes.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\Newtonsoft.Json.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\CsvHelper.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\LinqBridge.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\Ionic.Zip.Reduced.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\DotRas.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\tessnet2_32.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\Ude.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\Interop.SHDocVw.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\ManagedWinapi.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\Microsoft.mshtml.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\Interop.ShockwaveFlashObjects.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\INIFileParser.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\stdole.dll
+F:\myGitHub\Collection\JDLicence\bin\Release\XFCollection.pdb
+F:\myGitHub\Collection\JDLicence\bin\Release\XFCollection.xml
+F:\myGitHub\Collection\JDLicence\bin\Release\HtmlAgilityPack.pdb
+F:\myGitHub\Collection\JDLicence\bin\Release\HtmlAgilityPack.xml
+F:\myGitHub\Collection\JDLicence\bin\Release\X.CommLib.DotNet2.pdb
+F:\myGitHub\Collection\JDLicence\bin\Release\X.CommLib.DotNet2.xml
+F:\myGitHub\Collection\JDLicence\bin\Release\X.GlodEyes.pdb
+F:\myGitHub\Collection\JDLicence\bin\Release\X.GlodEyes.xml
+F:\myGitHub\Collection\JDLicence\bin\Release\Newtonsoft.Json.xml
+F:\myGitHub\Collection\JDLicence\bin\Release\CsvHelper.xml
+F:\myGitHub\Collection\JDLicence\bin\Release\DotRas.xml
+F:\myGitHub\Collection\JDLicence\bin\Release\INIFileParser.pdb
+F:\myGitHub\Collection\JDLicence\obj\Release\JDLicence.csprojResolveAssemblyReference.cache
+F:\myGitHub\Collection\JDLicence\obj\Release\JDLicence.dll
+F:\myGitHub\Collection\JDLicence\obj\Release\JDLicence.pdb

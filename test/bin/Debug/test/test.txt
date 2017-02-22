@@ -1,0 +1,249 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /><title>
+	首页 - 中国裁判文书网
+</title><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><link rel="bookmark" href="/favicon.ico" type="image/x-icon" /><link href="/Assets/css/ListIndex.css" rel="stylesheet" type="text/css" /><link href="/Assets/css/Menu.css" rel="stylesheet" type="text/css" /><link href="/Assets/js/libs/css/import_basic.css" rel="stylesheet" type="text/css" /><link id="skin" type="text/css" rel="stylesheet" splitmode="true" prepath="/Assets/js/" href="/Assets/js/libs/skins/red/style.css" /><link href="/Assets/css/User.css" rel="stylesheet" type="text/css" /><link id="customSkin" rel="stylesheet" type="text/css" />
+    
+    <link href="/Assets/css/MainIndex.css" rel="stylesheet" type="text/css" />
+    <meta name="renderer" content="webkit"><meta id="9DhefwqGPrzGxEp9hPaoag" content="{qqVMHNwu2stKQy8umuEKQRYYB1yFuXQDpegl2jq46PTQNc40l7445ORrmIRGmZm67piGw_lKAAiAJ6lOQowmgOYcQ}]mcq2RKJiMDTFMTxbhlaPpCRiMpTyQ0YuKYyCI6rQUT2_I6z0KowGMVyfKoNZAlSVx2y8V2WJpTrl11xAUUx9KTWhIqwXlTwapvphJC3Fh1pWH1EzivfghbYy8AyPDU09xkS6iUEuUawFHDW1AfyYlbgfKSZzh63ewbeJi2V4MqwmMlgRRqz1m6LpYfYJE6TsA1ekq6y8IPmQKvfwplJ6WVacsV2Go0E.I1SQt0yMValYKR_qqqqqqqqqr0qk162{ssESezv_dwB0Bd1vTE.Z45nOvxHp5.6Pfwz3B4cUBtQEk51Myh52PduuBEJ979oFAIN9dSu4qtQfP0cUWiWl8DfZ6xnEUtSlXlPZUtp37o1gAtpANlAqiI9xE802asoJoQGqqqqqqqqqqr0hAmh8DtfoQ8fD85d35ckhiEqkV6Zqqqqqqqqq.grREYUyAtzesHTIEajgi6_VT63N5Oxiljsiy84sADZqh9amMpM_5UpBr2c80klUQKuq1HTQ7eppTGE_kbzE2vzaqqqqqqqqq"><!--[if lt IE 9]><script>document.createElement("section")</script><![endif]--><script type="text/javascript" src="/4QbVtADbnLVIc/d.FxJzG50F.js?D9PVtGL=85d35c"></script><script type="text/javascript">var _$c5=window,_$c7=top,_$sL,_$vi,_$au,_$xN,_$vp=String.fromCharCode,_$wq=[],_$xc,_$xm,_$mk,_$av,_$b3,_$ah,_$sl,_$xB=_$c5.Error;var _$qO,_$aG,_$iY;var _$s3=1;_$gx();_$c5[_$vp(101,118,97,108)](_$bN(_$ch('mScBdId1eg4by76`TeugShBfzo.rNcva2COdfAI`wtMiRgUsYisepuH`Juhsxro_m`karh`l0gGtJSFr}ne`oremihar[o)elavpnyisclut`acslre `allcdlwvt` phnt`moOacienmrtnCop`JehTdmPo`tlsston`epvTls$lt#`_omatSeooaee`___suger@eeaaultv`.hprrtSgetcijeIntmeeb``SOBe`nr`ao``rcttt`p:`oxtcdconriSiene esyaokopppyirdAxAfSOFjrcb.un`emtTdec`iAtaecaeuatl`vd`beg$M`tt`bos`uo`tcilg`fnorCsatCedo`rphl``opli``tsneltNfNizeU liBhScFiutoe`a5`Za_lgrCp0aneafXn7tjoLeba9(P{Gn8tQvFc3dK]V`1xAzi5WFtqEcDlt___`rgmrvtIlec`l_sc_a`sayretcIneo`euwe3ixtysgmbd6aV`_owtCc`latce'),_$ch('Em6zmVDOoX3x1q6Df2iUSpn8uZ6euXJNGL58riR4J6pKUbWMhkbetdckhmenklccgdmiimrikhajblirkbipeljkfjlfqdrg')));_$p9();;function _$qd(_$ib){var _$js=[],_$aX,_$oI,_$hy,_$hh='?'[_$dO](0);for(_$aX=0;_$aX<_$ib[_$mz];){_$oI=_$ib[_$aX];if(_$oI<0x80)_$hy=_$oI;else if(_$oI<0xc0)_$hy=_$hh;else if(_$oI<0xe0){_$hy=((_$oI&0x3F)<<6)|(_$ib[_$aX+1]&0x3F);_$aX++ ;}else if(_$oI<0xf0){_$hy=((_$oI&0x0F)<<12)|((_$ib[_$aX+1]&0x3F)<<6)|(_$ib[_$aX+2]&0x3F);_$aX+=2;}else if(_$oI<0xf8){_$hy=_$hh;_$aX+=3;}else if(_$oI<0xfc){_$hy=_$hh;_$aX+=4;}else if(_$oI<0xfe){_$hy=_$hh;_$aX+=5;}else _$hy=_$hh;_$aX++ ;_$js.push(_$hy);}return _$tr(_$js);}var _$xu=_$im;var _$xa='T';var _$w5='D';;;;;_$f3();var _$ia;function _$qM(_$ib,_$js){var _$aX=_$ib.length,_$oI=new Array(Math.ceil(_$ib.length/_$js)),_$hy=0,_$hh=0;for(;_$hh<_$aX;_$hh+=_$js,_$hy++ )_$oI[_$hy]=_$ib.substr(_$hh,_$js);return _$oI;}function _$s4(_$ib,_$js,_$aX,_$oI){var _$hy=Math.floor((_$js+_$aX)/2);if(_$oI>0){_$oI-- ;if(_$hy-_$js>=3)_$s4(_$ib,_$js,_$hy,_$oI);if(_$aX-_$hy>=3)_$s4(_$ib,_$hy,_$aX,_$oI);}for(var _$hh=_$js;_$hh<_$hy;_$hh+=2){var _$ao=_$ib[_$hh];var _$in=_$aX-1-(_$hh-_$js);_$ib[_$hh]=_$ib[_$in];_$ib[_$in]=_$ao;}}function _$xv(_$ib){var _$js=_$ib[_$mz],_$aX=new Array(Math[_$iV](_$js*3/4));var _$oI,_$hy,_$hh,_$ao;var _$in=0,_$nD=0,_$hA=_$js-3;for(_$in=0;_$in<_$hA;_$in=_$in+4){_$oI=_$wq[_$ib[_$dO](_$in)];_$hy=_$wq[_$ib[_$dO](_$in+1)];_$hh=_$wq[_$ib[_$dO](_$in+2)];_$ao=_$wq[_$ib[_$dO](_$in+3)];_$aX[_$nD++ ]=(_$oI<<2)|(_$hy>>4);_$aX[_$nD++ ]=((_$hy&15)<<4)|(_$hh>>2);_$aX[_$nD++ ]=((_$hh&3)<<6)|_$ao;}if(_$in<_$js){_$oI=_$wq[_$ib[_$dO](_$in)];_$hy=_$wq[_$ib[_$dO](_$in+1)];_$aX[_$nD++ ]=(_$oI<<2)|(_$hy>>4);if(_$in+2<_$js){_$hh=_$wq[_$ib[_$dO](_$in+2)];_$aX[_$nD++ ]=((_$hy&15)<<4)|(_$hh>>2);}}return _$aX;}function _$hF(_$ib,_$js){if(!_$mk)return;if(typeof _$ib===_$kW)_$ib=String(_$ib);var _$aX=_$fM(_$ib);if(_$aX)_$js=parseInt(_$aX)+_$js;_$ib=_$aU+_$uG(_$ib);_$mk[_$ib]=_$js;}function _$eW(_$ib,_$js){return _$ib[_$lx](0,_$js[_$mz])===_$js;}function _$pB(_$aX){var _$oI=_$pY();_$rG();_$aX=_$xv(_$aX);var _$hy=0;_$oI=_$pY();;function _$nQ(){var _$nl=_$hk();if(_$nl<8)return[_$nl,_$kS()];else return[_$nl&0x7,((_$nl>>>3)&0x1F)-1];}var _$hh=parseInt(_$ch('576'));var _$ao=_$k3,_$in='u',_$nD='?',_$hA='E',_$hf="^";;function _$eg(){var _$nl=_$kS();return _$ap(_$nl);}var _$b7=_$rY();_$oI=_$pY();var _$jm=_$pl(_$lU(function(){return _$xy;})+'("');;function _$ib(_$nl,_$bV){var _$i5,_$fx;for(var _$e2=0;_$e2<_$nl;_$e2++ ){_$i5=_$nQ();_$fx=_$i5[1];switch(_$i5[0]){case 0:_$bV.push(_$o4[_$fx]);break;case 1:_$js(_$fx,_$bV);break;case 2:_$ib(_$fx,_$bV);break;case 3:_$ib(_$fx,_$bV);break;case 4:;_$bV.push(_$b7[_$fx]);break;case 5:_$bV.push(_$jm);_$bV.push(_$pl(_$uG(_$st(_$o4[_$fx]))));_$bV.push(_$in+_$hf);break;case 6:if(_$fx===0){_$bV.push(_$in);_$bV.push(_$ky);_$bV.push(_$in);}else if(_$fx===1){_$bV.push(_$in);_$bV.push(_$fw);_$bV.push(_$in);}else if(_$fx===2){var _$oP=_$c5[_$mm][_$iV]((_$pY()-_$gM)/1000);_$sB=_$sB+_$c5[_$mm][_$iV](_$c5[_$mm][_$i6](_$oP/5.88+1));_$bV.push(_$in);_$bV.push(_$pl(_$sB[_$rE]()));_$bV.push(_$in);}else _$bV.push(_$ao);break;case 7:;_$bV.push(_$b7[_$fx+_$hh]);break;default:;}}}var _$wJ=_$hk();var _$o4=_$rS();;function _$ap(_$nl){var _$bV=_$hy;_$hy+=_$nl;if(_$nl<10240)return String[_$hn][_$bS](null,_$aX[_$lx](_$bV,_$hy));else return _$tr(_$aX,_$bV,_$hy);}_$oI=_$pY();_$wJ=_$hk();var _$k9=_$kS();var _$ky=_$eg();var _$fw=_$b7[_$co](_$hh*2,_$k9*2);;function _$hk(){return _$aX[_$hy++ ];}_$b7=_$qM(_$b7,2);var _$kM=_$pl(_$gD);for(var _$pa=0;_$pa<_$b7[_$mz];_$pa++ )_$b7[_$pa]=_$kM+_$b7[_$pa];var _$eJ=parseInt(_$xC('YdJ2SDl'));;function _$js(_$nl,_$bV){var _$i5=_$kS(),_$fx,_$e2,_$oP=[],_$f4=[],_$no;for(_$fx=0;_$fx<_$nl;_$fx++ ){_$e2=_$kS();_$no=[];_$ib(_$e2,_$no);_$oP.push(_$no);}for(_$fx=0;_$fx<_$i5;_$fx++ ){_$e2=_$kS();_$no=[];_$ib(_$e2,_$no);_$f4.push(_$no);};_$sk(_$oP);_$fx=0;var _$cp=0;var _$c4=_$ps()%(_$i5-_$fx+1)%(_$nl-_$cp);for(var _$k4=0;_$k4<_$i5;_$k4++ ){if(_$c4<0&&_$cp<_$nl){_$c4=_$ps()%(_$i5-_$fx)%(_$nl-_$cp);_$bV.push(_$nD);_$up(_$bV,_$oP[_$cp]);_$cp++ ;}_$up(_$bV,_$f4[_$k4]);_$c4-- ;_$fx++ ;}while(_$cp<_$nl){_$up(_$bV,_$oP[_$cp]);_$cp++ ;}}if(_$eJ>=0&&_$c5[_$st(_$b7[_$eJ])])_$sk(_$b7);;_$oI=_$pY();;function _$kS(){var _$nl=_$sU(_$aX,_$hy);_$hy+=_$rJ(_$aX,_$hy);return _$nl;}_$wJ=_$hk();var _$dE=[];;function _$rS(){var _$nl,_$bV,_$i5,_$fx;_$bV=_$kS();_$nl=_$kS();_$i5=_$ap(_$nl);var _$e2=_$i5[_$ti](_$hA);_$bV=_$kS();for(var _$oP=0;_$oP<_$bV;_$oP++ ){_$fx=_$kS();_$e2.push(_$ap(_$fx));}return _$e2;}_$ib(_$kS(),_$dE);_$oI=_$pY();_$sv(_$st(_$dE.join('')));return;;;;}function _$sC(_$ib,_$js){_$qO|=_$ib;if(_$js)_$aG|=_$ib;}function _$bN(_$ib,_$js){_$ib=_$ib.split('`');_$js=_$qM(_$js,2);var _$aX=_$vp(95,36);for(var _$oI=0;_$oI<_$js.length;_$oI++ )_$js[_$oI]=_$aX+_$js[_$oI];;var _$hy=[_$vp(118,97,114,32)];for(var _$oI=0;_$oI<_$ib.length;_$oI++ ){if(_$oI>0)_$hy.push(',');_$hy.push(_$js[_$oI]+'="'+_$ib[_$oI]+'"');}_$hy.push(';');return _$hy.join('');}function _$gx(){if(_$qM)/$/.test(_$ug());var _$ib=new Array(32);for(var _$js=0;_$js<32;_$js++ )_$ib[_$js]=_$js;_$ib=_$tr(_$ib).split('');var _$aX=new Array(129);for(var _$js=127;_$js<256;_$js++ )_$aX[_$js-127]=_$js;_$aX=_$tr(_$aX).split('');_$xc='I-M3DJ0rcufq%d\\1]B:b&yTo2<>HFn};X |9v`[(V#A~Z*5.Cm^OWR{SN/E6pU)K$ztL@8e,jax\'7!lQg4s+w"k?P=i_GYh'.split('');_$xc=_$ib.concat(_$xc.concat(_$aX));_$xm='AmuI`,4kG^Msg!OY&/8#qN[leC2?9y:wdJ1P$Z<|; %_c"XSxoUW6]HT@}LF.0R{Ei3(-f*p~zhvnQ=7\\+\'rb)Dtj5aVB>K'.split('');}function _$tR(_$ib){var _$js=_$xB&&new _$xB();if(_$js){var _$aX=_$js[_$h6];if(!_$aX)return;var _$oI=_$aX[_$rE]();var _$hy=_$oI[_$ti]('\n');_$oI=_$hy[_$e1]();if(_$oI===''&&_$hy[_$mz]>0)_$oI=_$hy[_$e1]();if(_$oI[_$nq](_$mD)!== -1||_$eW(_$oI,_$k2)||_$oI===_$dU){_$hF(_$ib,1);return true;}}}function _$tt(_$ib,_$js){if(_$c5._$ws)return;if(_$js!==_$sl&&!_$js)return;console[_$i6](_$ib);}function _$pl(_$ib){var _$js=_$ib[_$mz],_$aX=new Array(_$js),_$oI,_$hy;for(_$oI=0;_$oI<_$js;_$oI++ ){_$hy=_$ib[_$dO](_$oI);if(_$hy>=32&&_$hy<127)_$aX[_$oI]=_$xm[_$hy-32];else _$aX[_$oI]=_$ib[_$ep](_$oI);}return _$aX.join('');}function _$p9(){_$sL=_$jb;_$sL=_$sL[_$ti]('');_$vi=_$c5[_$hM];_$au=_$c7[_$gZ];_$ps=_$c5[_$mm][_$de];_$b3=_$c5[_$fX];_$ah=_$c5[_$jN];_$xN=_$c5[_$kL];_$mk=_$c5[_$l8];if(_$mk)try{_$mk[_$e5]=_$e5;_$mk[_$jG](_$e5);_$mk[_$fJ]=_$l8;}catch(_$ib){_$mk=_$sl;}if(!_$qO&&!_$aG){_$aG=0;_$qO=0;_$iY=0;}_$c5[_$lu]=_$c5[_$lu]||(function(){var _$js={};_$js[_$i6]=function(){};return _$js;})();if(!_$xN){_$xN=new Object();_$c5[_$kL]=_$xN;}_$av=_$xv(_$q6);}function _$cE(_$ib,_$js){if(!_$ib){if(_$mk&&_$mk.$d==='1')debugger;if(_$js)throw _$js;else throw _$cf+_$ib;}}function _$xC(_$ib){return _$qd(_$xF(_$ib),_$sC(2,_$tR(9)));}function _$gc(_$ib){return unescape(encodeURIComponent(_$ib));}function _$rJ(_$ib,_$js){var _$aX=_$ib[_$js]&0xf0;if((_$aX&0x80)===0)return 1;if((_$aX&0xc0)===0x80)return 2;if((_$aX&0xe0)===0xc0)return 3;if((_$aX&0xf0)===0xe0)return 4;;}function _$fM(_$ib){if(!_$mk)return;if(typeof _$ib===_$kW)_$ib=String(_$ib);_$ib=_$aU+_$uG(_$ib);return _$mk[_$ib];}function _$sv(_$ib){if(_$ib===undefined||_$ib==="")return;var _$js=_$c5[_$bp][_$iJ],_$aX;if(!_$ia)_$ia=_$js.push;if(_$c5[_$kR])_$aX=_$c5[_$kR](_$ib);else{var _$oI=_$c5[_$ir];_$aX=_$oI[_$pi](_$c5,_$ib);}if(_$ia!==_$js.push)_$js.push=_$ia;return _$aX;}function _$rG(){_$qv=_$c5[_$ir][_$rE]()[_$b4](/[\r\n\s]/g,"")!==_$r6;}function _$xy(_$ib){var _$js=_$xv(_$ib);return _$qd(_$js);}function _$f3(){_$eB=0;_$xN._$w2=_$pY();_$gM=_$xN._$w2;_$qA=_$ch('`sa96k4oPeOeeLwhPdMj.YZ5MCaW1i4`VxwJobbe`');_$qA=_$qA[_$ti]('`');_$o3=_$xC('J8GoCa');_$sB=_$ch('42');_$sB=parseInt(_$sB);_$sC(4,0);_$sC(2,_$tR(7));_$ub=_$xC('AawS');var _$ib=_$xN[_$lK];if(_$ib){_$xN[_$lK]=false;_$pB(_$ib);}_$xN._$xk=_$pY();if(_$xN._$xk-_$xN._$w2>12000){_$sC(1,1);_$hF(13,1);}else _$sC(1,0);_$sC(8,0);_$sC(16,0);}function _$pY(){return new Date()[_$k8]();}function _$xF(_$ib){var _$js=_$xv(_$ib),_$aX=(_$js[0]<<8)+_$js[1],_$oI=_$js[_$mz],_$hy;for(_$hy=2;_$hy<_$oI;_$hy+=2){_$js[_$hy]^=(_$aX>>8)&0xFF;if(_$hy+1<_$oI)_$js[_$hy+1]^=_$aX&0xFF;_$aX++ ;}return _$js[_$lx](2);}function _$tr(_$ib,_$js,_$aX){_$js=_$js||0;if(_$aX===_$sl)_$aX=_$ib.length;var _$oI=[],_$hy;while(true){_$hy=_$js+40960;if(_$hy>=_$aX){_$oI.push(_$vp.apply(null,_$ib.slice(_$js,_$aX)));break;}else{_$oI.push(_$vp.apply(null,_$ib.slice(_$js,_$hy)));_$js=_$hy;}}return _$oI.join('');}function _$up(_$ib,_$js){for(var _$aX=0;_$aX<_$js[_$mz];_$aX++ )_$ib.push(_$js[_$aX]);}function _$lU(_$ib){return _$ib[_$rE]()[_$ru](/{\s*return\s*([A-Za-z0-9$_-]+);?\s*}/)[1];}function _$sU(_$ib,_$js){var _$aX=_$ib[_$js];if((_$aX&0x80)===0)return _$aX;if((_$aX&0xc0)===0x80)return((_$aX&0x3f)<<8)|_$ib[_$js+1];if((_$aX&0xe0)===0xc0)return((_$aX&0x1f)<<16)|(_$ib[_$js+1]<<8)|_$ib[_$js+2];if((_$aX&0xf0)===0xe0)return((_$aX&0xf)<<24)|(_$ib[_$js+1]<<16)|(_$ib[_$js+2]<<8)|_$ib[_$js+3];;}function _$rY(){return _$xC('lbpgHoGD8lJbsoG78ma4mvfU8kSgJ6fI8lp0cm3jROSgKvGw8lxgmoGpRG9dtk9h8mJKt6GY8cegYKM28Hwbd6kSQtrbuKMnYB2b_CM4Rz2bjmMS3JSKXCF6Y7SKCKMcRBxKeKMRRjmKgsU0YzYbBbMOR732nbFPYjpbd6kCJIQf61oaYBZ49mMnQipK_YFE3NrigmMNwHZBy6BWFWaygKMxYLx491DrYNTK4DhyieZf9vBni3a_yonEJFxa21D_Yj9dZbMLYBlB4OXNigNKbTFKigp_5Ck73trG7Cc6i_eK4vs2YBrKZUkTYBGyG1dgQEy_2OB7igWBgOBxIhldnl48ERpi.sXLtQAfjnDgQWeaOOBU8_9fuvkUEwTKPChFiLmaNnDwxwq4C2DligeaCOBwigfiG613E32fAkLOs6eSM6mWi2YfYsABQ1gytuNNEmq53kN382RfRufmxcSzhOL0iVG_I1rii935p675JmLXIs7BikySIs2sifYfwD9hQU74lU0J3YzHRDJci9rSU9xwQVySUo0Mi2Z_Mky2Qpl_qcAU3VYfmKJy8b2H8UV1IKRHsPAKQpROck9t3uVXtblhirffQb2zQ104MDlRirrSEvLnQKQGMU07JqaG3Dm4iAxTqDmTIKTeromNQUg5FCl2RUa4Ek7n8vRfssfk3pW4oKltiSTzJOftQpffKkGGinVGH6zYJmV0ADmkJrAgqlec3pRftkpssS9gHkAl3sg0ru2I3TeNmClxHBRc40t635Rfeb6e3MTT5Ps53Mag_o.yEieHXP1.8BE54OO4s4m26CoX87YO76CbIIlg_ssnitg0Z9d6iM2fdOPD87A5eKbYseagZ1cl3wJHfssSsd0ydk4HRI3XSuXx8yfcfns5F8yHaoXc859y_o6D8eNc5v.uHXpO6lhfJE994CvyRRm49k1M8.0GjKHnihSN5kP2Jh2O4uX4iiV0fV58F3pzykbkw379jusSFFZyNkbUxixOfusGHBV9.k_lMQfHBKUm3499Tubx8ZZ5OuBVxhL02DioFRf_Xs1V8yx2Cu4KiMm4aObBsexzXoXyxEGGvoK1ixfOfDKJseSHOOSsECyj8oxn3bznhDy7pU9vFsSRF2EOEvLb1DyEx609MOWNtbgaIoLy1DpcE6fnM12EIVNjwkeztKNmhvSnH9xjrCyyxSQyY6arpAqNIVGE899O1O2P1oZNwvNTpYSmUn9KHSznD1WR8vN91DgrIqadUbNLHSxmqnwbIpN9mCxXp1EeEu9nQGzXxUa.Rrz_30YjismXhlVdIDgZxCE_pK9NiP97pKeXwu9rtUfXFPJfisN_wDL4FOlNk606EC2EHPQeRqwXKKxmF2JeUKNxIsEOpKgM3Pr9DP2hpsGNYvSc8OJPpugbp17yH9VFIYVNks2UtVV5VbAOF22_VP2E32qO0KjLpIy9NU6EEeL5eD.hI8q5Nk_eHXLZNo.yHJYPj9KvH.lNdvnTMXxmBbhKM7JnND1CH_aNn2k7MXTngbslEgGN9ousQBzn9PINRWZ5Ob46x5JjgPiHiR29dD4IRxwmdDjpHzwXb6jIQ7Je4KhjIEpPOO4ot8WeP6hSHxVZfD1EwBRXbot8H8eZ_Pb5x_2XjnvNFNRCeOuXpI3yZvt7wBznfOiDtFJmPkH58jSme0KN3.eZjbhb3jl5yOvuxyemPk_Exgp9Bo.13.TPuCtwp3ynn6CA1EJnBCtsH.TZN0OFHEYPfojkIteXb0Uop3TX.Csm8N3ujknIWgSZ2OCpioSewuSLtmgLVu0L3TRBY9pNM0lgKsTh8CROhO0yR1zlAKetW9f.hPRkwCZeHDzWQuQLW9A53nWgAUJr36zO16SexvTBrCJCMaJxUnRUWvS4w60FFaf2RuftHCTewbJW8TYuI6TiHSR4osyXWfeBroTtIo9PDb7iF0xZcbZktrz.cbz.xPyelbmfEOpOrKJnHuSOF09OQCggmbWFFufZl6WGWG3LH1GexfSBDuZZQCZPEkZLtD0eru0z3nSelb7cMaS2oK7T8aVgmUWlIVSlkKYkEPldkDWkRAx41C7cE2JxkoWIHqaPJC7qirz2WbVPFSNuYDWc80flqVAX8TzZ1Ph23ZeljCBKitTlX1OOMdzOg1hxWBaLjkP6piGe0666IIYe46XSIhSx.uOdQdZeeUICWBRvB9sp8_p4_nOAtW7dPvXwMg0nS1hAQZN4COCiFdzlSKKRtEJudonhQeqduk60HJ0gdbiHpire4CdjH50gfYop85RugsOwpiRO2DB2WBwO.sn3M5gbgkCyttVLb6X_MgJxBkdB84pe_UHT8_r2GCHZihwZbV16F_9eeU6jE.qb4CKjRRmfGDX7HxEL_OngixWPLKB3w4gdPvXUFgeevDKM8ewOPviDQeypNoC_8eQZCnFztEe.SnFQ1QVgvvC4HZYl61PdthS2GnF_E7Ndi0wMHOW5sCqG8cYbJ6y28lrdtCf6t0m7su7.Hbw9isygHlA5WbqLQcl51Pz6iTp0ECqSiCq2FVN_IORaJDrOHVYbkofTQqQfs1mk1GT7AbrnI2WfI6rai6Sdooe019rtlkllHbR0IKRG3lwbUvpIEKxaIKRy8owtMKGAEUA.IDGa1fpokc7eFDxLqKSbiCpoqclR3qE2Q0wOIG2oMsgWWK0fiCRnQkePt9Nz8rSomlLk1ve5kKa0MqSa3kaKHsleos0PRfGec6GRpuEeAUyoHYW4A9LDRGfoAs0ZEpE21VQRISqZtbxREYWe1UZVxYEfKbaMH2egKKGiITfoivyQ3JSLyDM1HH0.nDPei_pb7sX7Fieg6u4r8ipL.O4L3hyaSsD4xIfazcKBt4Lez9.lEFW2yo4oHQp9SkBw8JgeyUOSW3le6O4J1Bge9v4WFiw0b64TIeNgZsnwxRmodOCDtgWS0O4217JovkDsW8Ra0v5iHwfGPKsBMxRadUs31Xebd1DwR.AeXCs.W3md5v_L3t3SgPD.IjN9yCc1HH055U5bWRT7vPDoQtr5GsBC3hVf2PUS8hG5Pvk_RBLe59._HWZfGC18HQRL7DsRQWY7O6P7xFwLGnDK');}function _$st(_$ib){var _$js=_$ib[_$mz],_$aX=new Array(_$js),_$oI,_$hy;for(_$oI=0;_$oI<_$js;_$oI++ ){_$hy=_$ib[_$dO](_$oI);_$aX[_$oI]=_$xc[_$hy];}return _$aX.join('');}function _$uG(_$ib,_$js){if(typeof _$ib===_$cX)_$ib=_$so(_$ib);if(!_$js)_$js=_$sL;var _$aX='',_$oI;for(_$oI=0;_$oI<_$ib[_$mz];_$oI=_$oI+3){_$aX+=_$js[_$ib[_$oI]>>2];_$aX+=_$js[((_$ib[_$oI]&3)<<4)|(_$ib[_$oI+1]>>4)];if(_$ib[_$oI+1]!==_$sl)_$aX+=_$js[((_$ib[_$oI+1]&15)<<2)|(_$ib[_$oI+2]>>6)];else{}if(_$ib[_$oI+2]!==_$sl)_$aX+=_$js[_$ib[_$oI+2]&63];}return _$aX;}function _$so(_$ib){var _$js=[],_$aX;_$ib=_$gc(_$ib);for(_$aX=0;_$aX<_$ib[_$mz];_$aX++ )_$js.push(_$ib[_$dO](_$aX));return _$js;}function _$sk(_$ib){for(var _$js,_$aX,_$oI=_$ib[_$mz]-1;_$oI>0;_$oI-- ){_$js=Math[_$iV](_$ps()*_$oI);_$aX=_$ib[_$oI];_$ib[_$oI]=_$ib[_$js];_$ib[_$js]=_$aX;}return _$ib;}function _$ug(){var _$ib='ef ghi  jklmnoL U3F9\\_XM?Ep  q rs1PW\');A0@.7I<JDC=:RV85-O6]t uv[ QG#`^BY,/K$%&S(2!"4+TH>*ZNacbd';for(var _$js=0;_$js<32;_$js++ )_$wq[_$js]=0;for(_$js=0;_$js<_$ib.length;_$js++ )_$wq[_$js+32]=_$ib.charCodeAt(_$js)-33;}function _$ch(_$ib){var _$js=_$ib.split('');_$s4(_$js,0,_$js.length,2);return _$js.join('');}</script><script src="/Assets/js/libs/js/jquery.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.Charts.Option.js" type="text/javascript"></script>
+    <script src="/Assets/js/echart/echarts-all.js" type="text/javascript"></script>
+    <script src="/Assets/js/echart/esl.js" type="text/javascript"></script>
+    <script src="/Assets/Js/lawyee.BigData.Common.js" type="text/javascript"></script>
+    <script src="/Assets/Js/Lawyee.BigData.Ajax.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.Common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/Scripts/respond.min.js"></script>
+    
+    <script type="text/javascript" src="/Assets/js/libs/js/language/cn.js"></script>
+    <script type="text/javascript" src="/Assets/js/libs/js/framework.js"></script>
+    
+    
+    <script type="text/javascript" src="/Assets/js/libs/js/form/datePicker/WdatePicker.js"></script>
+    
+    
+    <script type="text/javascript" src="/Assets/js/libs/js/tree/ztree/ztree.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Assets/js/libs/js/tree/ztree/ztree.css" />
+    
+    <script src="/Assets/js/Lawyee.CPWSW.Index.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.SearchIndex.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.JsTree.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.List.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.ListLoad.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.json-2.3.min.js" type="text/javascript"></script>
+    <script src="/Assets/js/lawyee.selectTree.js" type="text/javascript"></script>
+    <script src="/Assets/js/lawyee.namespace.root.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.DictData.js" type="text/javascript"></script>
+    
+    <script src="/Assets/js/Lawyee.CPWSW.WebsiteLog.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.GridSum.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.BaiduStatic.js" type="text/javascript"></script>
+    
+    <script src="/Assets/js/qrcode/qrcode.js" type="text/javascript"></script>
+    <script src="/Assets/js/Lawyee.CPWSW.MobileApp.js" type="text/javascript"></script>
+    
+	 <script type='text/javascript'>//2016-12-12 13:53:19:607;
+ var courtAllData=eval("[{\"PvCount\":[{\"Status\":true,\"Count\":\"4205554670\" }]},{\"TotalCount\":[{\"Count\":\"23921746\"}],\"CaseTypeCount\":[{\"name\":\"刑事案件\",\"count\":[{\"Count\":\"4126875\"}]},{\"name\":\"民事案件\",\"count\":[{\"Count\":\"14795189\"}]},{\"name\":\"行政案件\",\"count\":[{\"Count\":\"807476\"}]},{\"name\":\"赔偿案件\",\"count\":[{\"Count\":\"18659\"}]},{\"name\":\"执行案件\",\"count\":[{\"Count\":\"4053675\"}]}] },{\"AddCount\":[{\"Count\":\"25555\"}],\"CaseTypeAddCount\":[{\"name\":\"刑事案件\",\"count\":[{\"Count\":\"3538\"}]},{\"name\":\"民事案件\",\"count\":[{\"Count\":\"16792\"}]},{\"name\":\"行政案件\",\"count\":[{\"Count\":\"541\"}]},{\"name\":\"赔偿案件\",\"count\":[{\"Count\":\"57\"}]},{\"name\":\"执行案件\",\"count\":[{\"Count\":\"4627\"}]}] }]"); 
+ var courtData=eval("[{ court:\u0027北京市高级人民法院\u0027, province:\u0027北京\u0027,region:\u0027\u0027, leval:\u00272\u0027, key:\u0027001001000\u0027},{ court:\u0027北京市第一中级人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第一中级人民法院辖区\u0027, leval:\u00273\u0027, key:\u0027001001001000\u0027},{ court:\u0027北京市第二中级人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第二中级人民法院辖区\u0027, leval:\u00273\u0027, key:\u0027001001002000\u0027},{ court:\u0027北京市第三中级人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第三中级人民法院辖区\u0027, leval:\u00273\u0027, key:\u0027001001004000\u0027},{ court:\u0027北京市第四中级人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第四中级人民法院辖区\u0027, leval:\u00273\u0027, key:\u0027001001006000\u0027},{ court:\u0027北京知识产权法院\u0027, province:\u0027北京\u0027,region:\u0027北京知识产权法院辖区\u0027, leval:\u00273\u0027, key:\u0027001001005000\u0027}]"); 
+ var userData="{status:false,user:{ name:\"\"}}"; 
+ var ChildCourtdata=eval("[{ court:\u0027北京市石景山区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第一中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001001003\u0027, parentkey:\u0027001001001000\u0027},{ court:\u0027北京市海淀区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第一中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001001004\u0027, parentkey:\u0027001001001000\u0027},{ court:\u0027北京市门头沟区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第一中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001001005\u0027, parentkey:\u0027001001001000\u0027},{ court:\u0027北京市昌平区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第一中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001001007\u0027, parentkey:\u0027001001001000\u0027},{ court:\u0027北京市延庆区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第一中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001001009\u0027, parentkey:\u0027001001001000\u0027},{ court:\u0027北京市东城区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第二中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001002001\u0027, parentkey:\u0027001001002000\u0027},{ court:\u0027北京市丰台区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第二中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001002004\u0027, parentkey:\u0027001001002000\u0027},{ court:\u0027北京市西城区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第二中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001002010\u0027, parentkey:\u0027001001002000\u0027},{ court:\u0027北京市房山区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第二中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001002011\u0027, parentkey:\u0027001001002000\u0027},{ court:\u0027北京市大兴区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第二中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001002012\u0027, parentkey:\u0027001001002000\u0027},{ court:\u0027北京市朝阳区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第三中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001004001\u0027, parentkey:\u0027001001004000\u0027},{ court:\u0027北京市顺义区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第三中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001004002\u0027, parentkey:\u0027001001004000\u0027},{ court:\u0027北京市通州区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第三中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001004003\u0027, parentkey:\u0027001001004000\u0027},{ court:\u0027北京市平谷区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第三中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001004004\u0027, parentkey:\u0027001001004000\u0027},{ court:\u0027北京市怀柔区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第三中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001004005\u0027, parentkey:\u0027001001004000\u0027},{ court:\u0027北京市密云区人民法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第三中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001004006\u0027, parentkey:\u0027001001004000\u0027},{ court:\u0027北京铁路运输法院\u0027, province:\u0027北京\u0027,region:\u0027北京市第四中级人民法院辖区\u0027, leval:\u00274\u0027, key:\u0027001001006001\u0027, parentkey:\u0027001001006000\u0027},]"); </script>
+    <script language="JavaScript" type="text/javascript">
+        $(function () {
+            //开启统计功能
+            WebsiteLog.Config.Util = "Country,Area,City,Region,IP,Source,StartYear,EndYear,StartMonth,EndMonth,StartDay,EndDay,Device,PageURL,CreateDateTime";
+            WebsiteLog.Init();
+            document.body.onclick = function (e) {
+                //控制高级检索面板显示或隐藏
+                panelShowOrHide(e, "head_maxsearch_btn", "advanceSearchPanel");
+                panelShowOrHide(e, "gover_search_key", "suggestPanel", false);
+                if ($(".head_maxsearch_txt").css("display") == "none") {
+                    $("#head_maxsearch_btn").css("color", "#c21e24");
+                    $("#head_maxsearch_btn").css("opacity", 1);
+                }
+                if ($(".head_maxsearch_txt").css("display") == "block") {
+                    $("#head_maxsearch_btn").css("opacity", 1);
+                }
+            }
+            $("#divtdc").MobileAppQrCode();
+        });
+
+        function openApp() {
+            $("#divtdc").show();
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div id="top2">
+            <div id="top_left">
+                <script language="JavaScript" type="text/javascript">
+                    today = new Date();
+                    function initArray() {
+                        this.length = initArray.arguments.length
+                        for (var i = 0; i < this.length; i++)
+                            this[i + 1] = initArray.arguments[i]
+                    }
+                    var d = new initArray(
+							"星期日",
+							 "星期一",
+							 "星期二",
+							 "星期三",
+							 "星期四",
+							 "星期五",
+							 "星期六");
+                    document.write(
+		                  today.getFullYear(), "年",
+		                  today.getMonth() + 1, "月",
+		                  today.getDate(), "日 ",
+		                  d[today.getDay() + 1]
+		                 );
+                    
+                </script>
+            </div>
+            <div id="top_right">
+                <div id="loginInfo" class="loginInfo">
+                    <a href="/User/RegisterAndLogin?Operate=1">登录</a> <a href="/User/RegisterAndLogin">注册</a>
+                </div>
+                <a href="/User/AddSuggest" target="_blank">意见建议</a> <a href="http://www.court.gov.cn"
+                    target="_blank">返回主站</a> 
+					<a href="#" onclick="openApp()">App下载</a>
+            </div>
+        </div>
+        <div id="shop">
+            <div id="caption">
+            </div>
+            <div id="nav">
+                <ul>
+                    <li class="zhuye"><a href="/Index">首页</a></li>
+                    <li><a href="/List/List?sorttype=1&conditions=searchWord+1+AJLX++案件类型:刑事案件" target="_blank">
+                        刑事案件</a></li>
+                    <li><a href="/List/List?sorttype=1&conditions=searchWord+2+AJLX++案件类型:民事案件" target="_blank">
+                        民事案件</a></li>
+                    <li><a href="/List/List?sorttype=1&conditions=searchWord+3+AJLX++案件类型:行政案件" target="_blank">
+                        行政案件</a></li>
+                    <li><a href="/List/List?sorttype=1&conditions=searchWord+4+AJLX++案件类型:赔偿案件" target="_blank">
+                        赔偿案件</a></li>
+                    <li><a href="/List/List?sorttype=1&conditions=searchWord+5+AJLX++案件类型:执行案件" target="_blank">
+                        执行案件</a></li>
+                    <li class="yuyan"><a id="yuyan_a" href="javascript:void();">民族语言文书</a>
+                        <ul>
+                            <li><a href="/List/MongolianList" target="_blank">蒙古语</a></li>
+                            <li><a href="/List/TibetanList" target="_blank">藏语</a></li>
+                            <li><a href="/List/UygurList" target="_blank">维吾尔语</a></li>
+                            <li><a href="/List/KoreanList" target="_blank">朝鲜语</a></li>
+                            <li><a href="/List/KazakhList" target="_blank">哈萨克语</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="box_1" class="contentMiddle">
+                <div id="contentMain">
+                    <div id="searchBox">
+                    </div>
+                </div>
+            </div>
+            <div id="banner">
+            </div>
+        </div>
+        <div id="" class="contentMiddle">
+            <div id="contentStatistics" class="contentStatistics">
+                <div id="Statistics" class="index_Statistics">
+                    <div class="statistics_top">
+                        <div class="hot_top_1">
+                            <div class="hot_left t_1_h">
+                                <a></a>
+                            </div>
+                            <div class="hot_right">
+                                <span>今日新增<br />
+                                    <label id="dayadd">
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                        <div class="hot_top_1">
+                            <div class="hot_left t_2_h">
+                                <a></a>
+                            </div>
+                            <div class="hot_right">
+                                <span>文书总量<br />
+                                    <label id="doccount">
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                        <div class="hot_top_1">
+                            <div class="hot_left t_3_h">
+                                <a></a>
+                            </div>
+                            <div class="hot_right">
+                                <span>访问总量<br />
+                                    <label id="clickcount">
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistics_bottom" id="casetypecount">
+                    </div>
+                </div>
+                <div id="idx_main" class="index_idx_main">
+                    <div class="nav_t">
+                        <div class="nav_b">
+                            <div class="img_1">
+                                <img src="/Assets/img/Index/nav_b.png" width="165" height="64" border="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index_map_left">
+                        <div id="divChildCourt" class="index_divchildcourt">
+                            <div class="index_divchildcourt_top">
+                            </div>
+                            <div id="divChildCourtCon" class="index_divchildcourt_center">
+                            </div>
+                            <div class="index_divchildcourt_bottom">
+                            </div>
+                        </div>
+                        <div id="idx_map_content" class="index_map_content">
+                        </div>
+                    </div>
+                    <div class="index_map_right">
+                        <div class="index_map_right_l">
+                        </div>
+                        <div class="index_map_right_r">
+                            <div class="map_x">
+                            </div>
+                            <div class="area">
+                                <h2>
+                                    北京</h2>
+                            </div>
+                            <div class="proportion">
+                            </div>
+                            <div class="region">
+                                <ul>
+                                    <li name="最高人民法院"><a href="/List/List?sorttype=1&amp;conditions=searchWord++法院名称+最高人民法院+法院名称:最高人民法院"
+                                        target="_blank">最高人民法院</a> </li>
+                                    <li name="北京市高级人民法院"><a href="/List/List?sorttype=1&amp;conditions=searchWord++法院名称+北京市高级人民法院+法院名称:北京市高级人民法院"
+                                        target="_blank">北京市高级人民法院</a> </li>
+                                    <li name="北京"><a href="/List/List?sorttype=1&amp;conditions=searchWord++法院名称+北京市第一中级人民法院+法院名称:北京市第一中级人民法院"
+                                        target="_blank">北京市第一中级人民法院</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="/Assets/js/Lawyee.CPWSW.PageFooter.js" type="text/javascript"></script>
+        </div>
+        <div id="divtdc" class="divcontent_comment display_none">
+        </div>
+    </div>
+</body>
+</html>

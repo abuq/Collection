@@ -1,0 +1,6 @@
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JudgementsCollection\bin\Debug\JudgementsCollection.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JudgementsCollection\bin\Debug\JudgementsCollection.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JudgementsCollection\obj\Debug\JudgementsCollection.dll
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JudgementsCollection\obj\Debug\JudgementsCollection.pdb
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JudgementsCollection\bin\Debug\JudgementsCollection.XML
+D:\Documents\Visual Studio 2015\Projects\JDCollection\JudgementsCollection\obj\Debug\JudgementsCollection.csprojResolveAssemblyReference.cache

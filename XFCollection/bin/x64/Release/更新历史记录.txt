@@ -1,0 +1,109 @@
+﻿2016-7-20
+1.1.0.0
+加入 ShopUrl 属性 
+
+京东商品输出Key ： 
+ShopUrl # 店铺链接地址
+ProductSku # 商品 sku
+ProductName # 商品名称
+ProductUrl # 商品链接地址
+ProductImage # 商品图像链接地址
+ProductComments # 商品的评论数
+ProductPrice # 商品的价格
+ProductMPrice # 商品的折后价
+SearchPageIndex # 商品出现的页码 
+SearchPageRank # 商品的该页中的排名
+
+
+
+2016-7-22
+1.1.1.0
+修正了京东商品永远只采集第一页的问题
+
+
+154021 中的内容解析不出
+
+
+2016-8-8
+
+1.2.0.0
+
+法院裁判书输出Key：
+DocId # 裁判书ID
+Url # 裁判书链接
+CaseType # 案件类型
+Title # 裁判书标题
+PubDate # 裁判书发布日期
+Content # 裁判书正文内容
+SearchPageIndex # 裁判书出现的页码
+SearchPageRank # 页码中裁判书的排名
+
+
+2016-8-8
+1.3.0.0
+由于采集时间问题，分成两个采集器
+
+一.JudgementsDocIdCollector
+采集DocId输出Key:
+DocId # 裁判书ID
+CaseType # 案件类型
+Area # 法院地域
+Year # 裁判年份
+SearchPageIndex # 裁判书出现的页码
+SearchPageRank # 页码中裁判书的排名
+
+二.JudgementsContentCollector
+裁判书内容采集输出Key:
+DocId # 裁判书ID
+Url # 裁判书链接
+Title # 标题
+PubDate # 发布日期
+Content # 正文内容
+SearchPageIndex # 裁判书出现的页码
+SearchPageRank # 页码中裁判书的排名
+
+
+
+
+
+2016-8-16
+1.3.0.1
+由于法院网址屏蔽问题
+暂停时间改为5min
+增加了屏蔽异常抛出
+
+
+
+2016-8-16
+1.4.0.0
+JDShopDetailCollector
+京东店铺详细信息采集
+入口京东ShopId
+Key:
+ShopId #	店铺ID
+BrandProfile # 	品牌简介链接
+Brand # 品牌
+ShopName # 公司名称
+Location # 所在地
+Phone # 电话
+IllegalRecord # 违章次数
+Comment_General # 店铺综合评分
+Comment_GeneralRate # 店铺综合评分比率
+Comment_MatchDescrip # 店铺质量满意度
+Comment_MatchDescripRate # 店铺质量满意度比率
+Comment_ServiceStatue # 服务态度满意度
+Comment_ServiceStatueRate # 服务态度满意度比率
+Comment_ShipSpeed # 物流速度满意度
+Comment_ShipSpeedRate # 物流速度满意度比率
+Comment_ProductDescrip # 商品描述满意度
+Comment_ProductDescripRate # 商品描述满意度比率
+Comment_ReturnGoods # 退换货处理满意度
+Comment_ReturnGoodsRate # 退换货处理满意度比率
+Servece_AfterSales # 售后处理时长
+Servece_AfterSalesRate # 售后处理时长比率
+Service_TradeDispute # 交易纠纷率
+Service_TradeDisputeRate # 交易纠纷率比率
+Service_ReturnRepair # 退换货返修率
+Service_ReturnRepairRate # 退换货返修率比率
+SearchPageIndex # 出现的页码
+SearchPageRank # 该页中的排名	

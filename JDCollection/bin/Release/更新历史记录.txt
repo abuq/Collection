@@ -1,0 +1,1058 @@
+﻿2017-2-22
+TaoBao.ShopProductCollector
+产品数量不匹配，只采出了每组第一个产品
+SelectSingleNode改为SelectNodes选择所有节点数据
+
+TaoBao.ShopProductCollector
+节点名称不同，现在改为父节点的子节点
+
+
+采集所有商品的详细信息
+AliExpress.ProductDetailCollector
+keyword:shpId
+输出
+Url # 链接
+Title # 标题
+PercentNum # 评分
+RatingsNum # 评分人数
+OrderNum # 订单数
+DiscountRage # 折扣率
+EventTimeLeft # 剩余时间
+ActMinPrice # 实际最小价格
+ActMaxPrice # 实际最大价格
+MinPrice # 打折前最小价格
+MaxPrice # 打折前最大价格
+MobileDiscountPrice # 手机打折后价格
+ProductId # 产品编号
+TotalAvailQuantity # 库存
+CollectNum # 关注数
+SearchPageIndex # 
+SearchPageRank # 
+
+
+采集店铺商品的交易数据
+AliExpress.ProductTransactionData
+keyword:shpId
+输出
+nameVipLevel # 买家名
+productName # 产品名
+totalPrice # 购买数
+feedBackDate # 评价时间
+feedBackContent # 评价内容
+starM # 星级
+SearchPageIndex # 
+SearchPageRank # 
+
+
+
+
+2017-2-21
+TaoBao.ShopProductCollector
+引擎把下面的推荐产品也采进去了，现已经更改。
+
+2017-2-13
+TaoBao.ShopProductCollector
+xpath使用contains匹配某些部分会变
+用matches和ends-with都提示需要命名空间管理器或 XsltContext。此查询具有前缀、变量或用户定义的函数。
+目前的版本用不了。
+
+
+2017-2-10
+TaoBao.AlitrustCollector
+与行业水平比较率格式问题
+现修改如下
+如果不能转换为double则返回0
+
+
+2017-2-9
+TaoBao.ShopProductCollector
+淘宝天猫平台店铺产品枚举引擎
+productId # 产品编号
+productName # 产品名字
+productUrl # 产品链接
+shopId # 店铺编号
+shopName # 店铺名字
+
+
+2017-2-9
+TaoBao.AlitrustCollector
+修复了关闭店铺字段不符合要求的问题
+
+
+2017-2-7
+TaoBao.AlitrustCollector
+修复了部分与行业水平率的不正确存入数据库错误的bug
+
+
+2017-1-12
+TaoBao.JiYouJiaCollector
+店铺名被截断问题从title标签里取shopName
+url链接搜索关键词进行特定的编码，比如#
+新增Error_Notice:店铺存在但搜索不到
+json解析信息修改,取userId匹配的那段
+
+2017-1-11
+TaoBao.JiYouJiaCollector
+增加了对特殊的普通淘宝店铺的支持
+店铺名被截断问题从title标签里取shopName
+
+
+2017-1-10
+TaoBao.JiYouJiaCollector
+增加了对普通淘宝店铺的支持
+
+
+
+2017-1-6
+TaoBao.AlitrustCollector
+没有cookies跳转到登录页面
+增加一个cna的cookies解决
+
+
+2016-12-28
+TaoBao.AlitrustCollector
+有些任务失败
+最大跳转次数增加
+有些产品只有一页没有ProductCount问题修复
+
+2016-12-27
+TaoBao.AlitrustCollector
+ProductCount没有情况修复
+如果真的没有返回-1
+
+
+2016-12-23
+Tesseract
+验证码识别路径没设置异常抛出
+初始化验证码资源异常抛出
+fayuan.ZhiXingAndShiXingCollector
+失败type增加
+fayuan.ZhiXingAndShiXingCollector
+增加了UserName返回名字字段
+Name # 被执行人姓名/名称
+Identifier #  身份证号码/组织机构代码
+UserName # 返回的名字
+CaseTime # 立案时间
+CaseId # 案子编号
+Id # 编号
+Type # 类型
+State # 状态(success fail)
+View # 查看
+CheckTime # 查询时间
+
+
+2016-12-22
+执行和失信引擎
+fayuan.ZhiXingAndShiXingCollector
+Name # 被执行人姓名/名称
+Identifier #  身份证号码/组织机构代码
+CaseTime # 立案时间
+CaseId # 案子编号
+Id # 编号
+Type # 类型
+State # 状态(success fail)
+View # 查看
+CheckTime # 查询时间
+
+
+
+2016-12-20
+AliExpress.ProductDetailCollector
+Url # 176 # 链接
+Title # 288 # 标题
+PercentNum # 3 # 评分
+RatingsNum # 5 # 评分人数
+OrderNum # 5 订单数
+DiscountRage # 2 折扣率
+EventTimeLeft # 22 剩余时间
+ActMinPrice # 6 实际最小价格
+ActMaxPrice # 6 实际最大价格
+MinPrice # 5 最大价格
+MaxPrice # 5 最小价格
+MobileDiscountPrice # 6 手机折扣价
+ProductId # 11 # 手机编号
+TotalAvailQuantity # 5 # 总共可用量
+CollectNum # 5 # 收藏数
+SearchPageIndex # 1 #
+SearchPageRank # 2 #
+
+
+2016-12-14
+AliExpress.ShopAttributesCollector
+修改了输出格式
+storeNumber	# 7 # 店铺编号
+storeLocation #	16 # 地址
+storeTime #	18 # 开店时间
+seller #	22 # 卖家
+positiveFeedbackPastSixMonths #	5 # 好评率前六个月
+feedbackScore #	4 # 反馈评分
+aliExpressSellerSince #	18 # 从何时开始
+described #	3 # 描述
+describedRatings #	3 # 描述人数
+describedPercent #	7 # 描述比
+communication #	3 # 交流
+communicationRatings #	3 # 交流人数
+communicationPercent #	7 # 交流比
+shippingSpeed #	3 # 发货速度
+shippingSpeedRatings #	3 # 发货速度人数
+shippingSpeedPercent #	7 # 发货速度比
+positiveOneMonth #	2 # 好评一个月
+positiveThreeMonths #	3 # 好评三个月
+positiveSixMonths #	3 # 好评六个月
+positiveOneYear #	4 # 好评一年
+positiveOverall #	4 # 好评所有
+negativeOneMonth #	1 # 中评一个月
+negativeThreeMonths #	1 # 中评三个月
+negativeSixMonths #	1 # 中评六个月
+negativeOneYear #	2 # 中评一年
+negativeOverall #	2 # 中评所有
+neutralOneMonth #	1 # 差评一个月
+neutralThreeMonths #	1 # 差评三个月
+neutralSixMonths #	2 # 差评六个月
+neutralOneYear #	2 # 差评一年
+neutralOverAll #	2 # 差评所有
+positiveFeedbackRateOneMonth #	5 # 好评率一个月
+positiveFeedbackRateThreeMonths #	5 # 好评率三个月
+positiveFeedbackRateSixMonths #	5 # 好评率六个月
+positiveFeedbackRateOneYear #	5 # 好评率一年
+positiveFeedbackRateOverall #	5 # 好评率所有
+
+
+
+2016-12-13
+AliExpress店铺属性采集
+AliExpress.ShopAttributesCollector
+2016-12-13
+AliExpress店铺属性采集
+AliExpress.ShopAttributesCollector
+storeNumber # 32 # 店铺编号
+storeLocation # Text # 地址
+storeTime # 64 # 开店时间
+seller # 64 # 卖家
+positiveFeedbackPastSixMonths # 32 # 好评率前六个月
+feedbackScore # 32 # 反馈评分
+aliExpressSellerSince # 64 # 从何时开始
+described # 32 # 描述
+describedPercent # 32 # 描述比
+communication # 32 # 交流
+communicationPercent # 32 # 交流比
+shippingSpeed # 32 # 发货速度
+shippingSpeedPercent # 32 # 发货速度比
+positiveOneMonth # 32 # 好评一个月
+positiveThreeMonths # 32 # 好评三个月
+positiveSixMonths # 32 # 好评六个月
+positiveOneYear # 32 # 好评一年
+positiveOverall # 32 # 好评所有
+negativeOneMonth # 32 # 中评一个月
+negativeThreeMonths # 32 # 中评三个月
+negativeSixMonths # 32 # 中评六个月
+negativeOneYear # 32 # 中评一年
+negativeOverall # 32 # 中评所有
+neutralOneMonth # 32 # 差评一个月
+neutralThreeMonths # 32 # 差评三个月
+neutralSixMonths # 32 # 差评六个月
+neutralOneYear # 32 # 差评一年
+neutralOverAll # 32 # 差评所有
+positiveFeedbackRateOneMonth # 32 # 好评率一个月
+positiveFeedbackRateThreeMonths # 32 # 好评率三个月
+positiveFeedbackRateSixMonths # 32 # 好评率六个月
+positiveFeedbackRateOneYear # 32 # 好评率一年
+positiveFeedbackRateOverall # 32 # 好评率所有
+
+
+
+
+2016-12-07
+Taobao.ProductInfoCollector
+更改没有价格的取最小的价格
+
+fayuan.ZhiXingAndShiXingCollector
+查失信的页面比较慢
+等待时间改为5分钟 重试3次
+去掉SearchPageIndex和SearchPageRank
+ZhiXingAndShiXingParameter
+加了一个type参数 zhixing shixin
+验证码和访问验证码的cookies也尝试3次
+
+Taobao.JiYouJiaCollector
+shopId正则匹配改进懒惰匹配
+
+
+2016-12-06
+执行和失信引擎
+fayuan.ZhiXingAndShiXingCollector
+Name # 被执行人姓名/名称
+Identifier #  身份证号码/组织机构代码
+CaseTime # 立案时间
+CaseId # 案子编号
+Id # 编号
+Type # 类型
+View # 查看
+CheckTime # 查询时间
+SearchPageIndex # 
+SearchPageRank # 
+
+传入参数
+fayuan.ZhiXingAndShiXingParameter
+Name 被执行人姓名/名称
+Identifier 身份证号码/组织机构代码
+
+
+Taobao.ProductInfoCollector
+解决了下架产品没有价格的情况
+
+
+
+2016-12-2
+天猫淘宝流量搜索引擎
+TaoBao.MSearchCollector
+增加了违禁词异常抛出处理
+
+
+2016-11-30
+Taobao.ProductInfoCollector
+增加了天天特价标题判断
+增加了免运费判断
+
+
+
+2016-11-29
+TaoBao.AlitrustCollector
+增加了被屏蔽发日志暂停30s
+
+TaoBao.ProductInfoCollector
+SellPoint增加打折秒杀 淘金币 聚划算 天天特价
+
+2016-11-28
+天猫淘宝流量搜索引擎
+TaoBao.MSearchCollector
+多加了一个参数MaxPage
+若为空或者null 则直接采集最大页数
+控制最大采集页数
+
+
+输出减少，改为如下
+SearchKeyword # 关键字
+ProductId # 产品编号
+PositionType # 类型
+PageIndex # 页数
+ProductPosition # 位置 
+
+
+
+2016-11-24
+淘宝商品信息采集任务
+TaoBao.ProductInfoCollector
+增加Starts开始时间
+有些没有价格的特殊情况处理
+
+2016-11-23
+淘宝商品信息采集任务
+TaoBao.ProductInfoCollector
+去多个网页速度太慢
+减少采集访问的页面
+DefaultMovePageTimeSpan设置为0
+
+2016-11-22
+淘宝商品信息采集任务
+TaoBao.ProductInfoCollector
+输出更改
+ProductId # 商品编号
+ProductName # 商品名称
+ProductStateText # 信息获取成功或是失败值成功|失败
+SellPoint #  存放评价和收藏信息用json格式
+ProductImageUrl # 商品图片第一张大图
+ProductDescription # 存放sku信息
+ProductLocation # 商品发货地址
+ShopId # 店铺链接 从调用参数中获得
+ProductPrice # 促销价中的最小值
+ProductPriceMax # 促销价中的最大值
+ProductQuantity # 商品库存
+ReservePrice # 价格中的小值
+SellCountMonthly # 月销量
+TotalCommentCount # 累计评价
+PromotionPrice # 促销价格
+PromotionType # 暂无
+PromotionStartTime # 暂无
+PromotionEndTime # 暂无
+CategoryId # 从JSON结果中直接获取
+RootCatId # 从JSON结果中直接获取
+BrandId # 从JSON结果中直接获取
+Brand # 从JSON结果中直接获取, 可能暂无
+UserId # 从JSON结果中直接获取
+SpuId # 从JSON结果中直接获取, 可能暂无
+EncryptUserId # 暂无
+BossNickName # 暂无
+
+去掉
+SearchPageIndex
+SearchPageRank 
+
+
+
+2016-11-21
+淘宝商品信息采集任务
+TaoBao.ProductInfoCollector
+输出
+ProductId # 商品编号
+ProductName # 商品名称
+ProductStateText # 信息获取成功或是失败值成功|失败
+SellPoint #  存放评价和收藏信息用json格式
+ProductImageUrl # 商品图片第一张大图
+ProductDescription # 存放sku信息
+ProductLocation # 商品发货地址
+ShopId # 店铺链接 从调用参数中获得
+ProductPrice # 促销价中的最小值
+ProductPriceMax # 促销价中的最大值
+ProductQuantity # 商品库存
+ReservePrice # 价格中的小值
+SellCountMonthly # 月销量
+TotalCommentCount # 累计评价
+PromotionPrice # 促销价格
+PromotionType # 暂无
+PromotionStartTime # 暂无
+PromotionEndTime # 暂无
+CategoryId # 从JSON结果中直接获取
+RootCatId # 从JSON结果中直接获取
+BrandId # 从JSON结果中直接获取
+Brand # 从JSON结果中直接获取, 可能暂无
+UserId # 从JSON结果中直接获取
+SpuId # 从JSON结果中直接获取, 可能暂无
+EncryptUserId # 暂无
+BossNickName # 暂无
+ShopIdValue # 从JSON结果中直接获取
+FanCount # '从JSON结果中直接获取,某些店铺可能没有
+CreditLevel # 从JSON结果中直接获取
+Content # JSON的原始内容
+SearchPageIndex # 
+SearchPageRank # 
+
+数据类型转换问题
+增加收藏数部分取不到修改
+部分图片链接确实问题
+产品下架问题处理
+
+
+2016-11-11
+修改聚划算引擎
+即将上线链接不见了
+
+修改天猫淘宝流量搜索引擎
+去掉
+SearchPageIndex 
+SearchPageRank
+输出
+SearchKeyword # 关键词
+ProductId # 产品编号
+ProductName # 产品名称
+ProductPrice # 产品价格
+PaymentAcount # 销量
+ProductType # 产品类型 
+ShopName # 产品名称(空)
+UserMemberId # 用户成员编号(空)
+Location # 地址
+PositionType # 位置类型
+ProductPosition # 
+PageIndex #
+解决了p4p判断问题
+改用json解析
+
+
+2016-11-10
+天猫淘宝流量搜索引擎
+TaoBao.MSearchCollector
+输出
+SearchKeyword # 关键词
+ProductId # 产品编号
+ProductName # 产品名称
+ProductPrice # 产品价格
+PaymentAcount # 销量
+ProductType # 产品类型 
+ShopName # 产品名称(空)
+UserMemberId # 用户成员编号(空)
+Location # 地址
+PositionType # 位置类型
+SearchPageIndex # 
+SearchPageRank # 
+
+
+2016-11-4
+修改聚划算引擎
+聚名品网页结构改变
+变成和品牌团一样
+链接切分格式url#type
+
+天天特价标题混入\&quot;字符导致json解析失败
+HttpUtility.HtmlDecode解码为html字符串
+
+
+2016-10-27
+聚划算引擎切分按类别
+链接格式url#type
+
+2016-10-26
+天天特价及相关网页的采集引擎
+TaoBao.TejiaCollectors
+入口参数
+TaoBao.ActivityParameter
+输出
+itemId # 编号
+title # 标题
+reservePrice # 保留价格
+discountPrice # 打折价格
+discount # 折扣
+currentSellOut # 目前销售量
+quantity # 数量
+currentQuantity # 当前数量
+activityStartTime # 活动开始时间
+activityEndTime # 活动结束时间
+shopId # 店铺编号
+shopName # 店铺名称
+type # 活动类型
+SearchPageIndex # 
+SearchPageRank # 
+
+淘金币活动数据采集同
+天天特价及相关网页的采集引擎
+
+
+2016-10-20
+聚划算平台的参加活动的店铺采集
+TaoBao.ActivityCollectors
+title # 标题
+desc # 描述
+itemId # 编号
+ostimeText # 开抢时间
+leftTime # 剩余时间
+totalStock # 总共库存
+soldAmount # 销售总额
+itemUrl # item链接
+actPrice # 实际价格
+origPrice # 原始价格
+discount # 折扣
+SearchPageIndex # 
+SearchPageRank # 
+改了
+title # 标题
+description # 描述
+itemId # 编号
+ostimeText # 开抢时间
+leftTime # 剩余时间
+totalStock # 总共库存
+soldAmount # 销售总额
+itemUrl # item链接
+actPrice # 实际价格
+origPrice # 原始价格
+discount # 折扣
+type # 活动类型
+SearchPageIndex # 
+SearchPageRank # 
+
+
+2016-10-19
+聚划算平台的参加活动的店铺采集
+输入参数
+TaoBao.ActivityParameter
+Url 链接
+TaoBao.ActivityCollectors
+title # 标题
+desc # 描述
+itemId # 编号
+ostimeText # 开抢时间
+leftTime # 剩余时间
+totalStock # 总共库存
+soldAmount # 销售总额
+itemUrl # item链接
+actPrice # 实际价格
+origPrice # 原始价格
+discount # 折扣
+SearchPageIndex # 
+SearchPageRank # 
+改了
+title # 标题
+description # 描述
+itemId # 编号
+ostimeText # 开抢时间
+leftTime # 剩余时间
+totalStock # 总共库存
+soldAmount # 销售总额
+itemUrl # item链接
+actPrice # 实际价格
+origPrice # 原始价格
+discount # 折扣
+SearchPageIndex # 
+SearchPageRank # 
+
+
+
+
+2016-10-11
+1.7.0.1
+工商浙江数据采集
+增加了验证码是否成功的判断
+1为验证码验证成功，2为验证失败
+
+2016-10-10
+1.3.0.6
+JudgementsIncrementalCollector
+法院数据一个月增量采集
+DocId # 裁判书ID
+CaseType # 案件类型
+ReasonLevel # 案由层级
+ReasonKey # 案由关键字
+CourtLevel # 地域及法院层级
+CourtKey # 地域及法院关键字
+Year # 年份
+SearchPageIndex # 出现的页码
+SearchPageRank # 页码中的排名
+
+1.7.0.0
+工商浙江数据
+30s一次检测验证码5分钟抛出异常
+
+
+2016-09-30
+1.7.0.0
+工商浙江数据
+gongshang.ZheJiang
+Corpid # 唯一编号
+RgeNo # 注册号
+UniSCID # 统一社会信用代码/注册号
+CompanyName # 公司名称
+Contents # 网页内容
+
+
+2016-09-26
+1.3.0.5
+JudgementsDocIdCollector
+增加了高级法院采集法院地域
+用于采集高级法院的文书(法院层级:高级法院)
+
+
+
+
+
+2016-09-23
+AlitrustColletor
+ShopId # 店铺编号，数值
+ShopName # 店铺名称
+ShopName2 # 同ShopName2
+BossName # 旺旺号
+BossNickName # 旺旺号的昵称
+CompanyName # 公司名称（可能无）
+ShopStartDate # 开店时间
+ShpAgeNum # 店铺年龄
+ShopUrl # 采集入口参数
+GoodCommentCount # 好评数
+MainIndustry # 主营行业
+Comment_MatchDescrip # 评价参数
+Comment_MatchDescripRate # 评价参数
+Comment_ServiceStatue # 评价参数
+Comment_ServiceStatueRate # 评价参数
+Comment_ShipSpeed # 评价参数
+Comment_ShipSpeedRate # 评价参数
+MarginCharge` # 保证金
+ShopRank # 店铺等级
+Location # 所在位置
+SaleCount # 销售数量 
+ProductCount # 产品数据
+GoodCommentRate # 好评率
+MainBiz # 主营产品
+DayMonitor # 是否每天监测，从任务表中继承
+Loaned # 是否已经贷款，从任务表中继承
+targetuid # 任务编号
+Error_Notice # 店铺状态的一些描述
+
+
+2016-09-19
+UserCodeParser
+GetUserCode得到验证码结果字符串
+
+
+
+2016-09-13
+1.6.0.3
+JiYouJiaCollector
+加入了传入参数targetUid
+格式化url链接
+
+
+2016-7-20
+1.1.0.0
+加入 ShopUrl 属性 
+
+京东商品输出Key ： 
+ShopUrl # 店铺链接地址
+ProductSku # 商品 sku
+ProductName # 商品名称
+ProductUrl # 商品链接地址
+ProductImage # 商品图像链接地址
+ProductComments # 商品的评论数
+ProductPrice # 商品的价格
+ProductMPrice # 商品的折后价
+SearchPageIndex # 商品出现的页码 
+SearchPageRank # 商品的该页中的排名
+
+
+
+2016-7-22
+1.1.1.0
+修正了京东商品永远只采集第一页的问题
+
+
+154021 中的内容解析不出
+
+
+2016-8-8
+
+1.2.0.0
+
+法院裁判书输出Key：
+DocId # 裁判书ID
+Url # 裁判书链接
+CaseType # 案件类型
+Title # 裁判书标题
+PubDate # 裁判书发布日期
+Content # 裁判书正文内容
+SearchPageIndex # 裁判书出现的页码
+SearchPageRank # 页码中裁判书的排名
+
+
+2016-8-8
+1.3.0.0
+由于采集时间问题，分成两个采集器
+
+一.JudgementsDocIdCollector
+采集DocId输出Key:
+DocId # 裁判书ID
+CaseType # 案件类型
+Area # 法院地域
+Year # 裁判年份
+SearchPageIndex # 裁判书出现的页码
+SearchPageRank # 页码中裁判书的排名
+
+二.JudgementsContentCollector
+裁判书内容采集输出Key:
+DocId # 裁判书ID
+Url # 裁判书链接
+Title # 标题
+PubDate # 发布日期
+Content # 正文内容
+SearchPageIndex # 裁判书出现的页码
+SearchPageRank # 页码中裁判书的排名
+
+
+
+
+
+2016-8-16
+1.3.0.1
+由于法院网址屏蔽问题
+暂停时间改为5min
+增加了屏蔽异常抛出
+
+
+2016-8-22
+1.3.0.2
+修改了采集的入口
+解析出底层的案由和地域及法院
+因为法院网址限制只能采100页
+增加了解自动析验证码
+配置了资源文件自动解压
+解决了法院网址屏蔽问题
+加了最大只能正向翻100页和反向翻100页的限制
+
+一.JudgementsDocIdCollector
+输入Key：
+Reason 案由
+Court 地域及法院
+Year 年份
+
+采集DocId输出Key:
+DocId # 裁判书ID
+CaseType # 案件类型
+ReasonLevel # 案由层级
+ReasonKey # 案由关键字
+CourtLevel # 地域及法院层级
+CourtKey # 地域及法院关键字
+Year # 年份
+SearchPageIndex # 出现的页码
+SearchPageRank # 页码中的排名
+
+二.JudgementsContentCollector
+裁判书内容采集输出Key:
+DocId # 裁判书ID
+Url # 裁判书链接
+Title # 标题
+PubDate # 发布日期
+Content # 正文内容
+SearchPageIndex # 裁判书出现的页码
+SearchPageRank # 页码中裁判书的排名
+
+2016-8-23
+1.3.0.3
+JudgementsDocIdCollector
+加了ContentHtml 正文内容的HTML格式
+
+
+一.JudgementsDocIdCollector
+输入Key：
+Reason 案由
+Court 地域及法院
+Year 年份
+
+采集DocId输出Key:
+DocId # 裁判书ID
+CaseType # 案件类型
+ReasonLevel # 案由层级
+ReasonKey # 案由关键字
+CourtLevel # 地域及法院层级
+CourtKey # 地域及法院关键字
+Year # 年份
+SearchPageIndex # 出现的页码
+SearchPageRank # 页码中的排名
+
+二.JudgementsContentCollector
+裁判书内容采集输出Key:
+DocId # 裁判书ID
+Url # 裁判书链接
+Title # 标题
+PubDate # 发布日期
+Content # 正文内容
+ContentHtml # 正文内容Html格式
+SearchPageIndex # 裁判书出现的页码
+SearchPageRank # 页码中裁判书的排名
+
+2016-8-25
+1.3.0.4
+更改了一些参数输入的组合形式
+
+
+
+
+
+
+2016-8-16
+1.4.0.0
+JDShopDetailCollector
+京东店铺详细信息采集
+入口京东ShopId
+Key:
+ShopId #	店铺ID
+BrandProfile # 	品牌简介链接
+Brand # 品牌
+ShopName # 公司名称
+Location # 所在地
+Phone # 电话
+IllegalRecord # 违章次数
+Comment_General # 店铺综合评分
+Comment_GeneralRate # 店铺综合评分比率
+Comment_MatchDescrip # 店铺质量满意度
+Comment_MatchDescripRate # 店铺质量满意度比率
+Comment_ServiceStatue # 服务态度满意度
+Comment_ServiceStatueRate # 服务态度满意度比率
+Comment_ShipSpeed # 物流速度满意度
+Comment_ShipSpeedRate # 物流速度满意度比率
+Comment_ProductDescrip # 商品描述满意度
+Comment_ProductDescripRate # 商品描述满意度比率
+Comment_ReturnGoods # 退换货处理满意度
+Comment_ReturnGoodsRate # 退换货处理满意度比率
+Servece_AfterSales # 售后处理时长
+Servece_AfterSalesRate # 售后处理时长比率
+Service_TradeDispute # 交易纠纷率
+Service_TradeDisputeRate # 交易纠纷率比率
+Service_ReturnRepair # 退换货返修率
+Service_ReturnRepairRate # 退换货返修率比率
+SearchPageIndex # 出现的页码
+SearchPageRank # 该页中的排名	
+
+
+
+2016-08-28
+1.4.0.1
+JDShopDetailCollector
+京东店铺详细信息采集
+解决了店铺动态评分索引越界问题
+有些格式之前没考虑到，所以加了条件分支解决
+对于%和h的情况不加+ - 号
+
+
+2016-08-29
+1.4.0.2
+JDShopDetailCollector
+删除了Brand，新增了ShopIsExist用于标示店铺是否存在
+解决了店铺动态评分索引越界问题
+增加了个别特殊情况的条件分支
+Key:
+ShopId #	店铺ID
+BrandProfile # 	品牌简介链接
+ShopIsExist # 店铺是否存在
+ShopName # 公司名称
+Location # 所在地
+Phone # 电话
+IllegalRecord # 违章次数
+Comment_General # 店铺综合评分
+Comment_GeneralRate # 店铺综合评分比率
+Comment_MatchDescrip # 店铺质量满意度
+Comment_MatchDescripRate # 店铺质量满意度比率
+Comment_ServiceStatue # 服务态度满意度
+Comment_ServiceStatueRate # 服务态度满意度比率
+Comment_ShipSpeed # 物流速度满意度
+Comment_ShipSpeedRate # 物流速度满意度比率
+Comment_ProductDescrip # 商品描述满意度
+Comment_ProductDescripRate # 商品描述满意度比率
+Comment_ReturnGoods # 退换货处理满意度
+Comment_ReturnGoodsRate # 退换货处理满意度比率
+Servece_AfterSales # 售后处理时长
+Servece_AfterSalesRate # 售后处理时长比率
+Service_TradeDispute # 交易纠纷率
+Service_TradeDisputeRate # 交易纠纷率比率
+Service_ReturnRepair # 退换货返修率
+Service_ReturnRepairRate # 退换货返修率比率
+SearchPageIndex # 出现的页码
+SearchPageRank # 该页中的排名	
+
+
+2016-08-30
+1.4.0.3
+JDShopDetailCollector
+解决了部分无法解析店铺详情的店铺
+
+
+
+
+2016-09-08
+1.5.0.0
+JDProductsDetailCollector
+key:
+ProductId # 产品Id
+ProductName # 产品名字
+SelectColor # 选择颜色
+ImgSrc # 图片链接
+WarmReminder # 温馨提醒
+ProductPrice # 产品价格
+WhiteBar # 白条
+Service # 服务
+Discount # 促销
+ProductActivity # 产品活动
+IsExist # 产品是否有货以及预计送达时间
+AllCnt # 全部评价
+GoodCnt # 好评
+NormalCnt # 中评
+BadCnt # 差评
+PictureCnt # 有图评价
+SearchPageIndex # 出现的页码
+SearchPageRank # 该页中的排名
+
+
+2016-09-09
+1.5.0.1
+JDProductsDetailCollector
+解决了一些没有产品名称的问题
+
+
+JDProductsDetailCollector
+解决了部分京东商品无法采集的问题
+
+
+JDProductsDetailCollector
+加了产品是否下柜和产品是否存在的判断
+
+2016-09-10
+JDProductsDetailCollector
+默认暂停时间改为0
+
+
+2016-09-11
+1.6.0.0
+JiYouJiaCollector
+ShopId # 店铺编号，数值
+ShopName # 店铺名称
+ShopName2 # 同ShopName2
+BossName # 旺旺号
+BossNickName # 旺旺号的昵称
+CompanyName # 公司名称（可能无）
+ShopStartDate # 开店时间
+ShpAgeNum # 店铺年龄
+ShopUrl # 采集入口参数
+GoodCommentCount # 好评数
+MainIndustry # 主营行业
+Comment_MatchDescrip # 评价参数
+Comment_MatchDescripRate # 评价参数
+Comment_ServiceStatue # 评价参数
+Comment_ServiceStatueRate # 评价参数
+Comment_ShipSpeed # 评价参数
+Comment_ShipSpeedRate # 评价参数
+MarginCharge` # 保证金（可能没有）
+ShopRank # 店铺等级 （可能没有）
+Location # 所在位置
+SaleCount # 销售数量 
+ProductCount # 产品数据
+GoodCommentRate # 好评率
+MainBiz # 主营产品
+DayMonitor # 是否每天监测，从任务表中继承
+Loaned # 是否已经贷款，从任务表中继承
+targetuid # 任务编号
+Error_Notice # 店铺状态的一些描述（比如关店之类的）
+
+
+1.6.0.1
+修改了X.CommLib.DotNet2
+解决了超时问题
+
+
+2016-09-12
+1.6.0.2
+remove
+SearchPageIndex
+SearchPageRank
+
+更改了有些字段的默认值
+
+亲宝贝同极有家
+
+去掉了比率的%
+
+Error_Notice
+加了
+不支持的店铺类型
+没有找到相应的店铺信息
+
+
+
+1.4.0.3
+JDShopDetailCollector
+增加了关注人数、全部商品数、上新数、促销数、开店时间
+Key:
+ShopId #	店铺ID
+BrandProfile # 	品牌简介链接
+ShopIsExist # 店铺是否存在
+ShopName # 公司名称
+Location # 所在地
+Phone # 电话
+IllegalRecord # 违章次数
+Comment_General # 店铺综合评分
+Comment_GeneralRate # 店铺综合评分比率
+Comment_MatchDescrip # 店铺质量满意度
+Comment_MatchDescripRate # 店铺质量满意度比率
+Comment_ServiceStatue # 服务态度满意度
+Comment_ServiceStatueRate # 服务态度满意度比率
+Comment_ShipSpeed # 物流速度满意度
+Comment_ShipSpeedRate # 物流速度满意度比率
+Comment_ProductDescrip # 商品描述满意度
+Comment_ProductDescripRate # 商品描述满意度比率
+Comment_ReturnGoods # 退换货处理满意度
+Comment_ReturnGoodsRate # 退换货处理满意度比率
+Servece_AfterSales # 售后处理时长
+Servece_AfterSalesRate # 售后处理时长比率
+Service_TradeDispute # 交易纠纷率
+Service_TradeDisputeRate # 交易纠纷率比率
+Service_ReturnRepair # 退换货返修率
+Service_ReturnRepairRate # 退换货返修率比率
+FollowNumber # 关注人数            
+ProductsNum # 全部商品数
+NewProducts # 上新数
+PromotionNum # 促销数
+OpenTime # 开店时间
+SearchPageIndex # 出现的页码
+SearchPageRank # 该页中的排名	

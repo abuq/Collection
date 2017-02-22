@@ -1,0 +1,3495 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>X.GlodEyes</name>
+    </assembly>
+    <members>
+        <member name="T:X.GlodEyes.Collectors.Collector">
+            <summary>
+                采集器的基础基类
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Collectors.Collector.Random">
+            <summary>
+                为了文件使用
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.Collector.UserCodeParserCreateFunc">
+            <summary>
+                解析器创建器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Collector.CountPage">
+            <summary>
+                Gets or sets the count page.
+            </summary>
+            <value>
+                The count page.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Collector.Current">
+            <summary>
+                返回当前的采集值
+            </summary>
+            <value>
+                The current.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Collector.CurrentPage">
+            <summary>
+                Gets the current page.
+            </summary>
+            <value>
+                The current page.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Collector.CurrentUrl">
+            <summary>
+                Gets or sets the current URL.
+            </summary>
+            <value>
+                The current URL.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Collector.DefaultMovePageTimeSpan">
+            <summary>
+                Gets the default move page time span.
+            </summary>
+            <value>
+                The default move page time span.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Collector.NextUrl">
+            <summary>
+                Gets or sets the next URL.
+            </summary>
+            <value>
+                The next URL.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Collector.System#Collections#IEnumerator#Current">
+            <summary>
+                Gets the current.
+            </summary>
+            <value>
+                The current.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Collector.UserCodeParserCreator">
+            <summary>
+                用户识别码接口创建器
+            </summary>
+            <value>
+                The user code parser creator.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Collector.InnerParameter">
+            <summary>
+                工作参数
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.TestHelp``1(X.GlodEyes.Collectors.IParameter,System.Int32,X.GlodEyes.Collectors.Collector.UserCodeParserCreateFunc)">
+            <summary>
+                使用搜索的关键词进行搜索
+            </summary>
+            <typeparam name="T">采集器参数</typeparam>
+            <param name="parameter">搜索参数.</param>
+            <param name="pageLimit">搜索项目限制，如果为 0则不限制.</param>
+            <param name="func">The function.</param>
+            <returns>返回创建的值</returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.Dispose">
+            <summary>
+                Releases unmanaged and - optionally - managed resources.
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.GetEnumerator">
+            <summary>
+                Gets the enumerator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.GetStatusPoint">
+            <summary>
+                Gets the status point.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.Init(X.GlodEyes.Collectors.IParameter)">
+            <summary>
+                Setups the specified parameter.
+            </summary>
+            <param name="param">The parameter.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.MoveNext">
+            <summary>
+                Moves the next.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.Reset">
+            <summary>
+                Resets this instance.
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.SetStatusPoint(X.GlodEyes.Collectors.IStatusPoint)">
+            <summary>
+                Sets the status point.
+            </summary>
+            <param name="point">The point.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+                Gets the enumerator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Collector.CreateUserCodeParser(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+                创建一个验证码解析器
+            </summary>
+            <param name="parserName">human: 人工处理</param>
+            <param name="param">The parameter.</param>
+            <returns></returns>
+            <exception cref="T:System.NotSupportedException">不支持的识别码输入器类型：{parserName}</exception>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.CollectorTest">
+            <summary>
+                采集器测试器
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.CollectorTest.Test">
+            <summary>
+                Tests this instance.
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.Dic">
+            <summary>
+                字典基类
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:X.GlodEyes.Collectors.Dic" /> class.
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.CopyFrom(X.GlodEyes.Collectors.IDic,System.Boolean)">
+            <summary>
+                从指定的对象中复制值
+            </summary>
+            <param name="dic">The parameter.</param>
+            <param name="overwrite">if set to <c>true</c> [overwrite].</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.CopyTo(X.GlodEyes.Collectors.IDic,System.Boolean)">
+            <summary>
+                将值复制到指定的对象中
+            </summary>
+            <param name="dic">The dic.</param>
+            <param name="overwrite">if set to <c>true</c> [overwrite].</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.GetStringValue(System.String)">
+            <summary>
+                返回字符串格式的值
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.GetValue``1(System.String,``0)">
+            <summary>
+                返回指定 key 的值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="keyName">Name of the key.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">@无效的关键值</exception>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.GetValueCore``1(``0,System.String)">
+            <summary>
+                返回一个字符串格式的指定值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="defaultValue">The default value.</param>
+            <param name="keyName">Name of the key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.KeysToArray">
+            <summary>
+                将 key 输出为数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.SetValue(System.String,System.Object)">
+            <summary>
+                设置值
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.SetValueCore(System.Object,System.String)">
+            <summary>
+                设置值
+            </summary>
+            <param name="value">The value.</param>
+            <param name="keyName">Name of the key.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Dic.ToString">
+            <summary>
+                Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+                A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.ICollector">
+            <summary>
+                采集器接口
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.ICollector.CountPage">
+            <summary>
+                页码总数, 可选
+            </summary>
+            <value>
+                The count page.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.ICollector.CurrentPage">
+            <summary>
+                当前的页码， 可选 
+            </summary>
+            <value>
+                The current page.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.ICollector.CurrentUrl">
+            <summary>
+                当前链接， 可选 
+            </summary>
+            <value>
+                The current URL.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.ICollector.DefaultMovePageTimeSpan">
+            <summary>
+                翻页时默认的暂停时间
+            </summary>
+            <value>
+                The default move page time span.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.ICollector.NextUrl">
+            <summary>
+                下一页的链接， 可选 
+            </summary>
+            <value>
+                The next URL.
+            </value>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.ICollector.GetStatusPoint">
+            <summary>
+                返回一个状态点，以后可以通过状态点恢复工作， 可选 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.ICollector.Init(X.GlodEyes.Collectors.IParameter)">
+            <summary>
+                进行初始化
+            </summary>
+            <param name="param">The parameter.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.ICollector.SetStatusPoint(X.GlodEyes.Collectors.IStatusPoint)">
+            <summary>
+                设置一个状态点以恢复工作，使用 GetStatusPoint（）  返回的状态值，通过该接口进行还原
+            </summary>
+            <param name="point">The point.</param>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.IDic">
+            <summary>
+                一个字典类，作为参数的基类
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.IDic.CopyFrom(X.GlodEyes.Collectors.IDic,System.Boolean)">
+            <summary>
+                从指定的对象中复制值
+            </summary>
+            <param name="dic">The parameter.</param>
+            <param name="overwrite">if set to <c>true</c> [overwrite].</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.IDic.CopyTo(X.GlodEyes.Collectors.IDic,System.Boolean)">
+            <summary>
+                将值复制到指定的对象中
+            </summary>
+            <param name="dic">The dic.</param>
+            <param name="overwrite">if set to <c>true</c> [overwrite].</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.IDic.GetValue``1(System.String,``0)">
+            <summary>
+                返回一个指定key的值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="keyName">The keyname.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.IDic.GetStringValue(System.String)">
+            <summary>
+            返回字符串格式的值
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.IDic.SetValue(System.String,System.Object)">
+            <summary>
+                设置值
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.IDic.KeysToArray">
+            <summary>
+            将 key 输出为数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.IParameter">
+            <summary>
+            采集设置
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.IResut">
+            <summary>
+            采集结果
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.IStatusPoint">
+            <summary>
+                状态节点
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.IUserCodeParserCreator">
+            <summary>
+            验证码识别接口创建器
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.IUserCodeParserCreator.CreateUserCodeParser(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Creates the user code parser.
+            </summary>
+            <param name="parserName">Name of the parser.</param>
+            <param name="param">The parameter.</param>
+            <returns></returns>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector">
+            <summary>
+                京东店铺商品搜索
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.NotInitId">
+            <summary>
+                没有定义的一个定义值
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.ShopUrl">
+            <summary>
+                店铺地址
+            </summary>
+            <value>
+                The shop URL.
+            </value>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.MoveNext">
+            <summary>
+                为了测试
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.Test">
+            <summary>
+                Tests this instance.
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.TestSimplyRun">
+            <summary>
+                仅测试一家店铺
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.GetMainWebContent(System.String,System.Byte[],System.String@,System.String)">
+            <summary>
+                返回当前主页面的内容
+            </summary>
+            <param name="nextUrl">The next URL.</param>
+            <param name="postData">The post data.</param>
+            <param name="cookies">The cookies.</param>
+            <param name="currentUrl">The current URL.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.InitFirstUrl(X.GlodEyes.Collectors.Specialized.JingDong.NormalParameter)">
+            <summary>
+                为第一页作初始化准备
+            </summary>
+            <param name="param">The parameter.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.MoveToNextPage">
+            <summary>
+                移动下一页，第一页要特别处理
+            </summary>
+            <returns>
+                System.String.
+            </returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.ParseCountPage">
+            <summary>
+                解析出总页码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.ParseCurrentItems">
+            <summary>
+                解析出当前值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.ParseCurrentPage">
+            <summary>
+                解析出当前页码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.ParseNextUrl">
+            <summary>
+                解析出下一页的地址，默认当没有下一页的时候，枚举停止
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.ParseComments(System.Xml.XPath.XPathNavigator)">
+            <summary>
+                解析出评价数
+            </summary>
+            <param name="item">The item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.BuildAjaxSearchUrl(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+                构造搜索  ajax url
+            </summary>
+            <param name="webContent">Content of the web.</param>
+            <param name="renderStructure">The render structure.</param>
+            <returns></returns>
+            <exception cref="T:System.NotSupportedException">$无法从页面中解析出搜索参数</exception>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.GetSearchPageContent(System.String)">
+            <summary>
+                返回搜索页面的内容
+            </summary>
+            <param name="shopUrl">The shop URL.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.GuessIsSearchWebContent(System.String)">
+            <summary>
+                推荐是不是商品页面
+            </summary>
+            <param name="webContent">Content of the web.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.IsEmptyPage">
+            <summary>
+                Determines whether [is empty page].
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.IsSearchWebContent(System.String)">
+            <summary>
+                测试该页面是不是搜索结果页
+            </summary>
+            <param name="searchContent">Content of the search.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.LoadRenderStructures(System.String)">
+            <summary>
+                搜索布局参数, 是基本的一个，但不知道是哪一个，所以全部返回
+            </summary>
+            <param name="webContent">Content of the web.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.MoveToFirstPage">
+            <summary>
+                移动到第一页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.ParseAmountPage(System.String)">
+            <summary>
+                解析当前总页数
+            </summary>
+            <param name="content">The content.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.ParseCurrentItems(System.String,System.Boolean)">
+            <summary>
+                解析出商品
+            </summary>
+            <param name="htmlSource">The HTML source.</param>
+            <param name="listOnly">仅解析出列表，不解析价格等需要再次访问网络的内容.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.ParseModuleText(System.String)">
+            <summary>
+                解析 json 中的内容
+            </summary>
+            <param name="webContent">Content of the web.</param>
+            <returns></returns>
+            <exception cref="T:System.NotSupportedException">$没有从结果中解析出商品内容:{this.Current}</exception>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopProductsCollector.UpdateResultsPrices(System.Collections.Generic.List{X.GlodEyes.Collectors.IResut},System.String)">
+            <summary>
+                更新价格列表
+            </summary>
+            <param name="resultList">The result list.</param>
+            <param name="skuIdKey">The sku identifier key.</param>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.Specialized.JingDong.CompanyInfoParser">
+            <summary>
+            店铺信息解析器
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.CompanyInfoParser.Test">
+            <summary>
+                Tests this instance.
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.CompanyInfoParser.Parse(System.String)">
+            <summary>
+            开始解析
+            </summary>
+            <param name="webContent">Content of the web.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.CompanyInfoParser.ParseShopScoreResult(X.GlodEyes.Collectors.IResut,System.Xml.XPath.XPathNavigator)">
+            <summary>
+            180 天店铺评分
+            </summary>
+            <param name="resut">The resut.</param>
+            <param name="navigator">The navigator.</param>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector">
+            <summary>
+                京东列表采集
+                一页 5条
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.hasMore">
+            <summary>
+                是不是还有更多的内容
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.lastShopJsonHashCode">
+            <summary>
+                最的一次获得的店铺json 内容的hash值
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.Test">
+            <summary>
+                进行测试
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.DetectHasMore">
+            <summary>
+                检测是否还有更多的内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.InitFirstUrl(X.GlodEyes.Collectors.Specialized.JingDong.NormalParameter)">
+            <summary>
+            为第一页作初始化准备
+            </summary>
+            <param name="param">The parameter.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">没有指定搜索关键词</exception>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.ParseCountPage">
+            <summary>
+                解析出总页码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.ParseCurrentItems">
+            <summary>
+                解析出当前值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.ParseCurrentPage">
+            <summary>
+                解析出当前页码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.ParseNextUrl">
+            <summary>
+                解析出下一页的地址，默认当没有下一页的时候，枚举停止
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.ConvertToResult(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+                将一个 jobject 值转为 result 值
+            </summary>
+            <param name="jObject">The j object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.GetListShopItemInfo">
+            <summary>
+                获取店铺信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.ParseIdFromXpath(System.String,System.String)">
+            <summary>
+                Parses the identifier from xpath.
+            </summary>
+            <param name="htmlSource">The HTML source.</param>
+            <param name="xpath">The xpath.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.ParsePageToken">
+            <summary>
+                解析出页码相关的json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.ParseProductDataSkus(System.String)">
+            <summary>
+                解析出商品的 sku 值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.ParseShopIds(System.String)">
+            <summary>
+                从页面中解析出店铺的编号
+            </summary>
+            <param name="htmlSource">The HTML source.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.TryUpdateHasMoreFlag(System.String)">
+            <summary>
+                根据返回内容与上一页内容是否重复来检测是不是还有更多的页码
+                可能不太重要
+            </summary>
+            <param name="webContent">Content of the web.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.JingDong.JdShopListCollector.UpdateResultsKeyNames(System.Collections.Generic.IEnumerable{X.GlodEyes.Collectors.IResut})">
+            <summary>
+                更新采集结果的 keyname 值
+            </summary>
+            <param name="resuts">The resuts.</param>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.Specialized.JingDong.NormalParameter">
+            <summary>
+            通用采集参数
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Specialized.JingDong.NormalParameter.Keyword">
+            <summary>
+            搜索关键词
+            </summary>
+            <value>
+            The keyword.
+            </value>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector">
+            <summary>
+                51 job 采集例子
+            </summary>
+            <seealso>
+                <cref>
+                    X.GlodEyes.Collectors.WebRequestCollector{X.GlodEyes.Collectors.IResut,
+                    X.GlodEyes.Collectors.Specialized.JingDong.NormalParameter}
+                </cref>
+            </seealso>
+        </member>
+        <member name="F:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.companyInfoDictionary">
+            <summary>
+                保存已经采集过的公司信息
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.DefaultMovePageTimeSpan">
+            <summary>
+                每次翻页间的暂停时间（秒）
+            </summary>
+            <value>
+                The default move page time span.
+            </value>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.Test">
+            <summary>
+                测试入口
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.InitFirstUrl(X.GlodEyes.Collectors.Specialized.JingDong.NormalParameter)">
+            <summary>
+                初始化第一页的链接
+            </summary>
+            <param name="param">The parameter.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.ParseCountPage">
+            <summary>
+                共有多少页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.ParseCurrentItems">
+            <summary>
+                解析出当前值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.ParseCurrentPage">
+            <summary>
+                解析出当前页码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.ParseNextUrl">
+            <summary>
+                解析出下一页的地址，默认当没有下一页的时候，枚举停止
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.ParseCompanyInfo(System.String)">
+            <summary>
+                解析公司信息，为了演示，不进行解析
+            </summary>
+            <param name="webContent">Content of the web.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.ParseJobInfo(System.String)">
+            <summary>
+                解析职务信息，为了演示，不进行解析
+            </summary>
+            <param name="webContent">Content of the web.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.ReadItemNodeValueByPath(System.Xml.XPath.XPathNavigator,System.String)">
+            <summary>
+                根据 xpath 获取节点值
+            </summary>
+            <param name="itemNode">The item node.</param>
+            <param name="xpath">The xpath.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.ReadValueByXPath(System.String)">
+            <summary>
+                根据 xpath 获取 html 中的值
+            </summary>
+            <param name="xpath">The xpath.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.UpdateCompanyInfo(X.GlodEyes.Collectors.IResut,System.String)">
+            <summary>
+                更新公司信息
+            </summary>
+            <param name="result">The result.</param>
+            <param name="companyUrl">The company URL.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.Specialized.Job51.Job51Collector.UpdateJobInfo(X.GlodEyes.Collectors.IResut,System.String)">
+            <summary>
+                解析出公司信息
+            </summary>
+            <param name="result">The result.</param>
+            <param name="joburl">The joburl.</param>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.NormalCollector">
+            <summary>
+                通用处理器
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.NormalCollector.SetResultSearchPageIndex(X.GlodEyes.Collectors.IResut,System.Int32,System.Boolean)">
+            <summary>
+                设置该条目在页码
+            </summary>
+            <param name="result">The result.</param>
+            <param name="page">The page.</param>
+            <param name="overwrite">是不是强制写入</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.NormalCollector.SetResultSearchPageRank(X.GlodEyes.Collectors.IResut,System.Int32,System.Boolean)">
+            <summary>
+                设置该条目在当前页面中的排名
+            </summary>
+            <param name="result">The result.</param>
+            <param name="rank">The rank.</param>
+            <param name="overwrite">是不是强制写入</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.NormalCollector.UpdateResultsKeyNames(System.Collections.Generic.IEnumerable{X.GlodEyes.Collectors.IResut},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+                更新采集结果中的 keyname 值
+                结果集中与 keyNames 中 Key 对应的属性名将被改为 Value 中指定的值，如果 Value 设置为 null，则保留，如果 Key 不存在，则删除该属性
+            </summary>
+            <param name="resuts">The resuts.</param>
+            <param name="keyNames">The key names.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.NormalCollector.UpdateResultKeyName(X.GlodEyes.Collectors.IDic,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+                按照 KEYNAMES 重命名 result，并删除不存在的key
+            </summary>
+            <param name="resut">The resut.</param>
+            <param name="keyNames">The key names.</param>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.Parameter">
+            <summary>
+                采集参数
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.Resut">
+            <summary>
+            采集结果
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.StatusPoint">
+            <summary>
+                状态节点
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Collectors.WebRequestCollector`2">
+            <summary>
+                基于 webRequest 的发送工具
+            </summary>
+            <typeparam name="TResut">The type of the resut.</typeparam>
+            <typeparam name="TParam">The type of the parameter.</typeparam>
+            <seealso cref="T:X.GlodEyes.Collectors.NormalCollector" />
+            <seealso>
+                <cref>System.Collections.Generic.IEnumerator{TResut[]}</cref>
+            </seealso>
+            <seealso>
+                <cref>System.Collections.Generic.IEnumerable{TResut[]}</cref>
+            </seealso>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.WebRequestCollector`2.Cookies">
+            <summary>
+                工作过程中的 Cookies 值
+            </summary>
+            <value>
+                The cookies.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.WebRequestCollector`2.Current">
+            <summary>
+                返回当前的采集值
+            </summary>
+            <value>
+                The current.·
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.WebRequestCollector`2.HasMore">
+            <summary>
+                是否还有更多的内容
+            </summary>
+            <value>
+                <c>true</c> if this instance has more; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.WebRequestCollector`2.HtmlSource">
+            <summary>
+                当前页面的源码
+            </summary>
+            <value>
+                The HTML source.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.WebRequestCollector`2.InnerParam">
+            <summary>
+                The inner parameter
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Collectors.WebRequestCollector`2.LastUrl">
+            <summary>
+                上一级的链接
+            </summary>
+            <value>
+                The last URL.
+            </value>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.Init(`1)">
+            <summary>
+                使用指定的参数进行初始化
+            </summary>
+            <param name="param">The parameter.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.Init(X.GlodEyes.Collectors.IParameter)">
+            <summary>
+                Setups the specified parameter.
+            </summary>
+            <param name="param">The parameter.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.MoveNext">
+            <summary>
+                Moves the next.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.System#Collections#Generic#IEnumerable{TResut[]}#GetEnumerator">
+            <summary>
+                Gets the enumerator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.DetectHasMore">
+            <summary>
+                检测是否还有更多的内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.GetMainWebContent(System.String,System.Byte[],System.String@,System.String)">
+            <summary>
+                返回当前主页面的内容
+            </summary>
+            <param name="nextUrl">The next URL.</param>
+            <param name="postData">The post data.</param>
+            <param name="cookies">The cookies.</param>
+            <param name="currentUrl">The current URL.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.GetWebContent(System.String,System.Byte[],System.String@,System.String,System.Boolean)">
+            <summary>
+                返回指定 url 的页面内容
+            </summary>
+            <param name="url">The URL.</param>
+            <param name="postData">The post data.</param>
+            <param name="cookies">The cookies.</param>
+            <param name="refere">The refere.</param>
+            <param name="isAjax">是不是ajax请求.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.GetWebContent(System.String,System.Boolean)">
+            <summary>
+                返回指定 url 的页面内容
+            </summary>
+            <param name="url">The URL.</param>
+            <param name="keepCookies">if set to <c>true</c> [keep cookies].</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.InitFirstUrl(`1)">
+            <summary>
+                为第一页作初始化准备
+            </summary>
+            <param name="param">The parameter.</param>
+            <returns>返回第一页的链接</returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.MoveToNextPage">
+            <summary>
+                移动到下一页
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.ParseCountPage">
+            <summary>
+                解析出总页码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.ParseCurrentItems">
+            <summary>
+                解析出当前值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.ParseCurrentPage">
+            <summary>
+                解析出当前页码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.ParseNextUrl">
+            <summary>
+                解析出下一页的地址，默认当没有下一页的时候，枚举停止
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.VerifyWebContent(System.String,System.String)">
+            <summary>
+                检测页面内容是否正确
+            </summary>
+            <param name="webContent">Content of the web.</param>
+            <param name="cookies">The cookies.</param>
+        </member>
+        <member name="M:X.GlodEyes.Collectors.WebRequestCollector`2.UpdateResultRankInfo(`0[],System.Int32)">
+            <summary>
+                更新排名信息
+            </summary>
+            <param name="items">The current.</param>
+            <param name="page">The current page.</param>
+        </member>
+        <member name="T:X.GlodEyes.Datas.ErrorDataStoreHelper">
+            <summary>
+                错误信息存储器
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.ErrorDataStoreHelper.TableName">
+            <summary>
+                The table name
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ErrorDataStoreHelper.CreateErrorStoreTable(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                创建错误信息存储表
+            </summary>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ErrorDataStoreHelper.InsertDataError(System.String,System.String,System.String,System.String,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                插入一条错误信息原因
+            </summary>
+            <param name="errType">错误类型.</param>
+            <param name="tableName">对应的表名.</param>
+            <param name="dataParams">对应的错误数据.</param>
+            <param name="errMessage">错误描述.</param>
+            <param name="connection">插入数据使用的链接.</param>
+        </member>
+        <member name="T:X.GlodEyes.Datas.ICacheManager">
+            <summary>
+                缓存表接口
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ICacheManager.TableName">
+            <summary>
+                表名
+            </summary>
+            <value>
+                The name of the real table.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ICacheManager.ThrowIfCancellationRequestedHandle">
+            <summary>
+                停止回调函数
+            </summary>
+            <value>The throw if cancellation requested handle.</value>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ICacheManager.UpdateCache">
+            <summary>
+                进行缓存数据同步
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Datas.ResultDataCacheItem">
+            <summary>
+                提交结果荐
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultDataCacheItem.DataParam">
+            <summary>
+                提交的数据
+            </summary>
+            <value>
+                The data parameters.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultDataCacheItem.TaskDataId">
+            <summary>
+                数据编号
+            </summary>
+            <value>
+                The task data identifier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultDataCacheItem.TaskId">
+            <summary>
+                任务编号
+            </summary>
+            <value>
+                The task identifier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultDataCacheItem.RowId">
+            <summary>
+            数据在数据库中的编号
+            </summary>
+            <value>
+            The row identifier.
+            </value>
+        </member>
+        <member name="T:X.GlodEyes.Datas.ResultStatusCacheItem">
+            <summary>
+            客户端提交的状态缓存项
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultStatusCacheItem.StationId">
+            <summary>
+            Gets or sets the station identifier.
+            </summary>
+            <value>
+            The station identifier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultStatusCacheItem.TaskDataId">
+            <summary>
+            Gets or sets the task data identifier.
+            </summary>
+            <value>
+            The task data identifier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultStatusCacheItem.TaskId">
+            <summary>
+            Gets or sets the task identifier.
+            </summary>
+            <value>
+            The task identifier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultStatusCacheItem.Status">
+            <summary>
+            Gets or sets the status.
+            </summary>
+            <value>
+            The status.
+            </value>
+        </member>
+        <member name="T:X.GlodEyes.Datas.TaskCacheItem">
+            <summary>
+                表示一个缓存项目
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCacheItem.TaskDataId">
+            <summary>
+                任务编号
+            </summary>
+            <value>The task data identifier.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCacheItem.JsonParams">
+            <summary>
+                任务参数
+            </summary>
+            <value>The json parameters.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCacheItem.StationId">
+            <summary>
+                客户端编号
+            </summary>
+            <value>The station identifier.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCacheItem.TaskStatue">
+            <summary>
+                任务状态
+            </summary>
+            <value>The task statue.</value>
+        </member>
+        <member name="T:X.GlodEyes.Datas.TaskCache">
+            <summary>
+                缓存存储器
+                手册 ：http://www.cnblogs.com/wu-jian/archive/2011/11/29/2267795.html
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Datas.TaskCache.TaskCachingStatus">
+            <summary>
+                缓存的工作状态
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.TaskCache.TaskCachingStatus.Stop">
+            <summary>
+                同步停止中
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.TaskCache.TaskCachingStatus.Caching">
+            <summary>
+                缓存中
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.TaskCache.TaskCachingStatus.Clearing">
+            <summary>
+                清理中
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.TaskCache.missionStatusLocker">
+            <summary>
+                任务状态读取状态锁
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.TaskCache.lastWorkTime">
+            <summary>
+                最后一次工作时间
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCache.CachingStatus">
+            <summary>
+                数据缓存状态
+            </summary>
+            <value>The cacheing status.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCache.CacheSqlServer">
+            <summary>
+                缓存数据库连接
+            </summary>
+            <value>The cache SQL server.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCache.CacheTableName">
+            <summary>
+                缓存表名
+            </summary>
+            <value>The name of the cache table.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCache.MissionSqlServer">
+            <summary>
+                任务数据库连接
+            </summary>
+            <value>The mission SQL server.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCache.RecommandBatchSize">
+            <summary>
+                推荐的每批次处理数量
+            </summary>
+            <value>
+                The size of the recommand batch.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCache.WorkTimeSpan">
+            <summary>
+                每次工作的时间间隔
+            </summary>
+            <value>The work time span.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCache.TableName">
+            <summary>
+                数据存储的表的名称
+            </summary>
+            <value>The name of the table.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.TaskCache.ThrowIfCancellationRequestedHandle">
+            <summary>
+                停止回调函数
+            </summary>
+            <value>The throw if cancellation requested handle.</value>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.UpdateCache">
+            <summary>
+                Updates the cache.
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.SetMissionsStatus(System.String,GE.Task.TaskStateType,System.Int64[])">
+            <summary>
+            更新任务的状态
+            有一些已分配的任务可能没有被缓存的，设置状态时该任务可能还不在本机
+            如果是一个没有被同步到本地的任务被设置了状态，则该任务在缓存中的任务参数配置为 null, 所以不建议使用该方式设置任务为 ready
+            </summary>
+            <param name="machineName">The station identifier.</param>
+            <param name="status">The status.</param>
+            <param name="missionIds">The mission ids.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.SetMissionsStatus(X.GlodEyes.Datas.ResultStatusItem[])">
+            <summary>
+                Sets the missions status.
+            </summary>
+            <param name="items">The items.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.GetMissionsParam(System.String,System.Int32)">
+            <summary>
+                返回任务的参数
+            </summary>
+            <param name="stationId">The station identifier.</param>
+            <param name="number">The number.</param>
+            <returns>System.String[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.InitCache">
+            <summary>
+                缓存对象进行初始化
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.InitRemoteMissionServer">
+            <summary>
+            初始化远程服务
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.UpdateCache(System.Int32)">
+            <summary>
+                更新缓存数据
+            </summary>
+            <param name="bufferSize">Size of the buffer.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.UpdateCacheCore(System.Int32)">
+            <summary>
+               进行缓存更新的核心代码
+            </summary>
+            <param name="bufferSize">Size of the buffer.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.SyncCacheItems(System.Int32)">
+            <summary>
+                进行同步设置
+            </summary>
+            <param name="bufferSize">Size of the buffer.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.ClearSyncedItems">
+            <summary>
+                清除当前已经缓存的项目
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.DeleteLocalSyncedItems(System.Int32)">
+            <summary>
+                删除本地已经缓存的项目
+            </summary>
+            <param name="bufferSize">Size of the buffer.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.DeleteSyncedItemsCore(MySql.Data.MySqlClient.MySqlConnection,System.String,System.Int32)">
+            <summary>
+                删除已经缓存的项目
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="tableName">Name of the table.</param>
+            <param name="limit">Size of the buffer.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.CacheMissionData(System.Double,System.Int32)">
+            <summary>
+                缓存任务数据
+            </summary>
+            <param name="maxSize">The maximum size.</param>
+            <param name="batchSize">每一个批次处理数据的数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.CachingMissionDataItems(System.Collections.Generic.IEnumerable{X.GlodEyes.Datas.TaskCacheItem})">
+            <summary>
+                将指定的数据进行缓存，并返回当前已存储的数据大小
+            </summary>
+            <param name="items">The items.</param>
+            <returns>System.Int64.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.ConvertCacheItems(MySql.Data.MySqlClient.MySqlDataReader)">
+            <summary>
+                从缓存数据库中读取任务数据
+            </summary>
+            <param name="reader">The reader.</param>
+            <returns>X.GlodEyes.Datas.CacheItem[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.CreateCacheTable">
+            <summary>
+                创建本地内存表
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.CreateMissionServer">
+            <summary>
+                创建远程任务服务器
+            </summary>
+            <returns>X.GlodEyes.Datas.MissionServer.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.GetCacheItems(System.Int32,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                从缓存数据库中读取指定数据的数据
+            </summary>
+            <param name="number">The number.</param>
+            <param name="connection">The connection.</param>
+            <returns>X.GlodEyes.Datas.CacheItem[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.GetCurrentUnuseCacheSize">
+            <summary>
+                返回当前未使用的缓存数据大小
+            </summary>
+            <returns>System.Int64.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.GetCurrentUnuseCacheSize(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                返回当前缓存数量的大小
+            </summary>
+            <param name="connection">The connection.</param>
+            <returns>System.Int64.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.GetUncacheMissionDataFromRemoveMissionServer(System.Int32)">
+            <summary>
+                从远程任务服务器上读取一批需要缓存的数据
+                如果获取失败返回 null， 因为可能因为其它任务分配服务器会锁定该表
+            </summary>
+            <param name="limit">The limit.</param>
+            <returns>X.GlodEyes.Datas.CacheItem[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.GetUnSyncCacheItems(MySql.Data.MySqlClient.MySqlConnection,System.Int32)">
+            <summary>
+                返回未同步的项目
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="limit">The limit.</param>
+            <returns>
+                X.GlodEyes.Datas.CacheItem[].
+            </returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.IsNeedCacheMissionDatas(System.Double)">
+            <summary>
+                当前缓存的数据有没有达到指定
+            </summary>
+            <param name="size">The minimum size.</param>
+            <returns>System.Boolean.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.OpenConnection">
+            <summary>
+                打开缓存数据库
+            </summary>
+            <returns>MySqlConnection.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.ResetRemoteMissionDatas(System.Int32)">
+            <summary>
+                在远程任务服务器上重置已经缓存的任务的状态
+            </summary>
+            <param name="bufferSize">Size of the buffer.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.ResetTimeoutMissions">
+            <summary>
+                重置当前已经超时的任务
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.ResetMissionsStatus(System.String,System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="whereCondition">The where condition.</param>
+            <param name="conditionValue">The condition value.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.SetSyncedCacheItemsStatus(X.GlodEyes.Datas.TaskCacheItem[],MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                设置项目已被同步
+            </summary>
+            <param name="cacheItems">The cache items.</param>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.SyncCacheItemsStatusToRemoteMissionServer(X.GlodEyes.Datas.TaskCacheItem[])">
+            <summary>
+                将任务状态同步到远程服务器上
+            </summary>
+            <param name="cacheItems">The cache items.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.SyncMissionStatus(System.Int32)">
+            <summary>
+                同步任务状态
+            </summary>
+            <param name="bufferSize">每批次数据的数据量，如果低于此水平就不再进行同步.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.ThrowIfCancellationRequested">
+            <summary>
+                如果需要停止，则抛出异常
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.UpdateMissionsStatus(System.String,GE.Task.TaskStateType,System.Collections.Generic.IEnumerable{System.Int64},MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                使用指定的数据库连接对数据进行更新
+            </summary>
+            <param name="stationId">The station identifier.</param>
+            <param name="status">The status.</param>
+            <param name="missionIds">The mission ids.</param>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.HasMissionsParam(System.String)">
+            <summary>
+            数据表中否还有任务
+            </summary>
+            <param name="stationId">The station identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.TaskCache.ResetMissionsStatusWithClientId(System.String)">
+            <summary>
+            重置指定机器下的任务
+            </summary>
+            <param name="stationId">The station identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="T:X.GlodEyes.Datas.ITaskDataCache">
+            <summary>
+            任务参数缓存接口
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ITaskDataCache.SetMissionsStatus(System.String,GE.Task.TaskStateType,System.Int64[])">
+            <summary>
+                更新任务的状态
+                有一些已分配的任务可能没有被缓存的，设置状态时该任务可能还不在本机
+                如果是一个没有被同步到本地的任务被设置了状态，则该任务在缓存中的任务参数配置为 null, 所以不建议使用该方式设置任务为 ready
+            </summary>
+            <param name="stationId">The station identifier.</param>
+            <param name="status">The status.</param>
+            <param name="missionIds">The mission ids.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ITaskDataCache.SetMissionsStatus(X.GlodEyes.Datas.ResultStatusItem[])">
+            <summary>
+            批量更新任务的状态
+            </summary>
+            <param name="items">The items.</param>
+        </member>
+        <member name="T:X.GlodEyes.Datas.ResultCache">
+            <summary>
+                采集结果缓存器
+                sqlcommand 转字符串
+                例子表： yuanshi_dianpu_taobao_shop_attr
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.ResultCache.DataParamsDictionary">
+            <summary>
+                数据提交数据存储窗口
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.ResultCache.maxDataCacheTableNumber">
+            <summary>
+                最大缓存数据表的数量
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.ResultCache.random">
+            <summary>
+                辅助随机数生成器
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultCache.CacheSqlServer">
+            <summary>
+                缓存表数据连接
+            </summary>
+            <value>
+                The cache SQL server.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultCache.DataCacheTableName">
+            <summary>
+                数据缓存表名
+            </summary>
+            <value>
+                The name of the data cache table.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultCache.RecommandBatchSize">
+            <summary>
+                Gets or sets the size of the recommand batch.
+            </summary>
+            <value>
+                The size of the recommand batch.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultCache.RemoteTableName">
+            <summary>
+                远程的数据表名
+                结果表的表名，对变量进行了处理
+            </summary>
+            <value>
+                The name of the table.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultCache.ResultSqlServer">
+            <summary>
+                结果服务器的地址
+            </summary>
+            <value>
+                The result SQL server.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultCache.TaskDataCache">
+            <summary>
+                任务数据接口
+            </summary>
+            <value>
+                The data cache.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultCache.TableName">
+            <summary>
+                表名
+            </summary>
+            <value>
+                The name of the real table.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultCache.ThrowIfCancellationRequestedHandle">
+            <summary>
+                当前是否请求停止的回调函数
+            </summary>
+            <value>
+                The throw if cancellation requested handle.
+            </value>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.UpdateCache">
+            <summary>
+                Updates the cache.
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.AddResultDatas(System.Int64,System.String,System.String[])">
+            <summary>
+                添加一批结果数据
+            </summary>
+            <param name="taskDataId">The task data identifier.</param>
+            <param name="taskId">The task identifier.</param>
+            <param name="dataParams">The data parameters.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.AddResultStatus(System.String,System.Int64,System.String,GE.Task.TaskStateType)">
+            <summary>
+                添加结果状态
+            </summary>
+            <param name="stationId">The station identifier.</param>
+            <param name="taskDataId">The task data identifier.</param>
+            <param name="taskId">The task identifier.</param>
+            <param name="status">The status.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.InitCache">
+            <summary>
+                进行初始化
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.UpdateCache(System.Int32)">
+            <summary>
+                进行缓存数据同步
+            </summary>
+            <param name="bufferSize">每批次处理数据的数量.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.BuildFullTableName(System.String,System.Int32)">
+            <summary>
+                构建一个表名
+            </summary>
+            <param name="tableName">Name of the status cache table.</param>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.FindResultDataItems(System.String,MySql.Data.MySqlClient.MySqlConnection,System.Int32)">
+            <summary>
+                找出指定数据的待同步提交数据
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="connection">The connection.</param>
+            <param name="limit">The limit.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.GetDataParamDictionary(System.String)">
+            <summary>
+                数据缓存
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.InitDataParamsDictionary(System.String[])">
+            <summary>
+                初始化实体内容表
+            </summary>
+            <param name="dataTables">The data tables.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.ReadResultDataItemsFromReader(MySql.Data.MySqlClient.MySqlDataReader)">
+            <summary>
+                从 datareader 中读出需要同步的数据
+            </summary>
+            <param name="reader">The reader.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.TransferTargetTableName(System.String)">
+            <summary>
+                转换目标表名，如果发现参数，进行替换
+            </summary>
+            <param name="srcTableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.AddResultCacheItem(MySql.Data.MySqlClient.MySqlConnection,X.GlodEyes.Datas.ResultDataCacheItem,System.String,System.DateTime)">
+            <summary>
+                添加一个数据到缓存表中
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="item">The item.</param>
+            <param name="tableName">Name of the table.</param>
+            <param name="currentTime">The current time.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.AddResultDatasToMemoryTable(X.GlodEyes.Datas.ResultDataCacheItem[])">
+            <summary>
+                添加数据到二级缓存
+            </summary>
+            <param name="items">The items.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.BuildDataparamsId(System.String,System.Int64)">
+            <summary>
+                构建数据存储使用的 id
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="rowId">The row identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.CreateErrorStoreTable(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                创建错误信息保存表
+            </summary>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.CreateResultCacheTable(System.String,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                创建数据缓存表
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.DeleteResultDataItems(System.String,X.GlodEyes.Datas.ResultDataItem[],MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                删除对应的提交数据
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="items">The items.</param>
+            <param name="connection">The connection.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.GetAllDataCacheTableNames">
+            <summary>
+                返回所有可用的数据表名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.GetCachedDataCount">
+            <summary>
+                返回当前已缓存的数据数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.GetCachedDataCountFromTable(System.String)">
+            <summary>
+                返回某个表中的数据总数
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.GetLostInsertId(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                返回最后一次插入自增的编号
+            </summary>
+            <param name="connection">The connection.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.GetRandomDataCacheTableName">
+            <summary>
+                返回一个随机的数据存储表名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.InsertResultDataItemToRemoveServer(MySql.Data.MySqlClient.MySqlConnection,System.String)">
+            <summary>
+                将采集数据插入到远程数据库中
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="dataParams">The data parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.OpenConnection">
+            <summary>
+                打开缓存数据库
+            </summary>
+            <returns>MySqlConnection.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.OpenRemoteConnection">
+            <summary>
+                打开远程数据库的连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.StoreDataParams(System.String,X.GlodEyes.Datas.ResultDataCacheItem[])">
+            <summary>
+                将采集数据的内容放在缓存中
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="items">The success items.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.StoreErrorResultDataItem(X.GlodEyes.Datas.ResultDataItem,System.Exception,MySql.Data.MySqlClient.MySqlConnection@)">
+            <summary>
+                将一个数据保存到数据表中
+            </summary>
+            <param name="item">The item.</param>
+            <param name="exception">The exception.</param>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.SyncDataToRemoveServer(System.Collections.Generic.ICollection{System.String},System.Int32)">
+            <summary>
+                使用多线程对数据进行处理
+            </summary>
+            <param name="tableNames">The table names.</param>
+            <param name="bufferSize">从缓存中取多少数据进行处理.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.SyncDataToRemoveServerThread(System.String,System.Int32)">
+            <summary>
+                同步数据到远程服务器上，
+            </summary>
+            <param name="tableName">需要处理的表名.</param>
+            <param name="bufferSize">每批次处理的数据量大小.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.SyncResultsToRemoteServerCore(System.String,X.GlodEyes.Datas.ResultDataItem[],MySql.Data.MySqlClient.MySqlConnection,MySql.Data.MySqlClient.MySqlConnection@)">
+            <summary>
+                插入核心部分
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="items">The items.</param>
+            <param name="connection">The connection.</param>
+            <param name="errorInfoConnection">The error information connection.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.ThrowIfCancellationRequested">
+            <summary>
+                如果要求停止，抛出相应的异常
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.ResultCache.UpdateResultDataItemsDataParams(System.String,System.Collections.Generic.IEnumerable{X.GlodEyes.Datas.ResultDataItem})">
+            <summary>
+                批量获取待更新项目的内容
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="items">The items.</param>
+        </member>
+        <member name="T:X.GlodEyes.Datas.ResultDataItem">
+            <summary>
+            需要同步的结果数据
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultDataItem.RowId">
+            <summary>
+            数据对应的rowid
+            </summary>
+            <value>
+            The row identifier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultDataItem.DataParams">
+            <summary>
+            需要进行提交的数据
+            </summary>
+            <value>
+            The data parameters.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultDataItem.LastUpTime">
+            <summary>
+            最后更新时间
+            </summary>
+            <value>
+            The last up time.
+            </value>
+        </member>
+        <member name="T:X.GlodEyes.Datas.ResultStatusItem">
+            <summary>
+            结果状态项
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultStatusItem.TaskDataId">
+            <summary>
+            Gets or sets the task data identifier.
+            </summary>
+            <value>
+            The task data identifier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultStatusItem.TaskId">
+            <summary>
+            Gets or sets the task identifier.
+            </summary>
+            <value>
+            The task identifier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultStatusItem.TaskStatue">
+            <summary>
+            状态
+            </summary>
+            <value>
+            The task statue.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultStatusItem.StationId">
+            <summary>
+            客户端标识
+            </summary>
+            <value>
+            The station identifier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.ResultStatusItem.LastUpdate">
+            <summary>
+            最后一次的更新时间
+            </summary>
+            <value>
+            The last update.
+            </value>
+        </member>
+        <member name="T:X.GlodEyes.Datas.IMissionParamCache">
+            <summary>
+            任务数据处理器
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.IMissionParamCache.ThreadNumber">
+            <summary>
+                工作线程数，默认 10
+            </summary>
+            <value>The thread number.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.IMissionParamCache.WorkTimeSpan">
+            <summary>
+                每次检测缓存后暂停多长时间，默认 5秒
+            </summary>
+            <value>The sleep time.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.IMissionParamCache.CacheSqlServer">
+            <summary>
+                本地数据库信息
+            </summary>
+            <value>The local SQL server.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.IMissionParamCache.MissionSqlServer">
+            <summary>
+                任务数据库的连接
+            </summary>
+            <value>The mission SQL server.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.IMissionParamCache.BufferRate">
+            <summary>
+                缓存比例（可以进行多少次任务分配，每客户端 10秒1次，则 200个客户端，1分钟为 1200次，15分钟缓存的话为 15 * 1200 = 18000 ）
+                默认为 20000
+            </summary>
+            <value>The buffer rate.</value>
+        </member>
+        <member name="M:X.GlodEyes.Datas.IMissionParamCache.Start">
+            <summary>
+                启动工作
+                主要是启动后台的维护线程
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.IMissionParamCache.GetMissionsParam(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+                从指定的表中获取任务
+            </summary>
+            <param name="stationId">客户端定义.</param>
+            <param name="table">The table.</param>
+            <param name="number">需要的任务数，如果未设置，则使用 MissionTableInfo 中的相关值</param>
+            <returns>System.String[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.IMissionParamCache.SetMissionsStatus(System.String,System.String,GE.Task.TaskStateType,System.Int64[])">
+            <summary>
+                签入一批任务的状态
+                如果是一个没有被同步到本地的任务被设置了状态，则该任务在缓存中的任务参数配置为 null, 所以不建议使用该方式设置任务为 ready
+            </summary>
+            <param name="stationId">客户端标记.</param>
+            <param name="table">对应的数据表</param>
+            <param name="status">新的状态.</param>
+            <param name="missionIds">任务编号.</param>
+            <returns>SetMissionsStatus.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.IMissionParamCache.Stop">
+            <summary>
+                停止工作
+                主要是停止后台的同步线程
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Datas.MissionServer">
+            <summary>
+                日志服务器
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.MissionServer.MachineName">
+            <summary>
+                The machine name
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.#cctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:X.GlodEyes.Datas.MissionServer" /> class.
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionServer.Server">
+            <summary>
+                服务连接字符串
+            </summary>
+            <value>The server.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionServer.TableName">
+            <summary>
+                数据表的名称
+            </summary>
+            <value>The name of the table.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionServer.StatusHelpTableName">
+            <summary>
+                状态更新辅助表名
+            </summary>
+            <value>
+                The name of the status help table.
+            </value>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.GetReadyMissionDatas(System.Int32)">
+            <summary>
+                签出指定数据的待处理任务
+                成功 返回数据，如果 任务表被其它进程锁定返回 null, 其它抛出异常
+            </summary>
+            <param name="limit">The limit.</param>
+            <returns>CacheItem[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.ResetCachedMissions(System.Int32)">
+            <summary>
+            在远程任务服务器上重置已经缓存的任务的状态
+            </summary>
+            <param name="bufferSize">Size of the buffer.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.ResetCachedMissionsCore(MySql.Data.MySqlClient.MySqlConnection,System.String,System.Int32)">
+            <summary>
+                Resets the cached missions core.
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="connection">The connection.</param>
+            <param name="limit">The limit.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.SyncCacheItemsToMissionServer(X.GlodEyes.Datas.TaskCacheItem[])">
+            <summary>
+                设置任务的状态
+            </summary>
+            <param name="cacheItems">The cache items.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.ConvertCacheItem(MySql.Data.MySqlClient.MySqlDataReader)">
+            <summary>
+                从 DataReader 中读出数据
+            </summary>
+            <param name="reader">The reader.</param>
+            <returns>X.GlodEyes.Datas.CacheItem[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.GetReadyMissionDatas(System.String,MySql.Data.MySqlClient.MySqlConnection,MySql.Data.MySqlClient.MySqlTransaction,System.Int32)">
+            <summary>
+                从远程服务器读取需要缓存的数据
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="connection">The connection.</param>
+            <param name="transaction">The transaction.</param>
+            <param name="limit">The limit.</param>
+            <returns>
+                X.GlodEyes.Datas.CacheItem[].
+            </returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.SetMissionCheckOutStatus(System.String,MySql.Data.MySqlClient.MySqlConnection,MySql.Data.MySqlClient.MySqlTransaction,X.GlodEyes.Datas.TaskCacheItem[])">
+            <summary>
+                在远程服务器上标记任务已被缓存
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="connection">The connection.</param>
+            <param name="transaction">The transaction.</param>
+            <param name="cacheItems">The cache items.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.GetMissionServerLock(System.String,MySql.Data.MySqlClient.MySqlConnection,System.Int32)">
+            <summary>
+                获取服务器锁
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="connection">The connection.</param>
+            <param name="timeout">超时时间.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.OpenConnection">
+            <summary>
+                打开远程任务服务器的连接
+            </summary>
+            <returns>MySql.Data.MySqlClient.MySqlConnection.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.ReleaseMissionServerLock(System.String,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+                释放锁
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.ServerLockCore(System.String,MySql.Data.MySqlClient.MySqlConnection,System.Boolean,System.Int32)">
+            <summary>
+                获取或释放锁核心操作函数
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <param name="connection">The connection.</param>
+            <param name="lockSrv">if set to <c>true</c> [lock SRV].</param>
+            <param name="timeout">The timeout.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.Test">
+            <summary>
+                进行测试
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionServer.InitStatusHelpCache">
+            <summary>
+                初始化远程服务器上更新辅助数据表
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Datas.MissionCacheTable">
+            <summary>
+                任务缓存表数据
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionCacheTable.TaskCache">
+            <summary>
+                任务存储器
+            </summary>
+            <value>The cache.</value>
+        </member>
+        <member name="T:X.GlodEyes.Datas.MissionParamCache">
+            <summary>
+            任务参数缓存
+            远程数据库 使用数据库压缩技术
+            表名大小写敏感
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Datas.MissionParamCache.MissionTableInfoQuerierFuncHandle">
+            <summary>
+                工作数据表查询函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:X.GlodEyes.Datas.MissionParamCache.cacheTableDictionary">
+            <summary>
+                缓存的数据表
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.MissionParamCache.threadLocker">
+            <summary>
+                线程工作锁
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.MissionParamCache.workThread">
+            <summary>
+                工作维护线程
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:X.GlodEyes.Datas.MissionParamCache" /> class.
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionParamCache.CancellationPending">
+            <summary>
+                当前是不是设置了停止状态
+            </summary>
+            <value><c>true</c> if [cancel padding]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionParamCache.MissionTableInfoQuerier">
+            <summary>
+                工作表数据查询器
+            </summary>
+            <value>
+                The mission table information querier.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionParamCache.BufferRate">
+            <summary>
+                缓存比例（可以进行多少次任务分配，每客户端 10秒1次，则 150个客户端，1分钟为 900次，5分钟缓存的话为  5 * 900 = 4500 ）
+                默认为 5000
+            </summary>
+            <value>The buffer rate.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionParamCache.CacheSqlServer">
+            <summary>
+                本地数据库信息
+            </summary>
+            <value>The local SQL server.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionParamCache.MissionSqlServer">
+            <summary>
+                任务数据库的连接
+            </summary>
+            <value>The mission SQL server.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionParamCache.ThreadNumber">
+            <summary>
+                工作线程数，默认 10
+            </summary>
+            <value>The thread number.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionParamCache.WorkTimeSpan">
+            <summary>
+                每次检测缓存后暂停多长时间，默认 5秒
+            </summary>
+            <value>The sleep time.</value>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.GetMissionsParam(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+                从指定的表中获取任务
+            </summary>
+            <param name="stationId">客户端定义.</param>
+            <param name="table">The table.</param>
+            <param name="number">需要的任务数，如果未设置，则使用 MissionTableInfo 中的相关值</param>
+            <returns>System.String[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.SetMissionsStatus(System.String,System.String,GE.Task.TaskStateType,System.Int64[])">
+            <summary>
+            签入一批任务的状态
+            如果是一个没有被同步到本地的任务被设置了状态，则该任务在缓存中的任务参数配置为 null, 所以不建议使用该方式设置任务为 ready
+            </summary>
+            <param name="machineName">客户端标记.</param>
+            <param name="table">对应的数据表</param>
+            <param name="status">新的状态.</param>
+            <param name="missionIds">任务编号.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.Start">
+            <summary>
+                启动工作
+                主要是启动后台的维护线程
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.Stop">
+            <summary>
+                停止工作
+                主要是停止后台的同步线程
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.IsCancellationPending">
+            <summary>
+                当前是不是停止工作中
+            </summary>
+            <returns><c>true</c> if [is cancellation pending]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.ThreadIsRunning(System.Threading.Thread)">
+            <summary>
+                指定的工作线程是否正在工作
+            </summary>
+            <param name="thread">The thread.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.FindTaskCache(System.String,X.GlodEyes.Datas.MissionCacheTable@)">
+            <summary>
+                返回任务表缓存器
+                如果没有，就创建一个
+            </summary>
+            <param name="tableName">The table.</param>
+            <param name="cacheTable">The cache table.</param>
+            <returns>X.GlodEyes.Datas.TaskCache.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.GetMissionCacheTables">
+            <summary>
+                返回当前正在工作的数据表组成
+            </summary>
+            <returns>MissionCacheTable[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.GetNextWorkMissionCacheManager(System.Collections.Generic.List{X.GlodEyes.Datas.ICacheManager})">
+            <summary>
+                返回下一个需要工作的缓存处理器
+            </summary>
+            <param name="cacheList">The cache list.</param>
+            <returns>X.GlodEyes.Datas.MissionCacheTable.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.UpdateCacheTableDirectory">
+            <summary>
+                更新缓存表
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.GetCacheManagers">
+            <summary>
+                返回当前的缓存处理器
+            </summary>
+            <returns>ICacheManager[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.GetThreadNumber">
+            <summary>
+                返并发工作线程数
+            </summary>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.CreateTaskCache(System.String)">
+            <summary>
+                使用表名创建一个数据处理器
+            </summary>
+            <param name="tableName">Name of the table.</param>
+            <returns>X.GlodEyes.Datas.TaskCache.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.ReleaseTableCache(X.GlodEyes.Datas.MissionCacheTable,X.GlodEyes.Utilities.ThrowIfCancellationRequestedHandle,X.GlodEyes.Utilities.CancelHandle)">
+            <summary>
+                释放缓存表
+            </summary>
+            <param name="cacheTable">The cacheTable.</param>
+            <param name="throwifcancellationrequested">The throwifcancellationrequested.</param>
+            <param name="cancel">The cancel.</param>
+            <returns>System.Boolean.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.TableCacheThreadCommonFunc``1(System.String,System.Collections.Generic.IEnumerable{``0},X.GlodEyes.Utilities.ThreadWorkHelper{``0,System.Boolean}.ThreadWorkFunctionHandle)">
+            <summary>
+                对缓存表进行多线程处理的通用函数
+                根据参数使用多线程调用 func
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message">The message.</param>
+            <param name="sourcees">The sourcees.</param>
+            <param name="func">The function.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.TableCacheThreadCommonFunc``1(System.String,X.GlodEyes.Utilities.ThreadWorkHelper{``0,System.Boolean}.ThreadWorkSimplyFunctionHandle)">
+            <summary>
+                对缓存表进行多线程处理的通用函数
+                根据参数使用多线程调用 func
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="message">The message.</param>
+            <param name="func">The function.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.ReleaseThreadWorkHelper``1(X.GlodEyes.Utilities.ThreadWorkHelper{``0,System.Boolean})">
+            <summary>
+                释放一个多线程处理器
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="helper">The helper.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.CreateThreadWorkHelper``1">
+            <summary>
+                创建一个多线程处理器
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>X.GlodEyes.Utilities.ThreadWorkHelper&lt;T, System.Boolean&gt;.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.ThrowIfCancellationRequested">
+            <summary>
+                如果处理于需要中止的话抛出一个 OperationCanceledException 异常
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.UpdateTableCache(System.Collections.Generic.List{X.GlodEyes.Datas.ICacheManager},X.GlodEyes.Utilities.ThrowIfCancellationRequestedHandle)">
+            <summary>
+            更新任务缓存
+            </summary>
+            <param name="cacheList">The cache list.</param>
+            <param name="throwifcancellationrequested">The throwifcancellationrequested.</param>
+            <returns>
+              <c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.Sleep(System.Double)">
+            <summary>
+            暂停一段时间
+            </summary>
+            <param name="waitTime">The wait time.秒</param>
+        </member>
+        <member name="F:X.GlodEyes.Datas.MissionParamCache.nextUpdateCacheTableTime">
+            <summary>
+            下一次更新缓存表的时间
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.WorkThreadFunc">
+            <summary>
+                工作主线程
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Datas.MissionParamCache.stationTagDictionary">
+            <summary>
+            情报站使用标签
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.SetStationTags(System.String)">
+            <summary>
+            Sets the station tags.
+            </summary>
+            <param name="specialTags">The special tags.</param>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.FilterStationTags(System.String,System.String)">
+            <summary>
+                传入计划表的标签，当前如果有指定标签的工作站，则返回 true
+            </summary>
+            <param name="planTags">The expect station tags.</param>
+            <param name="taskTable">The task table.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.ClearStationTags">
+            <summary>
+            清理客户端标签
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.HasMissionsParam(System.String,System.String)">
+            <summary>
+            指定的任务表中是否还有任务数据
+            </summary>
+            <param name="stationId">The station identifier.</param>
+            <param name="table">Name of the database.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Datas.MissionParamCache.ResetMissionsStatusWithClientId(System.String)">
+            <summary>
+            根据客户端编号重置任务
+            </summary>
+            <param name="stationId">The station identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="T:X.GlodEyes.Datas.MissionTableInfo">
+            <summary>
+                任务表参数
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionTableInfo.MissionNumber">
+            <summary>
+                每次获取任务的数量
+            </summary>
+            <value>The weight.</value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionTableInfo.ResultTable">
+            <summary>
+                结果对应的表名
+            </summary>
+            <value>
+                The result table.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Datas.MissionTableInfo.TaskTable">
+            <summary>
+                任务对应的表名
+            </summary>
+            <value>The table.</value>
+        </member>
+        <member name="T:X.GlodEyes.Logs.LogHelper">
+            <summary>
+                日志记录辅助器
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Logs.LogHelper.WriteLogHandle">
+            <summary>
+                日志写入函数
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogHelper.RecodeUnHandleError">
+            <summary>
+                记录未控制异常
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogHelper.WriteLog(System.Object,System.String,System.Exception)">
+            <summary>
+                写入日志
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogHelper.WriteLog(System.Object,X.GlodEyes.Logs.LogType,System.String,System.Exception)">
+            <summary>
+                写入日志
+            </summary>
+            <param name="writer">日志写入者</param>
+            <param name="logType">The type.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogHelper.WriteLog(System.Type,X.GlodEyes.Logs.LogType,System.String,System.Exception)">
+            <summary>
+                写入指定类型的日志消息.
+            </summary>
+            <param name="writerType">日志写入者身份.</param>
+            <param name="logType">日志类型.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogHelper.WriteLog(log4net.ILog,X.GlodEyes.Logs.LogType,System.String,System.Exception)">
+            <summary>
+                写入日志
+            </summary>
+            <param name="logger">The log writer.</param>
+            <param name="logType">Type of the log.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogHelper.WriteLog(System.String,X.GlodEyes.Logs.LogType,System.String,System.Exception)">
+            <summary>
+                写入日志
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="logType">Type of the log.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogHelper.WriteLog(System.String,System.String,System.Exception)">
+            <summary>
+                写入日志
+            </summary>
+            <param name="writer">The writer.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogHelper.WriteLog(System.Object,X.GlodEyes.Logs.LogEventArgs)">
+            <summary>
+                写入日志
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:X.GlodEyes.Logs.LogEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogHelper.RecodeUnHandleError(System.String,System.Object,System.Object)">
+            <summary>
+                记录未控制异常
+            </summary>
+            <param name="title">The title.</param>
+            <param name="sender">The sender.</param>
+            <param name="errorObject">The exception.</param>
+        </member>
+        <member name="T:X.GlodEyes.Logs.ILogable">
+            <summary>
+            提供了日志事件的接口
+            </summary>
+        </member>
+        <member name="E:X.GlodEyes.Logs.ILogable.OnLogEvent">
+            <summary>
+            日志事件
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Logs.Logable">
+            <summary>
+                实现日志的通用类
+            </summary>
+        </member>
+        <member name="E:X.GlodEyes.Logs.Logable.OnLogEvent">
+            <summary>
+                日志事件
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Logs.Logable.SendDebugLog(System.String,System.Exception)">
+            <summary>
+                发送调试信息
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.Logable.SendLog(X.GlodEyes.Logs.LogType,System.String,System.Exception)">
+            <summary>
+                发送日志事件
+            </summary>
+            <param name="type">The type.</param>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.Logable.SendLog(System.String,System.Exception)">
+            <summary>
+                发送日志事件
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.Logable.SendLog(X.GlodEyes.Logs.LogEventArgs)">
+            <summary>
+                发送日志事件
+            </summary>
+            <param name="e">The <see cref="T:X.GlodEyes.Logs.LogEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.Logable.SendLog(System.Object,X.GlodEyes.Logs.LogEventArgs)">
+            <summary>
+                发送日志消息
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:X.GlodEyes.Logs.LogEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.Logable.RecodeWatchStopTime(System.Diagnostics.Stopwatch,System.String)">
+            <summary>
+                记录花费时间值
+            </summary>
+            <param name="title">The title.</param>
+            <param name="stopwatch">The stopwatch.</param>
+        </member>
+        <member name="T:X.GlodEyes.Logs.OnLogEventHandle">
+            <summary>
+                日志事件定义
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:X.GlodEyes.Logs.LogEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="T:X.GlodEyes.Logs.LogEventArgs">
+            <summary>
+                日志参数
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogEventArgs.#ctor(System.String,System.Exception)">
+            <summary>
+                Initializes a new instance of the <see cref="T:X.GlodEyes.Logs.LogEventArgs" /> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:X.GlodEyes.Logs.LogEventArgs.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:X.GlodEyes.Logs.LogEventArgs" /> class.
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Logs.LogEventArgs.Message">
+            <summary>
+                日志事件
+            </summary>
+            <value>The message.</value>
+        </member>
+        <member name="P:X.GlodEyes.Logs.LogEventArgs.Exception">
+            <summary>
+                对应的错误
+            </summary>
+            <value>The error.</value>
+        </member>
+        <member name="P:X.GlodEyes.Logs.LogEventArgs.LogType">
+            <summary>
+                日志的类型
+            </summary>
+            <value>The type of the log.</value>
+        </member>
+        <member name="T:X.GlodEyes.Logs.LogType">
+            <summary>
+                日志的类型
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Logs.LogType.Log">
+            <summary>
+                日志信息
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Logs.LogType.Debug">
+            <summary>
+                调试信息
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Logs.LogType.Warn">
+            <summary>
+                警告
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Logs.LogType.Error">
+            <summary>
+                错误信息
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Logs.LogType.Fatal">
+            <summary>
+                致命错误
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.DictionaryHelper">
+            <summary>
+                字典辅助函数
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.DictionaryHelper.GetItemKeyFuncHandle`2">
+            <summary>
+                返回一个项目的key值
+            </summary>
+            <typeparam name="TKey">item key 类型.</typeparam>
+            <typeparam name="TItem">item 类型.</typeparam>
+            <param name="item">The item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.DictionaryHelper.Group``2(System.Collections.Generic.IEnumerable{``1},X.GlodEyes.Utilities.DictionaryHelper.GetItemKeyFuncHandle{``0,``1})">
+            <summary>
+                将一个数组进行分组
+            </summary>
+            <typeparam name="TKey">The type of the key.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="sources">The plan list.</param>
+            <param name="func">The function.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.DictionaryHelper.Distinct(System.String[])">
+            <summary>
+            将一组字符串去重
+            </summary>
+            <param name="ids">The ids.</param>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.ExceptionUtility">
+            <summary>
+                异常辅助函数
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ExceptionUtility.IsCanceledException(System.Exception)">
+            <summary>
+                是不是停止异常
+            </summary>
+            <param name="exception">The exception.</param>
+            <returns>System.Boolean.</returns>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.LockerManager">
+            <summary>
+                一个锁管理器
+                可以使用一个字符串指定一个锁
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.LockerManager.LokcerDictionary">
+            <summary>
+                更新同步锁
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.LockerManager.GetLockKey(System.String)">
+            <summary>
+                返回指定名称的同步锁
+            </summary>
+            <param name="keyName">Name of the locker.</param>
+            <returns>
+                System.Object.
+            </returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.LockerManager.Lock(System.Object,System.Int32)">
+            <summary>
+                Locks the specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="timeout">超时时间（毫秒）.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.LockerManager.Lock(System.String,System.Int32)">
+            <summary>
+                锁定,成功返回锁，失败返回 null
+            </summary>
+            <param name="keyName">Name of the key.</param>
+            <param name="timeout">超时时间（毫秒）.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.LockerManager.Unlock(System.Object)">
+            <summary>
+                解锁
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.LockerManager.Unlock(System.String)">
+            <summary>
+                解锁
+            </summary>
+            <param name="keyName">Name of the key.</param>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.MysqlUtility">
+            <summary>
+                mysql 工具集
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.MysqlUtility.ClearTable(MySql.Data.MySqlClient.MySqlConnection,System.String)">
+            <summary>
+                清空一个表中的数据
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="tablenName">Name of the tablen.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.MysqlUtility.CreateCommand(MySql.Data.MySqlClient.MySqlConnection,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},MySql.Data.MySqlClient.MySqlTransaction,System.Nullable{System.Int32})">
+            <summary>
+                创建一个command 命令
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="commmand">The commmand.</param>
+            <param name="valueDictionary">The value dictionary.</param>
+            <param name="transaction">The transaction.</param>
+            <param name="timeout">运行命令的超时时间（秒）</param>
+            <returns>
+                MySql.Data.MySqlClient.MySqlCommand.
+            </returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.MysqlUtility.ExecuteNonQuery(MySql.Data.MySqlClient.MySqlConnection,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},MySql.Data.MySqlClient.MySqlTransaction,System.Nullable{System.Int32})">
+            <summary>
+                执行并返回受影响行数
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="commmand">The commmand.</param>
+            <param name="valueDictionary">The value dictionary.</param>
+            <param name="transaction">The transaction.</param>
+            <param name="timeout">The timeout.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.MysqlUtility.ExecuteReader(MySql.Data.MySqlClient.MySqlConnection,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},MySql.Data.MySqlClient.MySqlTransaction,System.Nullable{System.Int32})">
+            <summary>
+                执行并返回  reader
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="commmand">The commmand.</param>
+            <param name="valueDictionary">The value dictionary.</param>
+            <param name="transaction">The transaction.</param>
+            <param name="timeout">The timeout.</param>
+            <returns>
+                MySql.Data.MySqlClient.MySqlDataReader.
+            </returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.MysqlUtility.ExecuteScalar(MySql.Data.MySqlClient.MySqlConnection,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},MySql.Data.MySqlClient.MySqlTransaction,System.Nullable{System.Int32})">
+            <summary>
+                运行一个命令
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="commmand">The commmand.</param>
+            <param name="valueDictionary">The valueDictionary.</param>
+            <param name="transaction">The transaction.</param>
+            <param name="timeout">The timeout.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.MysqlUtility.OpenConnection(System.String,System.Boolean)">
+            <summary>
+                打开一个数据库连接
+            </summary>
+            <param name="connectionString">The connection string.</param>
+            <param name="compress">The compress.</param>
+            <returns>MySqlConnection.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.MysqlUtility.Serialize(System.Data.IDataRecord)">
+            <summary>
+                将 datareader 中的内容序列化为 json
+            </summary>
+            <param name="reader">The reader.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.ErrorListException">
+            <summary>
+                异常集合
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ErrorListException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:X.GlodEyes.Utilities.ErrorListException"/> class.
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ErrorListException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:X.GlodEyes.Utilities.ErrorListException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ErrorListException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:X.GlodEyes.Utilities.ErrorListException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="inner">The inner.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ErrorListException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:X.GlodEyes.Utilities.ErrorListException"/> class.
+            </summary>
+            <param name="info">The information.</param>
+            <param name="context">The context.</param>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.ErrorListException.Exceptions">
+            <summary>
+                对应的异常组合
+            </summary>
+            <value>The exceptions.</value>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ErrorListException.ToString">
+            <summary>
+                Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.AppInfo">
+            <summary>
+                产品信息
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.AppInfo.MachineType">
+            <summary>
+                pe头类型
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineUnknown">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ UNKNOWN
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineAm33">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ A M33
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineAmd64">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ AM D64
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineArm">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ ARM
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineEbc">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ EBC
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineI386">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ i386
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineIa64">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ I a64
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineM32R">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ M32 R
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineMips16">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ MIP S16
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineMipsfpu">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ MIPSFPU
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineMipsfpu16">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ MIPSFP u16
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachinePowerpc">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ POWERPC
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachinePowerpcfp">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ POWERPCFP
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineR4000">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ R4000
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineSh3">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ S h3
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineSh3Dsp">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ S h3 DSP
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineSh4">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ S h4
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineSh5">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ S h5
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineThumb">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ THUMB
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.MachineType.ImageFileMachineWcemipsv2">
+            <summary>
+                The IMAG e_ FIL e_ MACHIN e_ WCEMIPS v2
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.AppInfo.innerAssembly">
+            <summary>
+                需要查询信息的程序集
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.GetFileInternalName(System.String)">
+            <summary>
+                返回文件的内部名称
+            </summary>
+            <param name="filePath">The file path.</param>
+            <returns></returns>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.AppInfo.GetAssemblyAttributeValueFunc`1">
+            <summary>获取属性值的函数定义</summary>
+            <typeparam name="T">返回类型</typeparam>
+            <param name="assemblyAttribute">The assembly attribute.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:X.GlodEyes.Utilities.AppInfo" /> class.
+                使用当前运行的程序集进行初始化
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.#ctor(System.Reflection.Assembly)">
+            <summary>Initializes a new instance of the <see cref="T:X.GlodEyes.Utilities.AppInfo" /> class. 使用指定的程序集进行初始化</summary>
+            <param name="assembly">The assembly.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.#ctor(System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:X.GlodEyes.Utilities.AppInfo" /> class.
+            </summary>
+            <param name="assemblyFile">The assembly file.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.Test">
+            <summary>
+                进行测试
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.Configurations">
+            <summary>
+                返回 Configurationses属性，并按空格进行分隔
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.LoadAssembly(System.String)">
+            <summary>
+                Loads the assembly.
+            </summary>
+            <param name="assemblyFile">The assembly file.</param>
+            <returns></returns>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.AssemblyCompany">
+            <summary>
+                获取程序集的公司信息
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.AssemblyCopyright">
+            <summary>
+                获取程序集的版本
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.AssemblyDescription">
+            <summary>
+                程序集说明
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.AssemblyProduct">
+            <summary>
+                获取产品名称
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.AssemblyTitle">
+            <summary>
+                返回程序集标题
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.AssemblyVersion">
+            <summary>
+                返回程序集版本
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.FileName">
+            <summary>
+                Gets the name of the file.
+            </summary>
+            <value>
+                The name of the file.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.FilePath">
+            <summary>
+                执行程序的路径
+            </summary>
+            <value>
+                The file path.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.FileVersion">
+            <summary>
+                返回当前产品的文件版本
+            </summary>
+            <value> The file version. </value>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.AppInfo.ProductVersion">
+            <summary>
+                返回当前产品的版本
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.GetDllMachineType(System.String)">
+            <summary>返回程序的类型(32/64之类的)</summary>
+            <param name="dllPath">The DLL path.</param>
+            <returns></returns>
+            <exception cref="T:System.Exception">Can't find PE header</exception>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.GetFileVersion(System.String)">
+            <summary>返回指定文件的文件版本</summary>
+            <param name="filePath">The file path. </param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.GetProductVersion(System.String)">
+            <summary>返回指定文件的产品版本</summary>
+            <param name="filePath">The file path. </param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.GetAssemblyAttribute``1(System.Reflection.Assembly)">
+            <summary>返回指定类型的特点属性，如果不存在返回null</summary>
+            <typeparam name="T">返回类型</typeparam>
+            <param name="assembly">The assembly.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.AppInfo.GetAssemblyAttributeValue``1(System.Reflection.Assembly,X.GlodEyes.Utilities.AppInfo.GetAssemblyAttributeValueFunc{``0})">
+            <summary>返回指定属性值</summary>
+            <typeparam name="T">返回类型</typeparam>
+            <param name="assembly">The assembly.</param>
+            <param name="func">The function.</param>
+            <returns></returns>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.SingleInstance">
+            <summary>
+                只启动一个应用程序实例控制类
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.SingleInstance.WS_SHOWNORMAL">
+            <summary>
+                以默认状态显示窗口
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.SingleInstance.mutex">
+            <summary>The mutex.</summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.SingleInstance.runFlagFullname">
+            <summary>
+                The run flag fullname
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.SingleInstance.RunFlag">
+            <summary>
+                获取或设置程序运行标志，必须符合Windows文件命名规范
+                实现生成临时文件为依据，如果修改成设置注册表，那就不需要符合文件命名规范。
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.CreateMutex">
+            <summary>
+                创建应用程序进程Mutex
+            </summary>
+            <returns>返回创建结果，true表示创建成功，false创建失败。</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.CreateMutex(System.String)">
+            <summary>创建应用程序进程Mutex</summary>
+            <param name="name">Mutex名称</param>
+            <returns>返回创建结果，true表示创建成功，false创建失败。</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.DisposeRunFlag">
+            <summary>
+                释放初始化程序运行标志，如果释放失败将抛出异常
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.GetRunningInstance">
+            <summary>
+                获取应用程序进程实例,如果没有匹配进程，返回Null
+            </summary>
+            <returns>返回当前Process实例</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.HandleRunningInstance(System.Diagnostics.Process)">
+            <summary>获取应用程序句柄，设置应用程序前台运行，并返回bool值</summary>
+            <param name="instance">The instance.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.HandleRunningInstance">
+            <summary>
+                获取窗口句柄，设置应用程序前台运行，并返回bool值，重载方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.InitRunFlag">
+            <summary>
+                初始化程序运行标志，设置成功，返回true，已经设置返回false，设置失败将抛出异常
+            </summary>
+            <returns>返回设置结果</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.IsVsHostMode">
+            <summary>
+                当前是否在vs的宿主模式下
+            </summary>
+            <returns>
+                <c>true</c> if [is vs host mode]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.ReleaseMutex">
+            <summary>
+                释放Mutex
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.SetForegroundWindow(System.IntPtr)">
+            <summary>设置窗口置前</summary>
+            <param name="hWnd">The h WND.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.SetWindowTop(System.IntPtr)">
+            <summary>设置窗口到最前端</summary>
+            <param name="hWnd"></param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.SetWindowTop(System.Windows.Forms.Form)">
+            <summary>将窗口设置至最前端</summary>
+            <param name="form">The form.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleInstance.ShowWindowAsync(System.IntPtr,System.Int32)">
+            <summary>设置窗口状态</summary>
+            <param name="hWnd">The h WND.</param>
+            <param name="cmdShow">The CMD show.</param>
+            <returns></returns>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.SingleObjectCreator">
+            <summary>
+                单一对象生成器
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.SingleObjectCreator.CreateInstanceHandle">
+            <summary>
+                创建单一对象的回调函数
+            </summary>
+            <returns>T.</returns>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.SingleObjectCreator.ObjecDictionary">
+            <summary>
+                已经初始化对象存储器
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.SingleObjectCreator.CreateInstance(System.Type,X.GlodEyes.Utilities.SingleObjectCreator.CreateInstanceHandle)">
+            <summary>
+            Creates the instance.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="func">The function.</param>
+            <returns>
+            .
+            </returns>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.StopwatchRecorder">
+            <summary>
+                计时器记录器
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.StopwatchRecorder.innerEnable">
+            <summary>
+                是否启用计时器
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.StopwatchRecorder.itemList">
+            <summary>
+                The item list
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.StopwatchRecorder.name">
+            <summary>
+                计时器名称
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.StopwatchRecorder.stopWatch">
+            <summary>
+                The stop watcher
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.StopwatchRecorder.startTime">
+            <summary>
+                启动时的时间值
+            </summary>
+        </member>
+        <member name="F:X.GlodEyes.Utilities.StopwatchRecorder.stopTime">
+            <summary>
+                停止时的时间值
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.StopwatchRecorder.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:X.GlodEyes.Utilities.StopwatchRecorder" /> class.
+            </summary>
+            <param name="name">The recordName.</param>
+            <param name="enable">if set to <c>true</c> [innerEnable].</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.StopwatchRecorder.OutputDetail(log4net.ILog)">
+            <summary>
+                输出计时的详细信息
+            </summary>
+            <param name="log">The log.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.StopwatchRecorder.OutputInfo(log4net.ILog,System.String,System.TimeSpan,System.TimeSpan)">
+            <summary>
+                输出某一行的数据
+            </summary>
+            <param name="log">The log.</param>
+            <param name="recordName">Name of the record.</param>
+            <param name="timeSpan">The time span.</param>
+            <param name="totalTimeSpan">The total time span.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.StopwatchRecorder.Record(System.String)">
+            <summary>
+                记录一个时间值
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.StopwatchRecorder.Start">
+            <summary>
+                启动计时器
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.StopwatchRecorder.Stop">
+            <summary>
+                停止计时器
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.StopwatchRecorder.AddRecordItem(System.String,System.TimeSpan)">
+            <summary>
+                Adds the record item.
+            </summary>
+            <param name="recordName">The recordName.</param>
+            <param name="timeSpan">The time span.</param>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.StopwatchRecorder.RecordItem">
+            <summary>
+                某一个记录
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.StopwatchRecorder.RecordItem.RecordName">
+            <summary>
+                时间记录点
+            </summary>
+            <value>
+                The name of the record.
+            </value>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.StopwatchRecorder.RecordItem.TimeSpan">
+            <summary>
+                时间值
+            </summary>
+            <value>
+                The time span.
+            </value>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.CancelHandle">
+            <summary>
+                设置停止工作的回调函数
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.StopFuncHanlde">
+            <summary>
+                停止回调函数
+            </summary>
+            <returns>System.Boolean.</returns>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.ThrowIfCancellationRequestedHandle">
+            <summary>
+                检测是否停止回调函数
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.ThreadWorkHelper`2">
+            <summary>
+                线程工作辅助类
+            </summary>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.ThreadWorkHelper`2.ThreadWorkFunctionHandle">
+            <summary>
+                工作回调整函数定义
+            </summary>
+            <param name="source">工作数据源</param>
+            <param name="throwIfCancellationRequested">停止调用函数</param>
+            <param name="cancel">可以设置是否停止工作</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.#cctor">
+            <summary>
+                Initializes static members of the <see cref="T:X.GlodEyes.Utilities.ThreadWorkHelper`2" /> class.
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.ThreadWorkHelper`2.CanceledException">
+            <summary>
+                通用停止异常，为了节约
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.ThreadWorkHelper`2.StopCallback">
+            <summary>
+                停止回调函数
+            </summary>
+            <value>The stop callback.</value>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.ThreadWorkHelper`2.CancellationPending">
+            <summary>
+                当前是不是设置了停止状态
+            </summary>
+            <value><c>true</c> if [cancel padding]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.Dispose">
+            <summary>
+                释放占用资源
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.Close">
+            <summary>
+                停止工作
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.IsCancellationPending">
+            <summary>
+                是不是要求中止工作
+            </summary>
+            <returns><c>true</c> if [is cancellation pending]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.ThrowIfCancellationRequested">
+            <summary>
+                如果要求停止，则抛出OperationCanceledException 异常
+            </summary>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.ToArray``1(System.Collections.Generic.IList{``0})">
+            <summary>
+                将一个列表转为数组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source">The source.</param>
+            <returns>T[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.Work(X.GlodEyes.Utilities.ThreadWorkHelper{`0,`1}.ThreadWorkFunctionHandle,System.Collections.Generic.IEnumerable{`0},System.Int32)">
+            <summary>
+                使用多线程格式进行工作
+            </summary>
+            <param name="func">The function.</param>
+            <param name="sources">The sources.</param>
+            <param name="number">The number.</param>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.ThreadWorkHelper`2.ThreadWorkSimplyFunctionHandle">
+            <summary>
+            工作回调整函数定义(简易模式)
+            </summary>
+            <param name="throwIfCancellationRequested">停止调用函数</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.Work(X.GlodEyes.Utilities.ThreadWorkHelper{`0,`1}.ThreadWorkSimplyFunctionHandle,System.Int32)">
+            <summary>
+                使用简易多线程格式进行工作
+            </summary>
+            <param name="func">线程中的回调函数.</param>
+            <param name="number">线程数.</param>
+            <returns>IList&lt;WorkResult&gt;.</returns>
+            <exception cref="T:System.ArgumentException">$工作并发数不能小于等于 0：{number}</exception>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.SimplyWorkThreadFunc(X.GlodEyes.Utilities.ThreadWorkHelper{`0,`1}.ThreadWorkSimplyFunctionHandle,System.Collections.Generic.List{X.GlodEyes.Utilities.ThreadWorkHelper{`0,`1}.WorkResult})">
+            <summary>
+            简易工作模式下的
+            </summary>
+            <param name="func">The function.</param>
+            <param name="resultList">The result list.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.WaitThreadCompleted(System.Collections.Generic.IEnumerable{System.Threading.Thread})">
+            <summary>
+                等待指定的线程完成工作
+            </summary>
+            <param name="threads">The threads.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.WorkThreadFunc(X.GlodEyes.Utilities.ThreadWorkHelper{`0,`1}.ThreadWorkFunctionHandle,System.Collections.Generic.IList{`0},System.Collections.Generic.List{X.GlodEyes.Utilities.ThreadWorkHelper{`0,`1}.WorkResult})">
+            <summary>
+                内部工作线程函数
+            </summary>
+            <param name="func">The function.</param>
+            <param name="sourceList">The source list.</param>
+            <param name="resultList">The result list.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.SetWorkResul(`1,`0,System.Exception,System.Collections.Generic.List{X.GlodEyes.Utilities.ThreadWorkHelper{`0,`1}.WorkResult})">
+            <summary>
+                设置输出结果
+            </summary>
+            <param name="result">The result.</param>
+            <param name="source">The source.</param>
+            <param name="exception">The exception.</param>
+            <param name="resultList">The result list.</param>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.FindNextSource(System.Collections.Generic.IList{`0},`0@)">
+            <summary>
+                返回下一个工作源
+            </summary>
+            <param name="sourceList">The source list.</param>
+            <param name="source">The source.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.FindExceptions(System.Collections.Generic.IList{X.GlodEyes.Utilities.ThreadWorkHelper{`0,`1}.WorkResult})">
+            <summary>
+                从结果中找出异常的结果
+            </summary>
+            <param name="results">The results.</param>
+            <returns>Exception[].</returns>
+        </member>
+        <member name="M:X.GlodEyes.Utilities.ThreadWorkHelper`2.ThrowIfHasError(System.Collections.Generic.IList{X.GlodEyes.Utilities.ThreadWorkHelper{`0,`1}.WorkResult},System.String)">
+            <summary>
+                如果结果中有异常，则收集异常并一起抛出
+            </summary>
+            <param name="errorMessage">发生错误时，错误信息提示</param>
+            <param name="results">The results.</param>
+            <exception cref="T:X.GlodEyes.Utilities.ErrorListException">@初始化缓存表发生错误</exception>
+        </member>
+        <member name="T:X.GlodEyes.Utilities.ThreadWorkHelper`2.WorkResult">
+            <summary>
+                返回的结果
+            </summary>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.ThreadWorkHelper`2.WorkResult.Exception">
+            <summary>
+                结果是一个异常
+            </summary>
+            <value>The exception.</value>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.ThreadWorkHelper`2.WorkResult.Source">
+            <summary>
+                数据源
+            </summary>
+            <value>The source.</value>
+        </member>
+        <member name="P:X.GlodEyes.Utilities.ThreadWorkHelper`2.WorkResult.Result">
+            <summary>
+                返回的结果
+            </summary>
+            <value>The vaue.</value>
+        </member>
+    </members>
+</doc>
