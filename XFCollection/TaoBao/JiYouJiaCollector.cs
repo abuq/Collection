@@ -13,7 +13,7 @@ namespace XFCollection.TaoBao
     ///
     /// </summary>
     public class JiYouJiaCollector : WebRequestCollector<IResut,NormalParameter>
-    {   
+    {
 
         private string _targetUid;
 
@@ -24,11 +24,11 @@ namespace XFCollection.TaoBao
         {
             //var parameter = new NormalParameter { Keyword = @"https://qiansifang8.1688.com/" };
             //var parameter = new NormalParameter { Keyword = @"http://shtv001.taobao.com/" };
-            var parameter = new NormalParameter { Keyword = @"https://shop1471884266862.1688.com" };
+            var parameter = new NormalParameter { Keyword = @"https://btjiaju.jiyoujia.com/shop/view_shop.htm" };
             //var parameter = new NormalParameter { Keyword = @"https://88421950.taobao.com" };
             parameter.Add(@"targetUid", "5656");
-            
-            
+
+
 
             //var parameter = new NormalParameter { Keyword = @"http://shop73144325.taobao.com"};
 
@@ -157,24 +157,25 @@ namespace XFCollection.TaoBao
                 var url = $"https://shopsearch.taobao.com/search?app=shopsearch&q={shopNameEncoding}";
                 var htmlString = base.GetWebContent(url);
                 //用userId匹配符合的那段 用shopId也可以 
-                var tempHtmlString = GetContentJsonStringByUserId(htmlString, userId);
+                var tempToken = GetContentJsonStringByUserId(htmlString, userId);
 
-                if (!string.IsNullOrEmpty(tempHtmlString))
+                if (tempToken != null)
                 {
-                    bossNickName = GetBossNickName(tempHtmlString);
-                    mainIndustry = GetMainIndustry(tempHtmlString);
-                    Comment_MatchDescrip = GetComment_MatchDescrip(tempHtmlString);
-                    Comment_MatchDescripRate = GetComment_MatchDescripRate(tempHtmlString);
-                    Comment_ServiceStatue = GetComment_ServiceStatue(tempHtmlString);
-                    Comment_ServiceStatueRate = GetComment_ServiceStatueRate(tempHtmlString);
-                    Comment_ShipSpeed = GetComment_ShipSpeed(tempHtmlString);
-                    Comment_ShipSpeedRate = GetComment_ShipSpeedRate(tempHtmlString);
-                    shopRank = GetShopRank(tempHtmlString);
-                    location = GetLocation(tempHtmlString);
-                    saleCount = GetSaleCount(tempHtmlString);
-                    productCount = GetProductCount(tempHtmlString);
-                    goodCommentRate = GetGoodCommentRate(tempHtmlString);
-                    mainBiz = GetMainBiz(tempHtmlString);
+                    var tempString = tempToken.ToString();
+                    bossNickName = tempToken["nick"].ToString();
+                    mainIndustry = GetMainIndustry(tempString);
+                    Comment_MatchDescrip = GetComment_MatchDescrip(tempString);
+                    Comment_MatchDescripRate = GetComment_MatchDescripRate(tempString);
+                    Comment_ServiceStatue = GetComment_ServiceStatue(tempString);
+                    Comment_ServiceStatueRate = GetComment_ServiceStatueRate(tempString);
+                    Comment_ShipSpeed = GetComment_ShipSpeed(tempString);
+                    Comment_ShipSpeedRate = GetComment_ShipSpeedRate(tempString);
+                    shopRank = tempToken["shopIcon"]["iconClass"].ToString();
+                    location = tempToken["provcity"].ToString();
+                    saleCount = tempToken["totalsold"].ToString();
+                    productCount = tempToken["procnt"].ToString();
+                    goodCommentRate = tempToken["goodratePercent"].ToString();
+                    mainBiz = tempToken["mainAuction"].ToString();
 
                 }
                 else
@@ -182,7 +183,7 @@ namespace XFCollection.TaoBao
                     errorNotice = "店铺存在但搜索不到";
                 }
             }
-            
+
 
 
 
@@ -292,13 +293,13 @@ namespace XFCollection.TaoBao
         /// <param name="htmlString"></param>
         /// <param name="userId"></param>
         /// <returns></returns>
-        private string GetContentJsonStringByUserId(string htmlString,string userId)
+        private JToken GetContentJsonStringByUserId(string htmlString, string userId)
         {
 
             var jsonString = Regex.Match(htmlString, "(?<=g_page_config = ){.*?\"map\":{}}(?=;)").Value;
             var jObject = JObject.Parse(jsonString);
             var jToken = jObject["mods"]["shoplist"]["data"]["shopItems"];
-            if(jToken==null)
+            if (jToken == null)
                 throw new Exception("json解析失败，jToken为空。");
             var jArray = JArray.Parse(jToken.ToString());
             foreach (var token in jArray)
@@ -306,10 +307,10 @@ namespace XFCollection.TaoBao
                 var value = token["uid"].ToString();
                 if (value.Equals(userId))
                 {
-                    return token.ToString();
+                    return token;
                 }
             }
-            return string.Empty;
+            return null;
         }
 
         /// <summary>
@@ -372,7 +373,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetMainIndustry(string htmlString)
         {
-            return Regex.Match(htmlString, @"(?<=\\""ind\\"":\\"").*?(?=\\"")").Value;
+            return Regex.Match(htmlString, @"(?<=\\""ind\\"":[\s]*\\"").*?(?=\\"")").Value;
         }
 
         /// <summary>
@@ -382,9 +383,9 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetComment_MatchDescrip(string htmlString)
         {
-            return Regex.Match(htmlString, @"(?<=\\""mas\\"":\\"").*?(?=\\"")").Value;
+            return Regex.Match(htmlString, @"(?<=\\""mas\\"":[\s]*\\"").*?(?=\\"")").Value;
         }
-        
+
         /// <summary>
         /// 得到描述相符率
         /// </summary>
@@ -392,7 +393,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetComment_MatchDescripRate(string htmlString)
         {
-            return Regex.Match(htmlString, @"(?<=\\""mg\\"":\\"").*?(?=%\\"")").Value;
+            return Regex.Match(htmlString, @"(?<=\\""mg\\"":[\s]*\\"").*?(?=%\\"")").Value;
         }
 
 
@@ -404,7 +405,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetComment_ServiceStatue(string htmlString)
         {
-            return Regex.Match(htmlString,@"(?<=\\""sas\\"":\\"").*?(?=\\"")").Value;
+            return Regex.Match(htmlString, @"(?<=\\""sas\\"":[\s]*\\"").*?(?=\\"")").Value;
         }
 
         /// <summary>
@@ -414,7 +415,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetComment_ServiceStatueRate(string htmlString)
         {
-            return Regex.Match(htmlString, @"(?<=\\""sg\\"":\\"").*?(?=%\\"")").Value;
+            return Regex.Match(htmlString, @"(?<=\\""sg\\"":[\s]*\\"").*?(?=%\\"")").Value;
         }
 
         /// <summary>
@@ -424,7 +425,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetComment_ShipSpeed(string htmlString)
         {
-            return Regex.Match(htmlString, @"(?<=\\""cas\\"":\\"").*?(?=\\"")").Value;
+            return Regex.Match(htmlString, @"(?<=\\""cas\\"":[\s]*\\"").*?(?=\\"")").Value;
         }
 
         /// <summary>
@@ -434,7 +435,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetComment_ShipSpeedRate(string htmlString)
         {
-            return Regex.Match(htmlString, @"(?<=\\""cg\\"":\\"").*?(?=%\\"")").Value;
+            return Regex.Match(htmlString, @"(?<=\\""cg\\"":[\s]*\\"").*?(?=%\\"")").Value;
         }
 
 
@@ -455,7 +456,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetShopRank(string htmlString)
         {
-            return Regex.Match(htmlString, "(?<=\"iconClass\":\").*?(?=\")").Value;
+            return Regex.Match(htmlString, "(?<=\"iconClass\":[\\s]*\").*?(?=\")").Value;
         }
 
         /// <summary>
@@ -465,7 +466,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetLocation(string htmlString)
         {
-            return Regex.Match(htmlString, "(?<=\"provcity\":\").*?(?=\")").Value;
+            return Regex.Match(htmlString, "(?<=\"provcity\":[\\s]*\").*?(?=\")").Value;
         }
 
         /// <summary>
@@ -475,7 +476,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetSaleCount(string htmlString)
         {
-            return Regex.Match(htmlString, "(?<=totalsold\":).*?(?=,\")").Value;
+            return Regex.Match(htmlString, @"(?<=totalsold"":[\s]*)[\S]*?(?=,)").Value;
         }
 
 
@@ -486,7 +487,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetProductCount(string htmlString)
         {
-            return Regex.Match(htmlString, "(?<=\"procnt\":).*?(?=,\")").Value;
+            return Regex.Match(htmlString, @"(?<=""procnt"":[\s*])[\S]*?(?=,)").Value;
         }
 
         /// <summary>
@@ -496,7 +497,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetGoodCommentRate(string htmlString)
         {
-            return Regex.Match(htmlString, "(?<=\"goodratePercent\":\").*?(?=%\")").Value;
+            return Regex.Match(htmlString, "(?<=\"goodratePercent\":[\\s]*\").*?(?=%\")").Value;
         }
 
         /// <summary>
@@ -506,7 +507,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetMainBiz(string htmlString)
         {
-            return Regex.Match(htmlString, "(?<=\"mainAuction\":\").*?(?=\")").Value;
+            return Regex.Match(htmlString, "(?<=\"mainAuction\":[\\s]*\").*?(?=\")").Value;
         }
 
 
