@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>test</name>
+    </assembly>
+    <members>
+        <member name="T:test.EnumerTest.IterationSample">
+            <summary>
+            IterationSample
+            </summary>
+        </member>
+        <member name="T:test.EnumerTest.IterationSampleIterator">
+            <summary>
+            IterationSampleIterator
+            </summary>
+        </member>
+        <member name="T:test.JudgementsContentCollectorBak.PageInfo">
+            <summary>
+            页面信息类
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.Index">
+            <summary>
+            第几页
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.CaseType">
+            <summary>
+            案件类型
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.Page">
+            <summary>
+            每页几个裁决书
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.TotalPages">
+            <summary>
+            总共几个裁决书
+            </summary>
+        </member>
+        <member name="P:test.JudgementsContentCollectorBak.PageInfo.TotalIndex">
+            <summary>
+            总共需要翻多少页
+            </summary>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.test">
+            <summary>
+            测试
+            </summary>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetHtmlFromGet(System.String,System.Text.Encoding)">
+            <summary>
+            通过GET方式获取页面的方法
+            </summary>
+            <param name="urlString">请求的URL</param>
+            <param name="encoding">页面编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetHtmlFromPost(System.String,System.Text.Encoding,System.String)">
+            <summary>
+            提供通过POST方法获取页面的方法
+            </summary>
+            <param name="urlString">请求的URL</param>
+            <param name="encoding">页面使用的编码</param>
+            <param name="postDataString">POST数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetDocId(System.String)">
+            <summary>
+            得到DocId
+            </summary>
+            <param name="htmlString">网页内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetJudgementsTitle(System.String)">
+            <summary>
+            得到裁决文书的标题
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetJudgementsContent(System.String)">
+            <summary>
+            得到裁判文书的内容
+            </summary>
+            <param name="htmlString">网页内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetJudgementsPubDate(System.String)">
+            <summary>
+            得到裁决文书的发布日期
+            </summary>
+            <param name="htmlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:test.JudgementsContentCollectorBak.GetTotalPages(System.String)">
+            <summary>
+            得到总共的页数
+            </summary>
+            <param name="htmlString">网页内容</param>
+            <returns></returns>
+        </member>
+        <member name="T:test.BallEventArgs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:test.BallEventArgs.Test">
+            <summary>
+            Test
+            </summary>
+        </member>
+        <member name="M:test.BallEventArgs.More(System.Int32)">
+            <summary>
+            More
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:test.BallEventArgs.Less(System.Int32)">
+            <summary>
+            Less
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="T:test.QQZoneDemo">
+            <summary>
+            QQZoneDemo
+            </summary>
+        </member>
+        <member name="M:test.QQZoneDemo.GetValidateCodeByImg(System.Drawing.Bitmap)">
+            <summary>
+            GetValidateCodeByImg
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:test.QQZoneDemo.GetValidateCodeByUrl(System.String)">
+            <summary>
+            GetValidateCodeByUrl
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:test.QQZoneDemo.WaitLoadingCompleted(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            WaitLoadingCompleted
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:test.QQZoneDemo.LoginQQZone">
+            <summary>
+            LoginQQZone
+            </summary>
+        </member>
+        <member name="T:test.SeleniumDemo">
+            <summary>
+            SeleniumDemo
+            </summary>
+        </member>
+        <member name="M:test.SeleniumDemo.Test">
+            <summary>
+            Test
+            </summary>
+        </member>
+        <member name="M:test.SeleniumDemo.LoginSina">
+            <summary>
+            模拟登陆 taobao
+            </summary>
+        </member>
+        <member name="M:test.SinaWeiBoDemo.WaitLoadingCompleted(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            WaitLoadingCompleted
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:test.SinaWeiBoDemo.LoginSinaWeiBo">
+            <summary>
+            LoginSinaWeiBo
+            </summary>
+        </member>
+        <member name="M:test.test.Test">
+            <summary>
+            Test
+            </summary>
+        </member>
+        <member name="T:test.HttpHelper">
+            <summary>
+            HttpHelper
+            </summary>
+        </member>
+        <member name="P:test.HttpHelper.UserAgent">
+            <summary>
+            用户代理
+            </summary>
+        </member>
+        <member name="P:test.HttpHelper.MaximumAutomaticRedirections">
+            <summary>
+            最大自动重定向次数 默认为10
+            </summary>
+        </member>
+        <member name="P:test.HttpHelper.Timeout">
+            <summary>
+            超时时间 默认为60s
+            </summary>
+        </member>
+        <member name="P:test.HttpHelper.Cookies">
+            <summary>
+             Cookies
+            </summary>
+        </member>
+        <member name="P:test.HttpHelper.HttpEncoding">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="M:test.HttpHelper.Test">
+            <summary>
+            Test
+            </summary>
+        </member>
+        <member name="M:test.HttpHelper.GetHtmlByGet(System.String)">
+            <summary>
+            GetHtmlByGet
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:test.HttpHelper.GetHtmlByPost(System.String,System.String)">
+            <summary>
+            GetHtmlByPost
+            </summary>
+            <param name="url"></param>
+            <param name="postDataString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:test.HttpHelper.GetFormatCookies(System.String)">
+            <summary>
+            GetFormatCookies
+            </summary>
+            <param name="cookies"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

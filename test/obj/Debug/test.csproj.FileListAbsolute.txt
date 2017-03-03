@@ -36,3 +36,33 @@ D:\Documents\Visual Studio 2015\Projects\JDCollection\test\obj\Debug\test.csproj
 D:\Documents\Visual Studio 2015\Projects\JDCollection\test\bin\Debug\HtmlAgilityPack.dll
 D:\Documents\Visual Studio 2015\Projects\JDCollection\test\bin\Debug\HtmlAgilityPack.pdb
 D:\Documents\Visual Studio 2015\Projects\JDCollection\test\bin\Debug\HtmlAgilityPack.xml
+F:\myGitHub\Collection\test\bin\Debug\test.dll.config
+F:\myGitHub\Collection\test\bin\Debug\test.xml
+F:\myGitHub\Collection\test\bin\Debug\test.dll
+F:\myGitHub\Collection\test\bin\Debug\test.pdb
+F:\myGitHub\Collection\test\bin\Debug\HtmlAgilityPack.dll
+F:\myGitHub\Collection\test\bin\Debug\System.IO.dll
+F:\myGitHub\Collection\test\bin\Debug\System.Net.Http.dll
+F:\myGitHub\Collection\test\bin\Debug\System.Net.Http.Extensions.dll
+F:\myGitHub\Collection\test\bin\Debug\System.Net.Http.Primitives.dll
+F:\myGitHub\Collection\test\bin\Debug\System.Net.Http.WebRequest.dll
+F:\myGitHub\Collection\test\bin\Debug\System.Runtime.dll
+F:\myGitHub\Collection\test\bin\Debug\System.Threading.Tasks.dll
+F:\myGitHub\Collection\test\bin\Debug\tessnet2_32.dll
+F:\myGitHub\Collection\test\bin\Debug\WebDriver.dll
+F:\myGitHub\Collection\test\bin\Debug\WebDriver.Support.dll
+F:\myGitHub\Collection\test\bin\Debug\HtmlAgilityPack.pdb
+F:\myGitHub\Collection\test\bin\Debug\HtmlAgilityPack.xml
+F:\myGitHub\Collection\test\bin\Debug\System.IO.xml
+F:\myGitHub\Collection\test\bin\Debug\System.Net.Http.xml
+F:\myGitHub\Collection\test\bin\Debug\System.Net.Http.Extensions.xml
+F:\myGitHub\Collection\test\bin\Debug\System.Net.Http.Primitives.xml
+F:\myGitHub\Collection\test\bin\Debug\System.Net.Http.WebRequest.xml
+F:\myGitHub\Collection\test\bin\Debug\System.Runtime.xml
+F:\myGitHub\Collection\test\bin\Debug\System.Threading.Tasks.xml
+F:\myGitHub\Collection\test\bin\Debug\WebDriver.xml
+F:\myGitHub\Collection\test\bin\Debug\WebDriver.Support.xml
+F:\myGitHub\Collection\test\obj\Debug\test.csproj.App.config
+F:\myGitHub\Collection\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+F:\myGitHub\Collection\test\obj\Debug\test.dll
+F:\myGitHub\Collection\test\obj\Debug\test.pdb

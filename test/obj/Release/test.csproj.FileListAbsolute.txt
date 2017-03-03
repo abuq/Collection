@@ -36,3 +36,33 @@ D:\Documents\Visual Studio 2015\Projects\JDCollection\test\obj\Release\test.cspr
 D:\Documents\Visual Studio 2015\Projects\JDCollection\test\obj\Release\test.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2015\Projects\JDCollection\test\obj\Release\test.dll
 D:\Documents\Visual Studio 2015\Projects\JDCollection\test\obj\Release\test.pdb
+F:\myGitHub\Collection\test\bin\Release\test.dll.config
+F:\myGitHub\Collection\test\bin\Release\test.xml
+F:\myGitHub\Collection\test\bin\Release\test.dll
+F:\myGitHub\Collection\test\bin\Release\test.pdb
+F:\myGitHub\Collection\test\bin\Release\HtmlAgilityPack.dll
+F:\myGitHub\Collection\test\bin\Release\System.IO.dll
+F:\myGitHub\Collection\test\bin\Release\System.Net.Http.dll
+F:\myGitHub\Collection\test\bin\Release\System.Net.Http.Extensions.dll
+F:\myGitHub\Collection\test\bin\Release\System.Net.Http.Primitives.dll
+F:\myGitHub\Collection\test\bin\Release\System.Net.Http.WebRequest.dll
+F:\myGitHub\Collection\test\bin\Release\System.Runtime.dll
+F:\myGitHub\Collection\test\bin\Release\System.Threading.Tasks.dll
+F:\myGitHub\Collection\test\bin\Release\tessnet2_32.dll
+F:\myGitHub\Collection\test\bin\Release\WebDriver.dll
+F:\myGitHub\Collection\test\bin\Release\WebDriver.Support.dll
+F:\myGitHub\Collection\test\bin\Release\HtmlAgilityPack.pdb
+F:\myGitHub\Collection\test\bin\Release\HtmlAgilityPack.xml
+F:\myGitHub\Collection\test\bin\Release\System.IO.xml
+F:\myGitHub\Collection\test\bin\Release\System.Net.Http.xml
+F:\myGitHub\Collection\test\bin\Release\System.Net.Http.Extensions.xml
+F:\myGitHub\Collection\test\bin\Release\System.Net.Http.Primitives.xml
+F:\myGitHub\Collection\test\bin\Release\System.Net.Http.WebRequest.xml
+F:\myGitHub\Collection\test\bin\Release\System.Runtime.xml
+F:\myGitHub\Collection\test\bin\Release\System.Threading.Tasks.xml
+F:\myGitHub\Collection\test\bin\Release\WebDriver.xml
+F:\myGitHub\Collection\test\bin\Release\WebDriver.Support.xml
+F:\myGitHub\Collection\test\obj\Release\test.csproj.App.config
+F:\myGitHub\Collection\test\obj\Release\test.csprojResolveAssemblyReference.cache
+F:\myGitHub\Collection\test\obj\Release\test.dll
+F:\myGitHub\Collection\test\obj\Release\test.pdb

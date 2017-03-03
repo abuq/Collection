@@ -23,8 +23,8 @@ namespace XFCollection.TaoBao
         internal static void Test()
         {
             //var parameter = new NormalParameter { Keyword = @"https://qiansifang8.1688.com/" };
-            //var parameter = new NormalParameter { Keyword = @"http://shtv001.taobao.com/" };
-            var parameter = new NormalParameter { Keyword = @"https://btjiaju.jiyoujia.com/shop/view_shop.htm" };
+            var parameter = new NormalParameter { Keyword = @"http://lsnyd.taobao.com/" };
+            //var parameter = new NormalParameter { Keyword = @"https://btjiaju.jiyoujia.com/shop/view_shop.htm" };
             //var parameter = new NormalParameter { Keyword = @"https://88421950.taobao.com" };
             parameter.Add(@"targetUid", "5656");
 
@@ -174,7 +174,7 @@ namespace XFCollection.TaoBao
                     location = tempToken["provcity"].ToString();
                     saleCount = tempToken["totalsold"].ToString();
                     productCount = tempToken["procnt"].ToString();
-                    goodCommentRate = tempToken["goodratePercent"].ToString();
+                    goodCommentRate = tempToken["goodratePercent"].ToString().Replace("%", "");
                     mainBiz = tempToken["mainAuction"].ToString();
 
                 }

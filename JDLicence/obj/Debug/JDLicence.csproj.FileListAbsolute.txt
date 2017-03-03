@@ -37,3 +37,42 @@ D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Debug\phanto
 D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Debug\XFCollection.dll
 D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Debug\DotRas.dll
 D:\Documents\Visual Studio 2015\Projects\JDCollection\JDLicence\bin\Debug\DotRas.xml
+F:\myGitHub\Collection\JDLicence\bin\Debug\phantomjs.exe
+F:\myGitHub\Collection\JDLicence\bin\Debug\phantomjs-license.txt
+F:\myGitHub\Collection\JDLicence\bin\Debug\更新历史记录.txt
+F:\myGitHub\Collection\JDLicence\bin\Debug\JDLicence.dll.config
+F:\myGitHub\Collection\JDLicence\bin\Debug\JDLicence.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\JDLicence.pdb
+F:\myGitHub\Collection\JDLicence\bin\Debug\HtmlAgilityPack.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\XFCollection.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\X.CommLib.DotNet2.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\MySql.Data.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\X.GlodEyes.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\Newtonsoft.Json.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\CsvHelper.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\LinqBridge.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\Ionic.Zip.Reduced.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\tessnet2_32.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\DotRas.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\Ude.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\Interop.SHDocVw.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\ManagedWinapi.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\Microsoft.mshtml.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\Interop.ShockwaveFlashObjects.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\INIFileParser.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\stdole.dll
+F:\myGitHub\Collection\JDLicence\bin\Debug\XFCollection.pdb
+F:\myGitHub\Collection\JDLicence\bin\Debug\XFCollection.xml
+F:\myGitHub\Collection\JDLicence\bin\Debug\HtmlAgilityPack.pdb
+F:\myGitHub\Collection\JDLicence\bin\Debug\HtmlAgilityPack.xml
+F:\myGitHub\Collection\JDLicence\bin\Debug\X.CommLib.DotNet2.pdb
+F:\myGitHub\Collection\JDLicence\bin\Debug\X.CommLib.DotNet2.xml
+F:\myGitHub\Collection\JDLicence\bin\Debug\X.GlodEyes.pdb
+F:\myGitHub\Collection\JDLicence\bin\Debug\X.GlodEyes.xml
+F:\myGitHub\Collection\JDLicence\bin\Debug\Newtonsoft.Json.xml
+F:\myGitHub\Collection\JDLicence\bin\Debug\CsvHelper.xml
+F:\myGitHub\Collection\JDLicence\bin\Debug\DotRas.xml
+F:\myGitHub\Collection\JDLicence\bin\Debug\INIFileParser.pdb
+F:\myGitHub\Collection\JDLicence\obj\Debug\JDLicence.csprojResolveAssemblyReference.cache
+F:\myGitHub\Collection\JDLicence\obj\Debug\JDLicence.dll
+F:\myGitHub\Collection\JDLicence\obj\Debug\JDLicence.pdb

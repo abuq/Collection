@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Xml;
 using MySql.Data.MySqlClient;
 using X.GlodEyes.Collectors;
@@ -24,12 +26,13 @@ namespace XFCollection.TaoBao
         private int _totalPage;
         private int _curPage;
         private readonly Queue<string> _urlQueue;
-
+        private string _cookies;
+        private Hashtable _hashTable;
 
         /// <summary>
         /// DefaultMovePageTimeSpan
         /// </summary>
-        public override double DefaultMovePageTimeSpan => 60;
+        public override double DefaultMovePageTimeSpan => 0;
 
         /// <summary>
         /// 测试
@@ -38,7 +41,7 @@ namespace XFCollection.TaoBao
         {
             var parameter = new NormalParameter()
             {
-                Keyword = @"shop100116272.taobao.com"
+                Keyword = @"shop100325717.taobao.com"
             };
 
             TestHelp<ShopProductCollector>(parameter);
@@ -55,6 +58,8 @@ namespace XFCollection.TaoBao
 
             foreach (var keyWord in keyWords)
             {
+                Thread.Sleep(60 * 1000);
+                Console.WriteLine($"休息60s");
                 Console.WriteLine($"keyword id:{keyWord}");
 
                 try
@@ -78,7 +83,8 @@ namespace XFCollection.TaoBao
         public ShopProductCollector()
         {
             _urlQueue = new Queue<string>();
-            _httpHelper = new Http.HttpHelper { HttpEncoding = Encoding.Default,MaximumAutomaticRedirections = 50};
+            _httpHelper = new Http.HttpHelper { HttpEncoding = Encoding.Default, MaximumAutomaticRedirections = 50 };
+            _hashTable = new Hashtable();
         }
 
 
@@ -113,7 +119,6 @@ namespace XFCollection.TaoBao
             InitUrlQueue(param.Keyword);
             _curPage = 0;
             return _urlQueue.Count == 0 ? null : _urlQueue.Dequeue();
-
         }
 
         /// <summary>
@@ -176,8 +181,12 @@ namespace XFCollection.TaoBao
             //var htmlNodeCollection = docmentNode.SelectNodes("//div[starts-with(@class,'\\\"item')]//dl");
             //var htmlNodeCollection = docmentNode.SelectNodes("//div[ends-with(@class,'line1\\\"')]//dl");
 
+
+
             var docmentNode = HtmlAgilityPackHelper.GetDocumentNodeByHtml(HtmlSource);
-            var htmlNodeCollection = docmentNode.SelectNodes(@"//div[@class='\""pagination\""']/parent::div/child::div");
+
+            var htmlNodeCollection = docmentNode.SelectNodes(@"//div[@class='\""pagination\""']/parent::div/child::div")
+                                    ?? docmentNode.SelectNodes(@"//div[@class='\""comboHd\""']/parent::div/child::div");
 
             //var htmlNodeCollection = docmentNode.SelectNodes(@"//div[contains(@class,'\""item') and contains(@class,'line1\""')]//dl");
 
@@ -187,34 +196,42 @@ namespace XFCollection.TaoBao
                 //退出 后面的推荐产品不要了
                 if (attributes == @"\""pagination\""")
                     break;
-                else if (attributes.Contains(@"\""item") || attributes.Contains(@"line1\"""))
+                if (attributes == @"\""comboHd\""")
+                {
+                    //清空队列
+                    _urlQueue.Clear();
+                    break;
+                }
+                if (attributes.Contains(@"\""item") && attributes.Contains(@"line1\"""))
                 {
                     var htmlNodeDls = htmlNode.SelectNodes(".//dl");
                     foreach (var htmlNodeDl in htmlNodeDls)
                     {
                         var productId = getFormatProductId(htmlNodeDl.Attributes["data-id"].Value);
-                        var detailNode =
-                            htmlNodeDl.SelectSingleNode(@".//dd[@class='\""detail\""']//a[@class='\""item-name']");
-                        var productName = getFormatProductName(detailNode.InnerText);
-                        var productUrl = getFormatProductUrl(detailNode.Attributes["href"].Value);
-                        //Console.WriteLine($"shopId:{productId},shopName:{productName},productUrl:{productUrl}。");
-                        var resut = new Resut()
+                        //如果hash表不包含的productId
+                        if (!_hashTable.ContainsKey(productId))
                         {
-                            ["productId"] = productId,
-                            ["productName"] = productName,
-                            ["productUrl"] = productUrl,
-                            ["shopId"] = _shopUrl,
-                            ["shopName"] = _shopName
-                        };
+                            //productId加入到hash表中
+                            _hashTable.Add(productId, null);
+                            var detailNode =
+                                htmlNodeDl.SelectSingleNode(@".//dd[@class='\""detail\""']//a[@class='\""item-name']");
+                            var productName = getFormatProductName(detailNode.InnerText);
+                            var productUrl = getFormatProductUrl(detailNode.Attributes["href"].Value);
+                            //Console.WriteLine($"shopId:{productId},shopName:{productName},productUrl:{productUrl}。");
 
-                        resultList.Add(resut);
+                            var resut = new Resut()
+                            {
+                                ["productId"] = productId,
+                                ["productName"] = productName,
+                                ["productUrl"] = productUrl,
+                                ["shopId"] = _shopUrl,
+                                ["shopName"] = _shopName
+                            };
+
+                            resultList.Add(resut);
+                        }
                     }
-                    
-                }
-                //不作处理
-                else
-                {
-                    
+
                 }
                 //ProductId
                 //PrdouctName
@@ -226,6 +243,9 @@ namespace XFCollection.TaoBao
             return resultList.ToArray();
 
         }
+
+
+
 
 
         /// <summary>
@@ -249,11 +269,14 @@ namespace XFCollection.TaoBao
         {
             if (!url.ToLower().Contains("http"))
                 url = $"https://{url}";
-            var mainHtml = _httpHelper.GetHtmlByGet(_shopUrl=url);
+
+            var mainHtml = GetMainWebContent(_shopUrl = url, null, ref _cookies, null);
             _shopName = Regex.Match(mainHtml, @"(?<=<title>)[\s\S]*?(?=</title>)").Value.Trim();
+            if (_shopName.Equals("店铺浏览-淘宝网"))
+                throw new Exception("店铺不存在！");
             _shopName = Regex.Match(_shopName, "(?<=-).*(?=-)").Value.Trim();
             var categoryUrl = $"{url}/category.htm";
-            var html = _httpHelper.GetHtmlByGet(categoryUrl);
+            var html = GetMainWebContent(categoryUrl, null, ref _cookies, null);
             var documentNode = HtmlAgilityPackHelper.GetDocumentNodeByHtml(html);
             var listUrl = documentNode.SelectSingleNode("//input[@id='J_ShopAsynSearchURL']").Attributes["value"].Value;
             return $"{url}{listUrl}";
@@ -279,7 +302,7 @@ namespace XFCollection.TaoBao
         /// </summary>
         /// <param name="firstUrlPart"></param>
         /// <param name="totalPage"></param>
-        private void InitUrlQueue(string firstUrlPart,int totalPage)
+        private void InitUrlQueue(string firstUrlPart, int totalPage)
         {
             for (var i = 1; i <= totalPage; i++)
             {
@@ -287,7 +310,7 @@ namespace XFCollection.TaoBao
                 var curUrl = $"{firstUrlPart}&pageNo={i}";
                 _urlQueue.Enqueue(curUrl);
             }
-        }   
+        }
 
 
         /// <summary>
@@ -297,7 +320,7 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private string GetListHtml(string listUrl)
         {
-            return _httpHelper.GetHtmlByGet(listUrl);
+            return GetMainWebContent(listUrl, null, ref _cookies, null);
         }
 
 
@@ -316,6 +339,36 @@ namespace XFCollection.TaoBao
             var pageNum = Regex.Match(text, @"(?<=/)\d+").Value;
             int pageNumInt;
             return _totalPage = int.TryParse(pageNum, out pageNumInt) ? pageNumInt : 0;
+
+        }
+
+        /// <summary>
+        /// GetMainWebContent
+        /// </summary>
+        /// <param name="nextUrl"></param>
+        /// <param name="postData"></param>
+        /// <param name="cookies"></param>
+        /// <param name="currentUrl"></param>
+        /// <returns></returns>
+        protected override string GetMainWebContent(string nextUrl, byte[] postData, ref string cookies, string currentUrl)
+        {
+            int i = 1;
+            while (i <= 5)
+            {
+                try
+                {
+                    HtmlSource = _httpHelper.GetHtmlByGet(nextUrl);
+                    return HtmlSource;
+                }
+                catch (Exception e)
+                {
+                    i++;
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine($"休息1分钟重试");
+                    Thread.Sleep(60 * 1000);
+                }
+            }
+            throw new Exception("尝试超过5次");
         }
 
 

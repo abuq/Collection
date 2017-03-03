@@ -3779,6 +3779,16 @@
             <param name="listHtmlFirst"></param>
             <returns></returns>
         </member>
+        <member name="M:XFCollection.TaoBao.ShopProductCollector.GetMainWebContent(System.String,System.Byte[],System.String@,System.String)">
+            <summary>
+            GetMainWebContent
+            </summary>
+            <param name="nextUrl"></param>
+            <param name="postData"></param>
+            <param name="cookies"></param>
+            <param name="currentUrl"></param>
+            <returns></returns>
+        </member>
         <member name="T:XFCollection.TaoBao.TejiaCollectors">
             <summary>
             Class TejiaCollectors.

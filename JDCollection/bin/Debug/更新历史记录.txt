@@ -1,6 +1,79 @@
-﻿2017-2-22
+﻿2017-3-2
+TaoBao.ShopProductCollector
+针对个别店铺productId重复的现象
+维护一个hashTable以productId为key
+productId在hashTable中则丢弃
+
+
+TaoBao.ShopProductCollector
+去掉翻页之间的时间间隔
+获取网页内容出现异常重试5次，暂停时间60s
+配置每个店铺之前的采集间隔
+
+
+TaoBao.ShopProductCollector
+开始的页面没有从第一页开始改为从第一页开始
+
+
+
+2017-2-28
+TaoBao.ShopProductCollector
+有些页面上给的总页数与实际页数不符合
+若没有pagination只有comboHd则判断页数已经翻完，清空队列
+
+
+2017-2-27
+TaoBao.JiYouJiaCollector
+GoodCommentRate为double类型去掉%
+
+2017-2-24
+TaoBao.JiYouJiaCollector
+店铺采集不全问题修复
+
+2017-2-22
+TaoBao.ShopProductCollector
+产品数量不匹配，只采出了每组第一个产品
+SelectSingleNode改为SelectNodes选择所有节点数据
+
+TaoBao.ShopProductCollector
+节点名称不同，现在改为父节点的子节点
+
+
 采集所有商品的详细信息
 AliExpress.ProductDetailCollector
+keyword:shpId
+输出
+Url # 链接
+Title # 标题
+PercentNum # 评分
+RatingsNum # 评分人数
+OrderNum # 订单数
+DiscountRage # 折扣率
+EventTimeLeft # 剩余时间
+ActMinPrice # 实际最小价格
+ActMaxPrice # 实际最大价格
+MinPrice # 打折前最小价格
+MaxPrice # 打折前最大价格
+MobileDiscountPrice # 手机打折后价格
+ProductId # 产品编号
+TotalAvailQuantity # 库存
+CollectNum # 关注数
+SearchPageIndex # 
+SearchPageRank # 
+
+
+采集店铺商品的交易数据
+AliExpress.ProductTransactionData
+keyword:shpId
+输出
+nameVipLevel # 买家名
+productName # 产品名
+totalPrice # 购买数
+feedBackDate # 评价时间
+feedBackContent # 评价内容
+starM # 星级
+SearchPageIndex # 
+SearchPageRank # 
 
 
 
