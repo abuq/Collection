@@ -1,4 +1,23 @@
-﻿2017-3-2
+﻿2017-3-8
+TaoBao.PcFlowSearchCollector
+paymentAccount改为paymentAcount
+productPrice为空设置为0
+
+TaoBao.PcFlowSearchCollector
+searchKeyword # 关键词
+productId # 产品编号
+productName # 产品名
+productPrice # 价格
+paymentAccount # 销量
+productType # 类型
+shopName # 店铺名
+userMemberId # 卖家编号
+location # 地址
+productPosition # 位置
+positionType # 位置类型
+pageIndex # 页数
+
+2017-3-2
 TaoBao.ShopProductCollector
 针对个别店铺productId重复的现象
 维护一个hashTable以productId为key

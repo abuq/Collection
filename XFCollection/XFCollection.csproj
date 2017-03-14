@@ -213,6 +213,7 @@
     <Compile Include="TaoBao\AlitrustCollector.cs" />
     <Compile Include="TaoBao\JiYouJiaCollector.cs" />
     <Compile Include="TaoBao\MSearchCollector.cs" />
+    <Compile Include="TaoBao\PcFlowSearchCollector.cs" />
     <Compile Include="TaoBao\ProductInfoCollector.cs" />
     <Compile Include="TaoBao\PromotionCollector.cs" />
     <Compile Include="TaoBao\ShopProductCollector.cs" />
