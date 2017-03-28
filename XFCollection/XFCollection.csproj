@@ -216,6 +216,8 @@
     <Compile Include="TaoBao\PcFlowSearchCollector.cs" />
     <Compile Include="TaoBao\ProductInfoCollector.cs" />
     <Compile Include="TaoBao\PromotionCollector.cs" />
+    <Compile Include="TaoBao\ShopEnumCollector.cs" />
+    <Compile Include="TaoBao\ShopEnumParameter.cs" />
     <Compile Include="TaoBao\ShopProductCollector.cs" />
     <Compile Include="TaoBao\TejiaCollectors.cs" />
     <Compile Include="UserCode\UserCodeParser.cs" />

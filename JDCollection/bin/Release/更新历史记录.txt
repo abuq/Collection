@@ -1,4 +1,90 @@
-﻿2017-3-8
+﻿2017-03-28
+JingDong.JDShopDetailCollector
+页面不存在判断条件增加
+
+AliExpress.ProductTransactionData
+英文时间格式转换为中文时间格式
+starM星级去掉%符
+评价内容中有html字符，比如（&#39;）解码成曾经字符
+
+2017-03-27
+TaoBao.ShopEnumCollector使用sendlog标记一下页数不存在
+json解析空引用问题解决
+TaoBao.ShopProductCollector
+阿里旅行不支持
+TaoBao.MSearchCollector
+使用sendlog后不定义链接
+
+JingDong.JDShopDetailCollector
+页面不存在判断页面改变修改
+
+
+
+2017-03-24
+TaoBao.ShopProductCollector店铺商品采集引擎当店铺不存在时，直接完成这个任务
+TaoBao.MSearchCollector淘宝手机流量查询出现违禁词时，结束这个任务
+使用sendlog标记一下店铺不存在
+
+
+2017-03-23
+TaoBao.ShopEnumCollector
+Tmall取总页数的位置有所不同
+页面没有一个店铺问题解决
+json解析的时候有些字段没有，用可空类型处理?
+
+
+JingDong.JDShopDetailCollector
+网页上判断评分率正负号的字段产生变化修改
+
+
+2017-03-21
+TaoBao.ShopEnumCollector
+数据字段类型问题，现已去掉百分号
+
+
+2017-03-20
+TaoBao.ShopProductCollector
+页数不存在的返回为0页
+TaoBao.ShopEnumCollector
+Json解析MarketName索引越界问题更改
+
+2017-3-16
+TaoBao.ShopEnumParameter
+KeyWord 关键词
+ShopType 店铺类型
+SearchPage 搜索页数
+
+TaoBao.ShopEnumCollector
+ShopId # 
+ShopName # 
+ShopUrl # 
+ShopLogoUrl # 
+MarketName # 
+ShopRank # 
+Location # 
+InCountry # 
+InProvince # 
+InCity # 
+BossNickName # 
+EncryptedUserId # 
+MainBiz # 
+MainIndustry # 
+SaleCount # 
+ProductCount # 
+GoodCommentCount # 
+GoodCommentRate # 
+Comment_MatchDescrip # 
+Comment_MatchDescripRate # 
+Comment_ServiceStatue # 
+Comment_ServiceStatueRate # 
+Comment_ShipSpeed # 
+Comment_ShipSpeedRate # 
+Attribute_BuyProtect # 
+Attribute_GlobalBuy # 
+Attribute_GoldenSale # 
+SearchKeyword # 
+
+2017-3-8
 TaoBao.PcFlowSearchCollector
 paymentAccount改为paymentAcount
 productPrice为空设置为0

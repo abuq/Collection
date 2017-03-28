@@ -16,7 +16,7 @@ namespace XFCollection.TaoBao
     /// <summary>
     /// ShopProductCollector
     /// </summary>
-    public class ShopProductCollector:WebRequestCollector<IResut,NormalParameter>
+    public class ShopProductCollector : WebRequestCollector<IResut, NormalParameter>
     {
 
 
@@ -41,7 +41,7 @@ namespace XFCollection.TaoBao
         {
             var parameter = new NormalParameter()
             {
-                Keyword = @"shop100325717.taobao.com"
+                Keyword = @"shop35764087.taobao.com"
             };
 
             TestHelp<ShopProductCollector>(parameter);
@@ -272,10 +272,17 @@ namespace XFCollection.TaoBao
 
             var mainHtml = GetMainWebContent(_shopUrl = url, null, ref _cookies, null);
             _shopName = Regex.Match(mainHtml, @"(?<=<title>)[\s\S]*?(?=</title>)").Value.Trim();
+            if (_shopName.Contains("阿里旅行·去啊Alitrip.com"))
+                throw new Exception("阿里旅行不支持");
             if (_shopName.Equals("店铺浏览-淘宝网"))
-                throw new Exception("店铺不存在！");
+            {
+                //throw new Exception("店铺不存在！");
+                SendLog("店铺不存在！");
+                return string.Empty;
+            }
             _shopName = Regex.Match(_shopName, "(?<=-).*(?=-)").Value.Trim();
-            var categoryUrl = $"{url}/category.htm";
+            //var categoryUrl = $"{url}/category.htm";
+            var categoryUrl = $"{url}/search.htm";
             var html = GetMainWebContent(categoryUrl, null, ref _cookies, null);
             var documentNode = HtmlAgilityPackHelper.GetDocumentNodeByHtml(html);
             var listUrl = documentNode.SelectSingleNode("//input[@id='J_ShopAsynSearchURL']").Attributes["value"].Value;
@@ -290,6 +297,8 @@ namespace XFCollection.TaoBao
         private void InitUrlQueue(string url)
         {
             var firstUrlPart = InitFirstUrlPart(url);
+            if (string.IsNullOrEmpty(firstUrlPart))
+                return;
             var listHtml = GetListHtml(firstUrlPart);
             InitTotalPage(listHtml);
             if (_totalPage == 0)
@@ -335,6 +344,8 @@ namespace XFCollection.TaoBao
             var documentNode = HtmlAgilityPackHelper.GetDocumentNodeByHtml(listHtmlFirst);
             //不转义，双引号里面要两个双引号才表示双引号
             var htmlNode = documentNode.SelectSingleNode(@"//span[@class='\""page-info\""']") ?? documentNode.SelectSingleNode(@"//b[@class='\""ui-page-s-len\""']");
+            if (htmlNode == null)
+                return 0;
             var text = htmlNode.InnerText;
             var pageNum = Regex.Match(text, @"(?<=/)\d+").Value;
             int pageNumInt;
@@ -370,10 +381,5 @@ namespace XFCollection.TaoBao
             }
             throw new Exception("尝试超过5次");
         }
-
-
-
-
-
     }
 }

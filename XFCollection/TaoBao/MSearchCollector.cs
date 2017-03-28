@@ -16,7 +16,7 @@ namespace XFCollection.TaoBao
     /// <summary>
     /// MSearchCollector
     /// </summary>
-    public class MSearchCollector:WebRequestCollector<IResut, NormalParameter>
+    public class MSearchCollector : WebRequestCollector<IResut, NormalParameter>
     {
 
         private string _q;
@@ -87,7 +87,7 @@ namespace XFCollection.TaoBao
             {
                 //Keyword = @"鱼具椅"
                 //Keyword = @"13岁大童女装夏装"
-                Keyword = @"冲击钻 家用"
+                Keyword = @"武士刀"
                 //Keyword =  "巅峰"
 
             };
@@ -149,7 +149,7 @@ namespace XFCollection.TaoBao
             var sst = 1;
             var n = 20;
             var buying = "buyitnow";
-            
+
             var abtest = Regex.Match(html, @"(?<=abtest:')\d+(?=')").Value;
             var wlsort = Regex.Match(html, @"(?<=wlsort:')\d+(?=')").Value;
             var m = Regex.Match(html, @"(?<=m:')\w+(?=')").Value;
@@ -165,13 +165,11 @@ namespace XFCollection.TaoBao
                     //违禁词
                     _maxPage = int.Parse(Regex.Match(curHtml, @"(?<={""totalPage"":"")\d+(?="")").Value);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     var searchQuery = Regex.Match(curHtml, "(?<=search query:).*?(?=\")").Value;
-                    if(!string.IsNullOrEmpty(searchQuery))
-                        throw new Exception(searchQuery);
-                    else
-                        throw new Exception(e.Message);
+                    SendLog(searchQuery);
+                    return;
                 }
             }
 
@@ -180,21 +178,21 @@ namespace XFCollection.TaoBao
             {
                 var page = i;
 
-                var curUrl = 
+                var curUrl =
                     $"https://s.m.taobao.com/search?event_submit_do_new_search_auction={event_submit_do_new_search_auction}&_input_charset={_input_charset}&topSearch={topSearch}&atype={atype}&searchfrom={searchfrom}&action={action}&from={from}&q={q}&sst={sst}&n={n}&buying={buying}&m={m}&abtest={abtest}&wlsort={wlsort}&page={i}";
 
 
                 // 第一次的时候先查 看总页数 比5小的取解析出来的页数 不然取5页
                 if (i == 1)
                 {
-                    
+
                     var curHtml = base.GetWebContent(curUrl);
                     var totalPage = int.Parse(Regex.Match(curHtml, @"(?<={""totalPage"":"")\d+(?="")").Value);
                     CurrentPage = 0;
                     CountPage = _maxPage = _maxPage > totalPage ? totalPage : _maxPage;
                 }
 
-                
+
 
                 _dataUrlQueue.Enqueue(curUrl);
 
@@ -202,7 +200,7 @@ namespace XFCollection.TaoBao
             }
 
 
-            
+
 
 
         }
@@ -219,10 +217,10 @@ namespace XFCollection.TaoBao
             var url = $"{_homePage}{param.Keyword}";
             _maxPage = param.GetValue("MaxPage", -1);
 
-//            if (!int.TryParse(param["MaxPage"].ToString(), out _maxPage))
-//            {
-//                _maxPage = -1;
-//            }
+            //            if (!int.TryParse(param["MaxPage"].ToString(), out _maxPage))
+            //            {
+            //                _maxPage = -1;
+            //            }
 
             InitDataUrlQueue(url);
 
@@ -280,7 +278,7 @@ namespace XFCollection.TaoBao
                 //};
 
                 resultList.Add(resut);
-                index ++;
+                index++;
             }
 
 
@@ -325,7 +323,7 @@ namespace XFCollection.TaoBao
                 return new List<JToken>();
             }
 
-            return new List<JToken>(jToken.Values<JToken>()); 
+            return new List<JToken>(jToken.Values<JToken>());
         }
 
 
