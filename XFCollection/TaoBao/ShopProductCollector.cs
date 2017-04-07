@@ -41,7 +41,7 @@ namespace XFCollection.TaoBao
         {
             var parameter = new NormalParameter()
             {
-                Keyword = @"shop35764087.taobao.com"
+                Keyword = @"shop35764009.taobao.com"
             };
 
             TestHelp<ShopProductCollector>(parameter);

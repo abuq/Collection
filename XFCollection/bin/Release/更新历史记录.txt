@@ -1,4 +1,53 @@
-﻿2017-03-28
+﻿
+2017-04-07
+TaoBao.AlitrustCollector
+Json解析问题
+Error_Notice新增，旺铺关闭页面-未达到
+
+2017-04-06
+TaoBao.AlitrustCollector
+链接拼接成新链接问题
+如果末尾有/则不需要加/
+
+Incorrect datetime value: '' for column 'ShopStartDate' at row 1
+ShopStartDate设置成默认值1990/1/1 0:00:00
+
+
+2017-04-05
+TaoBao.AlitrustCollector
+页面改版
+评价率暂无数据为空，与行业持平为0，高于+value，低于-value
+采集ShpAgeNum，原来的ShopStartDate数据为当前时间减去ShpAgeNum，现在置为空
+
+
+2017-03-29
+AliExpress.ProductTransactionData
+shopId # 店铺编号
+nameVipLevel # 买家名字
+productName # 产品名
+totalPrice # 数量
+feedBackDate # 反馈日期
+feedBackContent # 反馈内容											
+starM # 星级
+productId # 产品编号
+SearchPageIndex # 
+SearchPageRank # 
+
+
+AliExpress.ShopProductCollector
+shopId # 店铺编号
+productName # 产品名
+productUrl # 产品链接
+productId # 产品编号
+price # 价格
+priceOld # 原价格
+orderNum # 订单数
+SearchPageIndex # 
+SearchPageRank # 
+
+部分字段格式问题 productName解码
+
+2017-03-28
 JingDong.JDShopDetailCollector
 页面不存在判断条件增加
 

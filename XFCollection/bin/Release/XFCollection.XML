@@ -3201,6 +3201,12 @@
             <param name="htmlString"></param>
             <returns></returns>
         </member>
+        <member name="M:XFCollection.TaoBao.AlitrustCollector.GetComment">
+            <summary>
+            GetComment
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:XFCollection.TaoBao.AlitrustCollector.GetShopRank(System.String)">
             <summary>
             得到店铺等级

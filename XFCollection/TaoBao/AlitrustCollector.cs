@@ -4,17 +4,19 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
+using Newtonsoft.Json.Linq;
 using NUnit.Framework.Constraints;
 using X.CommLib.Net.WebRequestHelper;
 using X.GlodEyes.Collectors;
 using X.GlodEyes.Collectors.Specialized.JingDong;
+using XFCollection.Http;
 
 namespace XFCollection.TaoBao
 {
     /// <summary>
     /// 诚信通采集引擎
     /// </summary>
-    public class AlitrustCollector : WebRequestCollector<IResut,NormalParameter>
+    public class AlitrustCollector : WebRequestCollector<IResut, NormalParameter>
     {
 
         private string _targetUid;
@@ -26,7 +28,8 @@ namespace XFCollection.TaoBao
 
         internal static void Test()
         {
-            var parameter = new NormalParameter { Keyword = @"https://shop1465826481944.1688.com" };
+            var parameter = new NormalParameter { Keyword = @"http://shop1464825016821.1688.com" };
+            //var parameter = new NormalParameter { Keyword = @"https://shop1397148954914.1688.com/" };
             //var parameter = new NormalParameter { Keyword = @"https://shop1423106386435.1688.com" };
             parameter.Add(@"targetUid", "5656");
             TestHelp<AlitrustCollector>(parameter, 1);
@@ -51,7 +54,7 @@ namespace XFCollection.TaoBao
                 Console.WriteLine($"keyword id: {keyWord}");
                 try
                 {
-                    var parameter = new NormalParameter { Keyword = $"https://{keyWord}" };
+                    var parameter = new NormalParameter { Keyword = $"https://{keyWord}/" };
                     TestHelp<AlitrustCollector>(parameter);
                 }
                 catch (NotSupportedException exception)
@@ -71,8 +74,10 @@ namespace XFCollection.TaoBao
         {
             _targetUid = param.GetValue(@"targetUid", string.Empty);
             _url = $"{param.Keyword}";
-            if(string.IsNullOrEmpty(_url))
+            if (string.IsNullOrEmpty(_url))
                 throw new Exception("传入的ShopUrl为空或null,请检查！");
+            //if (!_url.Contains("http"))
+            //    _url = $"https://{_url}";
             return _url;
         }
 
@@ -158,16 +163,26 @@ namespace XFCollection.TaoBao
             var location = GetLocation(HtmlSource);
             var productCount = GetProductCount(HtmlSource);
             var shopRank = GetShopRank(HtmlSource);
-            var dicComment = GetComment(HtmlSource);
+            //var dicComment = GetComment(HtmlSource);
+
+            IDictionary<string, string> dicComment = !shopName.Equals("旺铺关闭页面-未达到") ? GetComment() : new Dictionary<string, string>();
+
 
             var stringEmpty = string.Empty;
             var intDefault = 0;
             var dateDefault = DateTime.Parse("1990-01-01 00:00:00");
-            if (int.Parse(shpAgeNum) != 0)
-            {
-                dateDefault = DateTime.Now.AddYears(-int.Parse(shpAgeNum));
-            }
-            var errorNotice = shopName.Equals("违规下架") ? "违规下架" : stringEmpty;
+            //if (int.Parse(shpAgeNum) != 0)
+            //{
+            //    dateDefault = DateTime.Now.AddYears(-int.Parse(shpAgeNum));
+            //}
+
+            //旺铺关闭页面-未达到
+            var errorNotice = stringEmpty;
+            if (shopName.Equals("违规下架"))
+                errorNotice = "违规下架";
+            else if (shopName.Equals("旺铺关闭页面-未达到"))
+                errorNotice = "旺铺关闭页面-未达到";
+
 
             var resut = new Resut
             {
@@ -186,7 +201,7 @@ namespace XFCollection.TaoBao
                 //开店时间
                 ["ShopStartDate"] = dateDefault,
                 //ShpAgeNum
-                ["ShpAgeNum"] = intDefault,
+                ["ShpAgeNum"] = shpAgeNum,
                 //采集入口参数
                 ["ShopUrl"] = GetUrlFormat(CurrentUrl),
                 //好评数
@@ -196,15 +211,15 @@ namespace XFCollection.TaoBao
                 //描述相符
                 ["Comment_MatchDescrip"] = intDefault,
                 //描述相符率
-                ["Comment_MatchDescripRate"] = dicComment.ContainsKey("Comment_MatchDescripRate")?GetIntDefault(dicComment["Comment_MatchDescripRate"]):"0",
+                ["Comment_MatchDescripRate"] = dicComment.ContainsKey("Comment_MatchDescripRate") ? GetIntDefault(dicComment["Comment_MatchDescripRate"]) : "0",
                 //服务态度
                 ["Comment_ServiceStatue"] = intDefault,
                 //服务态度率
-                ["Comment_ServiceStatueRate"] = dicComment.ContainsKey("Comment_ServiceStatueRate")?GetIntDefault(dicComment["Comment_ServiceStatueRate"]):"0",
+                ["Comment_ServiceStatueRate"] = dicComment.ContainsKey("Comment_ServiceStatueRate") ? GetIntDefault(dicComment["Comment_ServiceStatueRate"]) : "0",
                 //物流服务
                 ["Comment_ShipSpeed"] = intDefault,
                 //物流服务率
-                ["Comment_ShipSpeedRate"] = dicComment.ContainsKey("Comment_ShipSpeedRate")?GetIntDefault(dicComment["Comment_ShipSpeedRate"]):"0",
+                ["Comment_ShipSpeedRate"] = dicComment.ContainsKey("Comment_ShipSpeedRate") ? GetIntDefault(dicComment["Comment_ShipSpeedRate"]) : "0",
                 //保证金
                 ["MarginCharge"] = intDefault,
                 //店铺等级
@@ -260,7 +275,7 @@ namespace XFCollection.TaoBao
         {
             return string.IsNullOrEmpty(key) ? "0" : key;
         }
-        
+
         /// <summary>
         /// 得到ShopId
         /// </summary>
@@ -284,8 +299,8 @@ namespace XFCollection.TaoBao
 
         private string GetShopName2(string htmlString)
         {
-            string result =  Regex.Match(htmlString, "(?<=&quot;)实力商家供应商信息(?=&quot;)").Value;
-            return result.Equals("实力商家供应商信息")? "实力商家供应商信息": "供应商信息";
+            string result = Regex.Match(htmlString, "(?<=&quot;)实力商家供应商信息(?=&quot;)").Value;
+            return result.Equals("实力商家供应商信息") ? "实力商家供应商信息" : "供应商信息";
         }
 
         /// <summary>
@@ -344,7 +359,7 @@ namespace XFCollection.TaoBao
             if (string.IsNullOrEmpty(productCount))
             {
                 var cookies = $"cna={GetCna()}";
-                var html = GetMainWebContent($"{_url}/page/offerlist.htm",null,ref cookies, null);
+                var html = GetMainWebContent($"{_url}/page/offerlist.htm", null, ref cookies, null);
                 productCount = Regex.Match(html, @"(?<=<em class=""offer-count"">)\d+(?=</em>)").Value;
                 if (string.IsNullOrEmpty(productCount))
                 {
@@ -372,26 +387,96 @@ namespace XFCollection.TaoBao
         /// <returns></returns>
         private Dictionary<string, string> GetComment(string htmlString)
         {
-            Dictionary<string,string> dic = new Dictionary<string, string>();
-            
+            Dictionary<string, string> dic = new Dictionary<string, string>();
+
 
             var Comment_MatchDescripRate = Regex.Match(htmlString, "<span class=\"product-description-value.*?\">.*?</span>").Value;
             var Comment_MatchDescripRateNum = GetFormatRate(Comment_MatchDescripRate).Trim();
             dic.Add("Comment_MatchDescripRate", Comment_MatchDescripRate.Contains("lower") ? $"-{Comment_MatchDescripRateNum}" : $"+{Comment_MatchDescripRateNum}");
-              
+
 
             var Comment_ServiceStatueRate = Regex.Match(htmlString, "<span class=\"shopper-response-value.*?\">.*?</span>").Value;
             var Comment_ServiceStatueRateNum = GetFormatRate(Comment_ServiceStatueRate).Trim();
             dic.Add("Comment_ServiceStatueRate", Comment_ServiceStatueRate.Contains("lower") ? $"-{Comment_ServiceStatueRateNum}" : $"+{Comment_ServiceStatueRateNum}");
-               
+
             var Comment_ShipSpeedRate = Regex.Match(htmlString, "<span class=\"sell-product-value.*?\">.*?</span>").Value;
             var Comment_ShipSpeedRateNum = GetFormatRate(Comment_ShipSpeedRate);
 
             dic.Add("Comment_ShipSpeedRate", Comment_ShipSpeedRate.Contains("lower") ? $"-{Comment_ShipSpeedRateNum}" : $"+{Comment_ShipSpeedRateNum}");
-               
+
             return dic;
         }
 
+        /// <summary>
+        /// GetComment
+        /// </summary>
+        /// <returns></returns>
+        private IDictionary<string, string> GetComment()
+        {
+
+            var dic = new Dictionary<string, string>();
+            var url = CurrentUrl.EndsWith("/") ? $"{CurrentUrl}event/app/winport_bsr/getBsrData.htm" : $"{CurrentUrl}/event/app/winport_bsr/getBsrData.htm";
+            //var url = "https://shop1397148954914.1688.com/event/app/winport_bsr/getBsrData.htm";
+            var httpHelper = new HttpHelper();
+            var html = httpHelper.GetHtmlByPost(url, $"site_id=winport&page_type=index");
+            var jArray = JArray.Parse(JObject.Parse(html)["result"]["bsrDataList"].ToString());
+
+            var Comment_MatchDescripRate = jArray[0]?["compareLineRate"]?.ToString().Replace("%", string.Empty);
+            if (Comment_MatchDescripRate == "-1")
+            {
+                Comment_MatchDescripRate = string.Empty;
+            }
+            else if (Comment_MatchDescripRate == "0")
+            {
+                Comment_MatchDescripRate = "0";
+            }
+            else
+            {
+                var compareTag = int.Parse(jArray[0]?["compareTag"]?.ToString() ?? "0");
+                Comment_MatchDescripRate = compareTag == -1
+                    ? $"-{Comment_MatchDescripRate}"
+                    : $"+{Comment_MatchDescripRate}";
+            }
+
+
+            var Comment_ServiceStatueRate = jArray[1]?["compareLineRate"]?.ToString().Replace("%", string.Empty);
+            if (Comment_ServiceStatueRate == "-1")
+            {
+                Comment_ServiceStatueRate = string.Empty;
+            }
+            else if (Comment_ServiceStatueRate == "0")
+            {
+                Comment_ServiceStatueRate = "0";
+            }
+            else
+            {
+                var compareTag = int.Parse(jArray[1]?["compareTag"]?.ToString() ?? "0");
+                Comment_ServiceStatueRate = compareTag == -1 ? $"-{Comment_ServiceStatueRate}" : $"+{Comment_ServiceStatueRate}";
+            }
+
+            var Comment_ShipSpeedRate = jArray[2]?["compareLineRate"]?.ToString().Replace("%", string.Empty);
+            if (Comment_ShipSpeedRate == "-1")
+            {
+                Comment_ShipSpeedRate = string.Empty;
+            }
+            else if (Comment_ShipSpeedRate == "0")
+            {
+                Comment_ShipSpeedRate = "0";
+            }
+            else
+            {
+                var compareTag = int.Parse(jArray[2]?["compareTag"]?.ToString() ?? "0");
+                Comment_ShipSpeedRate = compareTag == -1 ? $"-{Comment_ShipSpeedRate}" : $"+{Comment_ShipSpeedRate}";
+            }
+
+
+
+            dic.Add("Comment_MatchDescripRate", Comment_MatchDescripRate);
+            dic.Add("Comment_ServiceStatueRate", Comment_ServiceStatueRate);
+            dic.Add("Comment_ShipSpeedRate", Comment_ShipSpeedRate);
+
+            return dic;
+        }
 
         private string GetFormatRate(string rate)
         {
@@ -415,7 +500,7 @@ namespace XFCollection.TaoBao
             foreach (Match match in matchs)
             {
                 imgSrc = match.Value;
-                cur ++;
+                cur++;
             }
             if (imgSrc.Contains("2422944_1490276829.png"))
                 return $"sale_{cur}_diamond";
