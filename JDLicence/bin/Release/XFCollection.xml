@@ -3296,6 +3296,13 @@
             <param name="htmlString"></param>
             <returns></returns>
         </member>
+        <member name="M:XFCollection.TaoBao.JiYouJiaCollector.GetShopType(System.String)">
+            <summary>
+            GetShopType
+            </summary>
+            <param name="htmlString"></param>
+            <returns></returns>
+        </member>
         <member name="M:XFCollection.TaoBao.JiYouJiaCollector.GetContentJsonStringByUserId(System.String,System.String)">
             <summary>
             shopId

@@ -1,4 +1,14 @@
-﻿
+﻿2017-04-11
+TaoBao.JiYouJiaCollector
+新增DayMonitor字段
+区分店铺类别
+天猫-4，淘宝-2 ，淘宝企业-3，诚信通-1，极有家-5，亲宝贝-6，飞猪-7 ,天猫国际 -8,未知--99
+
+2017-04-10
+TaoBao.AlitrustCollector
+Error_Notice新增,账号关闭-旺铺关闭,404-阿里巴巴
+
+
 2017-04-07
 TaoBao.AlitrustCollector
 Json解析问题

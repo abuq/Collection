@@ -28,7 +28,9 @@ namespace XFCollection.TaoBao
 
         internal static void Test()
         {
-            var parameter = new NormalParameter { Keyword = @"http://shop1464825016821.1688.com" };
+
+            //http://shop1464825016821.1688.com    http://shop1375721923107.1688.com    
+            var parameter = new NormalParameter { Keyword = @"http://shop1425574019991.1688.com" };
             //var parameter = new NormalParameter { Keyword = @"https://shop1397148954914.1688.com/" };
             //var parameter = new NormalParameter { Keyword = @"https://shop1423106386435.1688.com" };
             parameter.Add(@"targetUid", "5656");
@@ -165,7 +167,7 @@ namespace XFCollection.TaoBao
             var shopRank = GetShopRank(HtmlSource);
             //var dicComment = GetComment(HtmlSource);
 
-            IDictionary<string, string> dicComment = !shopName.Equals("旺铺关闭页面-未达到") ? GetComment() : new Dictionary<string, string>();
+            IDictionary<string, string> dicComment = !shopName.Contains("旺铺关闭") && !shopName.Equals("404-阿里巴巴") ? GetComment() : new Dictionary<string, string>();
 
 
             var stringEmpty = string.Empty;
@@ -180,8 +182,8 @@ namespace XFCollection.TaoBao
             var errorNotice = stringEmpty;
             if (shopName.Equals("违规下架"))
                 errorNotice = "违规下架";
-            else if (shopName.Equals("旺铺关闭页面-未达到"))
-                errorNotice = "旺铺关闭页面-未达到";
+            else if (shopName.Contains("旺铺关闭") || shopName.Equals("404-阿里巴巴"))
+                errorNotice = shopName;
 
 
             var resut = new Resut
