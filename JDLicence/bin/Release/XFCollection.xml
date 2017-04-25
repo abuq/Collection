@@ -1963,6 +1963,16 @@
             编码
             </summary>
         </member>
+        <member name="P:XFCollection.Http.HttpHelper.AllowAutoRedirect">
+            <summary>
+            允许自动跳转
+            </summary>
+        </member>
+        <member name="F:XFCollection.Http.HttpHelper.Referer">
+            <summary>
+            Referer
+            </summary>
+        </member>
         <member name="M:XFCollection.Http.HttpHelper.Test">
             <summary>
             Test
@@ -3219,6 +3229,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:XFCollection.TaoBao.AlitrustCollector.GetRandom32">
+            <summary>
+            GetRandom32
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:XFCollection.TaoBao.JiYouJiaCollector">
              <summary>
             
@@ -3231,7 +3247,7 @@
         </member>
         <member name="M:XFCollection.TaoBao.JiYouJiaCollector.GetMainWebContent(System.String,System.Byte[],System.String@,System.String)">
             <summary>
-            
+            GetMainWebContent
             </summary>
             <param name="nextUrl"></param>
             <param name="postData"></param>
@@ -3303,6 +3319,30 @@
             <param name="htmlString"></param>
             <returns></returns>
         </member>
+        <member name="M:XFCollection.TaoBao.JiYouJiaCollector.GetShopAge(System.String,System.String)">
+            <summary>
+            shopType
+            </summary>
+            <param name="htmlString"></param>
+            <param name="shopType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XFCollection.TaoBao.JiYouJiaCollector.GetShopStartDate(System.String,System.String)">
+            <summary>
+            GetShopStartDate
+            </summary>
+            <param name="htmlString"></param>
+            <param name="shopType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XFCollection.TaoBao.JiYouJiaCollector.GetShopKeeper(System.String,System.String)">
+            <summary>
+            GetShopKeeper
+            </summary>
+            <param name="htmlString"></param>
+            <param name="shopType"></param>
+            <returns></returns>
+        </member>
         <member name="M:XFCollection.TaoBao.JiYouJiaCollector.GetContentJsonStringByUserId(System.String,System.String)">
             <summary>
             shopId
@@ -3370,6 +3410,13 @@
         <member name="M:XFCollection.TaoBao.JiYouJiaCollector.GetComment_ServiceStatueRate(System.String)">
             <summary>
             得到服务态度率
+            </summary>
+            <param name="htmlString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XFCollection.TaoBao.JiYouJiaCollector.GetGoodCommentCount(System.String)">
+            <summary>
+            GetGoodCommentCount
             </summary>
             <param name="htmlString"></param>
             <returns></returns>

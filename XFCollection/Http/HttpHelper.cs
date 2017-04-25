@@ -28,7 +28,7 @@ namespace XFCollection.Http
         /// <summary>
         /// 最大自动重定向次数 默认为10
         /// </summary>
-        public int MaximumAutomaticRedirections { get; set; }=10;
+        public int MaximumAutomaticRedirections { get; set; } = 10;
 
 
         /// <summary>
@@ -45,13 +45,27 @@ namespace XFCollection.Http
         /// <summary>
         /// 编码
         /// </summary>
-        public Encoding HttpEncoding { get; set; } = Encoding.UTF8; 
+        public Encoding HttpEncoding { get; set; } = Encoding.UTF8;
+
+
+        /// <summary>
+        /// 允许自动跳转
+        /// </summary>
+        public bool AllowAutoRedirect { get; set; } = true;
+
+
+        /// <summary>
+        /// Referer
+        /// </summary>
+        public string Referer = string.Empty;
 
         /// <summary>
         /// Test
         /// </summary>
         internal void Test()
         {
+
+            var htmlTest = GetHtmlByPost("http://music.163.com/weapi/v1/resource/comments/R_SO_4_418603077?csrf_token=", "params=P86tal00glp6vCsICC2ReHcObZCGDDxucxkNTuCDtZ%2BhUKxYznpaEq0hLzapHrwuvMELsl4X68crdlke%2FqVZZDEZD%2FfUdrbluk%2FQhIQZzW07zl7p72er4wv37d%2BPtOpo%2F69bmEpK2UAdOMUjcOgK8PWua2dytf6hJAaziscIHjnyVxPeCclwJBTy%2F9qmvnCw&encSecKey=6e07a383efd3c23a32ae837c90bfffc8d1ec1b27b4579d5e11782eaa383be39956f343ff548995634700c5ad7ad5f1cb8d227d3a2a7b07e0e74ffd630db22daa14b21f6310df63eae5e94079daa443d3f4fd0eb722d66814df2fa71c28b6ef444f58a38f2b10f58855c3ad190eae7bfb23e1d5b5895bfe3401e94c31b2fe8e63");
             //var hashSet = new HashSet<string>();
             var html = GetHtmlByGet("http://op.hanhande.com/");
             var result =
@@ -69,7 +83,7 @@ namespace XFCollection.Http
         /// <returns></returns>
         public string GetHtmlByGet(string url)
         {
-            
+
             var stringEmpty = string.Empty;
             var html = stringEmpty;
 
@@ -80,12 +94,14 @@ namespace XFCollection.Http
             httpWebRequest.UserAgent = UserAgent;
             httpWebRequest.MaximumAutomaticRedirections = MaximumAutomaticRedirections;
             httpWebRequest.Timeout = Timeout;
-            if(!string.IsNullOrEmpty(Cookies))
-                httpWebRequest.Headers.Add("Cookie",Cookies);
-            
+            httpWebRequest.AllowAutoRedirect = AllowAutoRedirect;
+            httpWebRequest.Referer = Referer;
+            if (!string.IsNullOrEmpty(Cookies))
+                httpWebRequest.Headers.Add("Cookie", Cookies);
+
             var httpWebResponse = httpWebRequest.GetResponse() as HttpWebResponse;
 
-            using(var stream = httpWebResponse?.GetResponseStream())
+            using (var stream = httpWebResponse?.GetResponseStream())
                 if (stream != null)
                     //使用缺省的编码
                     using (var streamReader = new StreamReader(stream, HttpEncoding))
@@ -93,7 +109,8 @@ namespace XFCollection.Http
                         html = streamReader.ReadToEnd();
                     }
 
-            Cookies = GetFormatCookies(httpWebResponse?.Headers["set-cookie"]??Cookies);
+            //更新cookies
+            Cookies = GetFormatCookies(httpWebResponse?.Headers["set-cookie"] ?? Cookies);
 
 
             return html;
@@ -114,14 +131,16 @@ namespace XFCollection.Http
             var postDataByte = HttpEncoding.GetBytes(postDataString);
 
             var httpWebRequest = WebRequest.Create(url) as HttpWebRequest;
-            if(httpWebRequest == null) return stringEmpty;
+            if (httpWebRequest == null) return stringEmpty;
             httpWebRequest.Method = "POST";
             httpWebRequest.UserAgent = UserAgent;
             httpWebRequest.MaximumAutomaticRedirections = MaximumAutomaticRedirections;
             httpWebRequest.Timeout = Timeout;
+            httpWebRequest.AllowAutoRedirect = AllowAutoRedirect;
             httpWebRequest.ContentType = "application/x-www-form-urlencoded";
+            httpWebRequest.Referer = Referer;
             httpWebRequest.ContentLength = postDataByte.Length;
-            if(!string.IsNullOrEmpty(Cookies))
+            if (!string.IsNullOrEmpty(Cookies))
                 httpWebRequest.Headers.Add("Cookie", Cookies);
             //httpWebRequest写入post数据
             using (var inputStream = httpWebRequest.GetRequestStream())
@@ -139,6 +158,7 @@ namespace XFCollection.Http
                     }
             }
 
+            //更新cookies
             Cookies = GetFormatCookies(httpWebResponse?.Headers["set-cookie"] ?? Cookies);
 
             return html;
@@ -156,13 +176,13 @@ namespace XFCollection.Http
             //Expires日期会含有,
             var cookieCollection = Regex.Matches(cookies, "[^;&,]*=[^;&,]*");
             //需要的key=value所包含的字符串 全部小写便于后面比较
-            var removeString = new string[]{"domain", "path", "expires", "httponly", "max-age"};
+            var removeString = new string[] { "domain", "path", "expires", "httponly", "max-age" };
             //保存移除字符串数组长度
             var length = removeString.Length;
             //用于保存不重复的key=value键值对
             //.net 2.0不包含HashSet
             //HashSet相当于Dictionary只有key而value为null
-            var set = new Dictionary<string,object>();
+            var set = new Dictionary<string, object>();
 
             foreach (Match cookie in cookieCollection)
             {
@@ -175,11 +195,11 @@ namespace XFCollection.Http
                     isContains = true;
                     break;
                 }
-                
+
                 //不包含移除字符串并且集合中不存在key=value值
                 if (!isContains && !set.ContainsKey(value))
                 {
-                    set.Add(value,null);
+                    set.Add(value, null);
                 }
 
             }

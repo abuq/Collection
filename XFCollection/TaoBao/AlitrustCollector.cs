@@ -30,7 +30,7 @@ namespace XFCollection.TaoBao
         {
 
             //http://shop1464825016821.1688.com    http://shop1375721923107.1688.com    
-            var parameter = new NormalParameter { Keyword = @"http://shop1425574019991.1688.com" };
+            var parameter = new NormalParameter { Keyword = @"https://520fanfan.1688.com/" };
             //var parameter = new NormalParameter { Keyword = @"https://shop1397148954914.1688.com/" };
             //var parameter = new NormalParameter { Keyword = @"https://shop1423106386435.1688.com" };
             parameter.Add(@"targetUid", "5656");
@@ -167,7 +167,7 @@ namespace XFCollection.TaoBao
             var shopRank = GetShopRank(HtmlSource);
             //var dicComment = GetComment(HtmlSource);
 
-            IDictionary<string, string> dicComment = !shopName.Contains("旺铺关闭") && !shopName.Equals("404-阿里巴巴") ? GetComment() : new Dictionary<string, string>();
+            IDictionary<string, string> dicComment = !shopName.Contains("旺铺关闭") && !shopName.Equals("404-阿里巴巴") && !shopName.Equals("违规下架") ? GetComment() : new Dictionary<string, string>();
 
 
             var stringEmpty = string.Empty;
@@ -184,6 +184,8 @@ namespace XFCollection.TaoBao
                 errorNotice = "违规下架";
             else if (shopName.Contains("旺铺关闭") || shopName.Equals("404-阿里巴巴"))
                 errorNotice = shopName;
+
+            var dayMonitor = string.IsNullOrEmpty(errorNotice) ? "1" : "0";
 
 
             var resut = new Resut
@@ -236,7 +238,7 @@ namespace XFCollection.TaoBao
                 ["GoodCommentRate"] = intDefault,
                 //主营产品
                 ["MainBiz"] = mainBiz,
-                ["DayMonitor"] = intDefault,
+                ["DayMonitor"] = dayMonitor,
                 ["Loaned"] = intDefault,
                 ["targetuid"] = stringEmpty,
                 //当前店铺状态
@@ -417,10 +419,16 @@ namespace XFCollection.TaoBao
         {
 
             var dic = new Dictionary<string, string>();
-            var url = CurrentUrl.EndsWith("/") ? $"{CurrentUrl}event/app/winport_bsr/getBsrData.htm" : $"{CurrentUrl}/event/app/winport_bsr/getBsrData.htm";
+
+            var refer = CurrentUrl.EndsWith("/") ? CurrentUrl : $"{CurrentUrl}/";
+            var url = $"{refer}event/app/winport_bsr/getBsrData.htm";
             //var url = "https://shop1397148954914.1688.com/event/app/winport_bsr/getBsrData.htm";
-            var httpHelper = new HttpHelper();
-            var html = httpHelper.GetHtmlByPost(url, $"site_id=winport&page_type=index");
+            var httpHelper = new HttpHelper { Cookies = $"cna={GetCna()}", Referer = CurrentUrl };
+
+            var html = httpHelper.GetHtmlByPost(url, $"site_id=winport&page_type=index&_csrf_token={GetRandom32()}&site_key={GetRandom32()}");
+
+
+
             var jArray = JArray.Parse(JObject.Parse(html)["result"]["bsrDataList"].ToString());
 
             var Comment_MatchDescripRate = jArray[0]?["compareLineRate"]?.ToString().Replace("%", string.Empty);
@@ -510,8 +518,11 @@ namespace XFCollection.TaoBao
                 return $"sale_{cur}_star";
             else if (imgSrc.Contains("2423877_1490276829.png"))
                 return $"sale_{cur}_royal";
-            else
-                return $"{imgSrc}+{cur}";
+            //else
+            //    return $"{imgSrc}+{cur}";
+
+            //其他情况
+            return "";
         }
 
 
@@ -539,6 +550,30 @@ namespace XFCollection.TaoBao
             }
 
             return cna;
+        }
+
+
+        /// <summary>
+        /// GetRandom32
+        /// </summary>
+        /// <returns></returns>
+        public string GetRandom32()
+        {
+            var random32 = string.Empty;
+            var random = new Random();
+            //abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+            var array = new[]
+            {
+                'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u','v', 'w', 'x', 'y', 'z',
+                '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'
+            };
+            for (var i = 0; i < 32; i++)
+            {
+
+                random32 += array[random.Next(array.Length)];
+            }
+
+            return random32;
         }
 
 
